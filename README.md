@@ -9,3 +9,7 @@ With slight modifications (adding MWE types) it is possible to use it also for t
 **Results**: results of experiments on 18 languages with multiple reports reflecting the progress of the identification process.
 
 **SourceCode**: The folder Src
+
+**Requirements**: scikit-learn version 0.14.1 not higher!
+
+**Run** sh ./Scripts/run_atil_llf.sh to run the system and evaluate the results

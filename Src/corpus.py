@@ -132,8 +132,12 @@ class Corpus:
                 if not line.startswith('#'):
                     lineParts = line.split('\t')
 
-                    if len(lineParts) != 10 or '-' in lineParts[0]:
+                    if len(lineParts) != 10: #or '-' in lineParts[0]:
                         continue
+                    if "-" in lineParts[0]:
+                        lineParts[0] = lineParts[0].split('-')[0]
+                    elif "." in lineParts[0]:
+                        lineParts[0] = lineParts[0].split('.')[0]
 
                     lineNum += 1
                     if lineParts[3] == '_':

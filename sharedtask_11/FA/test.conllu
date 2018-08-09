@@ -1,3 +1,6 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# source_sent_id = . . autogen--data.parsemetsv--1
+# text = یکی از روزهای بسیار سرد ماه آوریل بود و ساعت‌ها سیزده ضربه می‌نواختند .
 1	یکی	یک	NUM	_	_	8	nsubj	_	_
 2	از	از	ADP	_	_	3	case	_	_
 3	روزهای	روز	NOUN	_	_	8	obl	_	_
@@ -13,6 +16,8 @@
 13	می‌نواختند	نواخت	VERB	_	_	0	root	_	_
 14	.	.	PUNCT	_	_	13	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--2
+# text = وینستون اسمیت , درحالی‌که برای فرار از باد سرد موذی , سر در گریبان فرو برده بود , به سرعت از‌لای درهای شیشه‌ای به‌‌درون عمارت پیروزی خزید و گردبادی از گردوخاک را با خود به درون آورد .
 1	وینستون	وینستون	PROPN	_	_	2	punct	_	_
 2	اسمیت	اسمیت	PROPN	_	_	0	root	_	_
 3	,	,	PUNCT	_	_	16	punct	_	_
@@ -52,6 +57,8 @@
 37	آورد	آورد	VERB	_	_	38	conj	_	_
 38	.	.	PUNCT	_	_	28	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--3
+# text = در راهرو , بوی کلم پخته و حصیر کهنه می‌آمد .
 1	در	در	ADP	_	_	2	case	_	_
 2	راهرو	راهرو	NOUN	_	_	10	obl	_	_
 3	,	,	PUNCT	_	_	10	punct	_	_
@@ -64,6 +71,8 @@
 10	می‌آمد	آمد	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--4
+# text = برروی دیوار راهرو , پوستر رنگی بزرگی نصب شده بود که برای چنین فضایی نامناسب می‌نمود .
 1	برروی	بررو	ADP	_	_	2	case	_	_
 2	دیوار	دیوار	NOUN	_	_	9	obl	_	_
 3	راهرو	راهرو	NOUN	_	_	9	advmod	_	_
@@ -82,6 +91,8 @@
 16	می‌نمود	نمود	VERB	_	_	9	ccomp	_	_
 17	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--5
+# text = تصویری عظیم , به پهنای بیش از یک متر , که چهره مردی تقریبا چهل‌وپنج‌ساله با سبیل‌های کلفت سیاه‌رنگ و جذابیتی خشن را نشان می‌داد .
 1	تصویری	تصویر	NOUN	_	_	25	advmod	_	_
 2	عظیم	عظیم	ADJ	_	_	1	amod	_	_
 3	,	,	PUNCT	_	_	25	punct	_	_
@@ -109,12 +120,16 @@
 25	می‌داد	داد	VERB	_	_	0	root	_	_
 26	.	.	PUNCT	_	_	25	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--6
+# text = وینستون به‌طرف پله‌ها رفت .
 1	وینستون	وینستون	PROPN	_	_	4	advmod	_	_
 2	به‌طرف	به‌طرف	ADP	_	_	3	case	_	_
 3	پله‌ها	پله	NOUN	_	_	4	obl	_	_
 4	رفت	رفت	VERB	_	_	0	root	_	_
 5	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--7
+# text = زحمت امتحان‌کردن آسانسور را به خود نداد , چون در بهترین شرایط هم به‌ندرت درست کار می‌کرد , چه رسد به حالا که جریان برق , به‌منظور صرفه‌جویی برای استقبال از هفته ابراز تنفر در ساعاتی از روز قطع بود .
 1	زحمت	زحمت	NOUN	_	_	7	advmod	_	_
 2	امتحان‌کردن	امتحان‌کردن	NOUN	_	_	1	fixed	_	_
 3	آسانسور	آسانسور	NOUN	_	_	2	fixed	_	_
@@ -157,6 +172,8 @@
 40	بود	بود	VERB	_	_	22	acl:relcl	_	_
 41	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--8
+# text = آپارتمان وینستون در طبقه هفتم قرار داشت , و او اگرچه سی‌ونه سال بیشتر نداشت ولی چون بالای قوزک راست ش دچار زخم واریسی بود , آهسته بالا می‌رفت و چند بار نیز دربین راه نفس تازه کرد .
 1	آپارتمان	آپارتمان	NOUN	_	_	7	nsubj	_	_
 2	وینستون	وینستون	PROPN	_	_	7	punct	_	_
 3	در	در	ADP	_	_	4	case	_	_
@@ -197,6 +214,8 @@
 38	کرد	کرد	VERB	_	_	29	conj	_	_
 39	.	.	PUNCT	_	_	38	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--9
+# text = در همه طبقات , روبروی آسانسور , همان پوستر با چهره بسیار عظیم ش به دیوار آویخته شده بود و به آدم , خیره نگاه می‌کرد .
 1	در	در	ADP	_	_	3	case	_	_
 2	همه	همه	DET	_	_	3	det	_	_
 3	طبقات	طبقه	NOUN	_	_	17	obl	_	_
@@ -225,6 +244,8 @@
 26	می‌کرد	کرد	VERB	_	_	17	conj	_	_
 27	.	.	PUNCT	_	_	26	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--10
+# text = چشم‌ها یش طوری به تصویر کشیده شده بود که انگار آدم را تعقیب می‌کرد .
 1	چشم‌ها	چشم	NOUN	_	_	6	nsubj	_	_
 2	یش	او	PRON	_	_	1	nmod:poss	_	_
 3	طوری	طور	ADV	_	_	6	advmod	_	_
@@ -241,6 +262,8 @@
 14	می‌کرد	کرد	VERB	_	_	6	ccomp	_	_
 15	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--11
+# text = شرح زیر تصویر چنین بود : برادر بزرگ مراقب تو ست .
 1	شرح	شرح	NOUN	_	_	5	nsubj	_	_
 2	زیر	زیر	ADP	_	_	3	case	_	_
 3	تصویر	تصویر	NOUN	_	_	5	obl	_	_
@@ -254,6 +277,8 @@
 11	ست	است	VERB	_	_	5	ccomp	_	_
 12	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--12
+# text = از داخل آپارتمان , صدای زنگداری به گوش می‌رسید که در حال خواندن ارقامی درمورد تولید چدن خام بود .
 1	از	از	ADP	_	_	2	case	_	_
 2	داخل	داخل	NOUN	_	_	9	obl	_	_
 3	آپارتمان	آپارتمان	NOUN	_	_	9	conj	_	_
@@ -275,6 +300,8 @@
 19	بود	بود	VERB	_	_	9	ccomp	_	_
 20	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--13
+# text = صدا از صفحه فلزی مستطیل‌شکلی به گوش می‌رسید که بیشتر به آیینه‌ای کدر شباهت داشت و بخشی از دیوار سمت راست را پوشانده بود .
 1	صدا	صدا	NOUN	_	_	8	advmod	_	_
 2	از	از	ADP	_	_	3	case	_	_
 3	صفحه	صفحه	NOUN	_	_	8	obl	_	_
@@ -301,6 +328,8 @@
 24	بود	بود	AUX	_	_	23	cop	_	_
 25	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--14
+# text = وینستون با چرخاندن دکمه‌ای صدا را کم کرد , ولی کلمات هنوز قابل‌تشخیص بودند .
 1	وینستون	وینستون	PROPN	_	_	8	punct	_	_
 2	با	با	ADP	_	_	3	case	_	_
 3	چرخاندن	چرخاندن	NOUN	_	_	8	obl	_	_
@@ -317,6 +346,8 @@
 14	بودند	بود	VERB	_	_	8	conj	_	_
 15	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--15
+# text = صدا و تصویر این دستگاه را , که به آن « صفحه سخنگو » می‌گفتند می‌شد ضعیف و تار کرد ولی راهی برای خاموش‌کردن کامل آن وجود نداشت .
 1	صدا	صدا	NOUN	_	_	0	root	_	_
 2	و	و	CONJ	_	_	3	cc	_	_
 3	تصویر	تصویر	NOUN	_	_	1	conj	_	_
@@ -347,11 +378,15 @@
 28	نداشت	داشت	VERB	_	_	20	ccomp	_	_
 29	.	.	PUNCT	_	_	28	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--16
+# text = به‌طرف پنجره رفت .
 1	به‌طرف	به‌طرف	ADP	_	_	2	case	_	_
 2	پنجره	پنجره	NOUN	_	_	3	obl	_	_
 3	رفت	رفت	VERB	_	_	0	root	_	_
 4	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--17
+# text = اندامی لاغر , نحیف و کوچک داشت که یونیفرم آبی‌رنگ حزب هم تکیدگی او را بیشتر نمایان می‌ساخت .
 1	اندامی	اندام	NOUN	_	_	7	obj	_	_
 2	لاغر	لاغر	ADJ	_	_	7	advmod	_	_
 3	,	,	PUNCT	_	_	7	punct	_	_
@@ -372,6 +407,8 @@
 18	می‌ساخت	ساخت	VERB	_	_	7	ccomp	_	_
 19	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--18
+# text = موهایی بور و کم‌پشت و چهره‌ای گلگون داشت , و پوست صورت ش تحت تاثیر سرمای زمستان که تازه پایان یافته بود و نیز استفاده از تیغ‌های کند ریش‌تراش و صابون‌های نامرغوب , زبر و خشن شده بود .
 1	موهایی	مو	NOUN	_	_	0	root	_	_
 2	بور	بور	ADJ	_	_	1	amod	_	_
 3	و	و	CONJ	_	_	4	cc	_	_
@@ -412,6 +449,8 @@
 38	بود	بود	AUX	_	_	37	cop	_	_
 39	.	.	PUNCT	_	_	37	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--19
+# text = با‌وجود بسته‌بودن پنجره‌ها , حس می‌کرد بیرون باید خیلی سرد باشد .
 1	با‌وجود	با‌وجود	ADP	_	_	2	case	_	_
 2	بسته‌بودن	بسته‌بودن	NOUN	_	_	6	obl	_	_
 3	پنجره‌ها	پنجره	NOUN	_	_	6	conj	_	_
@@ -425,6 +464,8 @@
 11	باشد	باش	VERB	_	_	6	ccomp	_	_
 12	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--20
+# text = آن پایین , در خیابان گردبادهای کوچکی از زمین برمی‌خاست و خار و خاشاک و کاغذپاره‌ها را به هوا بلند می‌کرد , و باوجوداینکه هوا آفتابی بود و آسمان رنگ آبی تندی داشت , گویی همه چیز , به‌جز پوسترهایی که همه جا چسبانده شده بود , عاری از رنگ و شادابی بود .
 1	آن	آن	DET	_	_	2	det	_	_
 2	پایین	پایین	NOUN	_	_	10	advmod	_	_
 3	,	,	PUNCT	_	_	10	punct	_	_
@@ -480,6 +521,8 @@
 53	بود	بود	VERB	_	_	52	aux	_	_
 54	.	.	PUNCT	_	_	52	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--21
+# text = از هر نقطه‌ای , چهره مرد سبیلو به آدم نگاه می‌کرد .
 1	از	از	ADP	_	_	3	case	_	_
 2	هر	هر	DET	_	_	3	det	_	_
 3	نقطه‌ای	نقطه	NOUN	_	_	11	obl	_	_
@@ -493,6 +536,8 @@
 11	می‌کرد	کرد	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--22
+# text = یکی از این پوسترها روی دیوار خانه روبرویی بود و زیر آن همان عبارت نوشته شده بود : برادر بزرگ مراقب تو ست .
 1	یکی	یک	NUM	_	_	0	root	_	_
 2	از	از	ADP	_	_	4	case	_	_
 3	این	این	DET	_	_	4	det	_	_
@@ -518,6 +563,8 @@
 23	ست	است	VERB	_	_	15	ccomp	_	_
 24	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--23
+# text = و چشم‌های سیاه ش مستقیم به چشم‌های وینستون خیره شده بود .
 1	و	و	CONJ	_	_	10	cc	_	_
 2	چشم‌های	چشم	NOUN	_	_	10	nsubj	_	_
 3	سیاه	سیاه	ADJ	_	_	4	amod	_	_
@@ -531,6 +578,8 @@
 11	بود	بود	AUX	_	_	10	aux	_	_
 12	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--24
+# text = در پایین آن , نزدیک سطح خیابان , پوستر دیگری به چشم می‌خورد که گوشه آن پاره شده بود و باد آن را طوری تکان می‌داد که کلمه اینگسوس به طور متناوب آشکار و پنهان می‌شد .
 1	در	در	ADP	_	_	3	case	_	_
 2	پایین	پایین	NOUN	_	_	1	fixed	_	_
 3	آن	آن	PRON	_	_	13	obl	_	_
@@ -569,6 +618,8 @@
 36	می‌شد	شد	VERB	_	_	26	ccomp	_	_
 37	.	.	PUNCT	_	_	36	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--25
+# text = در فاصله‌ای دور , هلیکوپتری برفراز بام خانه‌ها پرسه می‌زد , گهگاه مانند خرمگسی , در یک نقطه , در جا می‌چرخید و بعد مجددا چرخی زده و به سمتی دیگر پرواز می‌کرد .
 1	در	در	ADP	_	_	2	case	_	_
 2	فاصله‌ای	فاصله	NOUN	_	_	8	nmod	_	_
 3	دور	دور	ADJ	_	_	2	amod	_	_
@@ -604,6 +655,8 @@
 33	می‌کرد	کرد	VERB	_	_	27	conj	_	_
 34	.	.	PUNCT	_	_	33	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--26
+# text = هلیکوپتر گشت پلیس بود که از پشت پنجره‌ها به خانه‌های مردم سرک می‌کشید .
 1	هلیکوپتر	هلیکوپتر	NOUN	_	_	4	nsubj	_	_
 2	گشت	گشت	NOUN	_	_	4	obl	_	_
 3	پلیس	پلیس	NOUN	_	_	2	nmod:poss	_	_
@@ -619,6 +672,8 @@
 13	می‌کشید	کشید	VERB	_	_	4	ccomp	_	_
 14	.	.	PUNCT	_	_	13	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--27
+# text = ولی این هلیکوپترهای پلیس چندان اهمیتی نداشتند , بلکه مهمتر از آنها پلیس افکار بود .
 1	ولی	ولی	CONJ	_	_	15	punct	_	_
 2	این	این	DET	_	_	3	det	_	_
 3	هلیکوپترهای	هلیکوپتر	NOUN	_	_	7	nsubj	_	_
@@ -636,6 +691,8 @@
 15	بود	بود	VERB	_	_	0	root	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--28
+# text = پشت‌‌سر وینستون , صدایی که از صفحه سخنگو پخش می‌شد همچنان مشغول پرحرفی درباره چدن خام و موفقیت کامل برنامه سه‌ساله نهم بود .
 1	پشت‌‌سر	پشت‌سر	ADP	_	_	12	advmod	_	_
 2	وینستون	وینستون	PROPN	_	_	12	punct	_	_
 3	,	,	PUNCT	_	_	12	punct	_	_
@@ -661,6 +718,8 @@
 23	بود	بود	VERB	_	_	22	aux	_	_
 24	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--29
+# text = صفحه سخنگو نوعی دستگاه فرستنده و گیرنده بود که صدای وینستون را , حتی وقتی‌که زمزمه‌ای بسیار آهسته بود , بلافاصله دریافت می‌کرد .
 1	صفحه	صفحه	NOUN	_	_	0	root	_	_
 2	سخنگو	سخنگو	ADJ	_	_	1	amod	_	_
 3	نوعی	نوع	NOUN	_	_	4	det	_	_
@@ -686,6 +745,8 @@
 23	می‌کرد	کرد	VERB	_	_	7	acl:relcl	_	_
 24	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--30
+# text = خلاصه , تا زمانی‌که وینستون در محدوده دید دستگاه قرار داشت , هم تصویر و هم صدا یش دریافت می‌شد .
 1	خلاصه	خلاصه	ADV	_	_	2	advmod	_	_
 2	,	,	PUNCT	_	_	20	punct	_	_
 3	تا	تا	ADP	_	_	4	case	_	_
@@ -708,6 +769,8 @@
 20	می‌شد	شد	VERB	_	_	0	root	_	_
 21	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--31
+# text = البته هیچ راهی وجود نداشت که بفهمی در فلان لحظه خاص آیا زیر نظر قرار داشته ای یا نه .
 1	البته	البته	ADV	_	_	5	advmod	_	_
 2	هیچ	هیچ	DET	_	_	3	det	_	_
 3	راهی	راه	NOUN	_	_	5	nsubj	_	_
@@ -729,6 +792,8 @@
 19	نه	نه	INTJ	_	_	20	dep	_	_
 20	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--32
+# text = همچنین هرگز نمی‌توانستی سر دربیاوری که پلیس افکار , چند بار و از چه طریقی , به تفتیش عقاید تو پرداخته است .
 1	همچنین	همچنین	ADV	_	_	3	advmod	_	_
 2	هرگز	هرگز	ADV	_	_	3	advmod	_	_
 3	نمی‌توانستی	توانست	VERB	_	_	0	root	_	_
@@ -753,6 +818,8 @@
 22	است	است	AUX	_	_	21	cop	_	_
 23	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--33
+# text = حتی اگر می‌گفتند همه مردم را تمام‌وقت کنترل می‌کنند , چندان دور از ذهن نبود .
 1	حتی	حتی	CONJ	_	_	9	advmod	_	_
 2	اگر	اگر	SCONJ	_	_	3	mark	_	_
 3	می‌گفتند	گفت	VERB	_	_	9	advcl	_	_
@@ -770,6 +837,8 @@
 15	نبود	بود	VERB	_	_	12	aux	_	_
 16	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--34
+# text = یعنی آنها هر زمانی اراده می‌کردند می‌توانستند , همه رفتار و کردار ت را زیر نظر بگیرند .
 1	یعنی	یعنی	CONJ	_	_	17	advmod	_	_
 2	آنها	آنها	PRON	_	_	17	nsubj	_	_
 3	هر	هر	DET	_	_	4	det	_	_
@@ -789,6 +858,8 @@
 17	بگیرند	گیر	VERB	_	_	0	root	_	_
 18	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--35
+# text = مردم ازروی عادتی که تبدیل به غریزه شده بود , همواره باید با این تصور زندگی می‌کردند که هر حرفی که می‌زنند شنیده می‌شود و هر حرکتی که انجام می‌دهند – به‌جز در تاریکی – زیر نظر است .
 1	مردم	مردم	NOUN	_	_	0	root	_	_
 2	ازروی	ازرو	ADP	_	_	3	case	_	_
 3	عادتی	عادت	NOUN	_	_	1	nmod	_	_
@@ -829,6 +900,8 @@
 38	است	است	VERB	_	_	3	acl:relcl	_	_
 39	.	.	PUNCT	_	_	38	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--36
+# text = وینستون به صفحه سخنگو پشت کرد .
 1	وینستون	وینستون	PROPN	_	_	6	advmod	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	صفحه	صفحه	NOUN	_	_	6	obl	_	_
@@ -837,6 +910,8 @@
 6	کرد	کرد	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--37
+# text = این‌طوری مطمئن‌تر بود ؛ گرچه به خوبی می‌دانست که این کار فایده‌ای ندارد و کماکان تحت کنترل است .
 1	این‌طوری	این‌طور	PRON	_	_	3	nsubj	_	_
 2	مطمئن‌تر	مطمئن	ADJ	_	_	3	xcomp	_	_
 3	بود	بود	VERB	_	_	0	root	_	_
@@ -857,6 +932,8 @@
 18	است	است	VERB	_	_	13	conj	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--38
+# text = یک کیلومتر آن‌طرف‌تر ساختمان سفید وزارت حقیقت , محل کار ش , برفراز منظره دودآلود شهر , سر به فلک کشیده بود .
 1	یک	یک	NUM	_	_	2	nummod	_	_
 2	کیلومتر	کیلومتر	NOUN	_	_	0	root	_	_
 3	آن‌طرف‌تر	آن‌طرف	ADV	_	_	2	advmod	_	_
@@ -881,6 +958,8 @@
 22	بود	بود	AUX	_	_	2	cop	_	_
 23	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--39
+# text = با حالتی انزجارگونه پیش خود اندیشید : اینجا شهر لندن است , شهر عمده پایگاه شماره‌یک هوایی و سومین ایالت سرزمین اوشنیا ازلحاظ جمعیت .
 1	با	با	ADP	_	_	2	case	_	_
 2	حالتی	حالت	NOUN	_	_	6	obl	_	_
 3	انزجارگونه	انزجارگونه	ADJ	_	_	2	amod	_	_
@@ -907,6 +986,8 @@
 24	جمعیت	جمعیت	NOUN	_	_	22	obl	_	_
 25	.	.	PUNCT	_	_	24	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--40
+# text = تلاش کرد خاطراتی از دوران کودکی اش را به یاد آورد و ببیند آیا لندن همیشه همین‌طور بوده است یا نه .
 1	تلاش	تلاش	NOUN	_	_	2	compound:lvc	_	_
 2	کرد	کرد	VERB	_	_	0	root	_	_
 3	خاطراتی	خاطره	NOUN	_	_	11	obj	_	_
@@ -930,6 +1011,8 @@
 21	نه	نه	INTJ	_	_	18	conj	_	_
 22	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--41
+# text = آیا لندن در زمان‌های گذشته نیز مملو از این خانه‌های قدیمی و پوسیده قرن نوزدهم بوده است که از هر طرف با الوارهای فراوان به دیوارهای سست شان شمع زده باشند , پنجره‌های شان با مقوا و سقف‌های شان با آهن‌پاره و حلبی پوشانده شده باشند , و دیوارهای سست باغ‌ها از هر طرف شکم داده باشند ؟
 1	آیا	آیا	ADV	_	_	7	advmod	_	_
 2	لندن	لندن	PROPN	_	_	7	punct	_	_
 3	در	در	ADP	_	_	4	case	_	_
@@ -989,6 +1072,8 @@
 57	باشند	باش	AUX	_	_	56	cop	_	_
 58	؟	؟	PUNCT	_	_	56	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--42
+# text = از محل‌هایی که مورد اصابت بمب قرار گرفته بود , گردوغبار به هوا بلند شود و درخت‌های بید در زمین‌های پرسنگ‌وکلوخ رشد کرده باشند ؛ و هر جا که بمب‌ها , محوطه وسیع‌تری را از بین برده است , انبوهی از خانه‌های چوبی شبیه لانه مرغ , بر زمین سبز شده باشد ؟
 1	از	از	ADP	_	_	2	case	_	_
 2	محل‌هایی	محل	NOUN	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	7	mark	_	_
@@ -1043,6 +1128,8 @@
 52	باشد	باش	AUX	_	_	51	cop	_	_
 53	؟	؟	PUNCT	_	_	51	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--43
+# text = اما فایده نداشت , چیزی به یاد نمی‌آورد .
 1	اما	اما	CONJ	_	_	3	punct	_	_
 2	فایده	فایده	NOUN	_	_	3	nsubj	_	_
 3	نداشت	داشت	VERB	_	_	0	root	_	_
@@ -1053,6 +1140,8 @@
 8	نمی‌آورد	آورد	VERB	_	_	3	conj	_	_
 9	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--44
+# text = از دوران کودکی اش به‌جز صحنه‌هایی شاد و دوست‌داشتنی چیزی در خاطر نداشت که آنها هم مشخص نبود در چه زمانی و چگونه رخ داده‌ اند و اغلب واضح نبودند .
 1	از	از	ADP	_	_	2	case	_	_
 2	دوران	دوران	NOUN	_	_	7	nmod	_	_
 3	کودکی	کودکی	NOUN	_	_	7	nsubj	_	_
@@ -1085,6 +1174,8 @@
 30	نبودند	بود	VERB	_	_	13	ccomp	_	_
 31	.	.	PUNCT	_	_	30	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--45
+# text = وزارت حقیقت – یا همان مینی‌ترو در زبان نوین – به طرز شگفت‌آوری درمیان چشم‌انداز , خودنمایی می‌کرد .
 1	وزارت	وزارت	NOUN	_	_	18	nsubj	_	_
 2	حقیقت	حقیقت	NOUN	_	_	1	conj	_	_
 3	–	–	PUNCT	_	_	2	punct	_	_
@@ -1105,6 +1196,8 @@
 18	می‌کرد	کرد	VERB	_	_	0	root	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--46
+# text = ساختمان عظیم هرمی‌شکل به رنگ سفید , که به صورت پله‌پله تا ارتفاع سیصد متر بالا رفته بود .
 1	ساختمان	ساختمان	NOUN	_	_	0	root	_	_
 2	عظیم	عظیم	ADJ	_	_	1	amod	_	_
 3	هرمی‌شکل	هرمی‌شکل	ADJ	_	_	1	amod	_	_
@@ -1125,6 +1218,8 @@
 18	بود	بود	AUX	_	_	1	cop	_	_
 19	.	.	PUNCT	_	_	1	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--47
+# text = از جایی که وینستون ایستاده بود سه شعار حزب را که به نحوی موزون بر نمای سفید ساختمان به طور برجسته نوشته بودند , به راحتی می‌شود خواند : جنگ صلح است آزادی بردگی است نادانی توانایی است .
 1	از	از	ADP	_	_	2	case	_	_
 2	جایی	جا	NOUN	_	_	4	fixed	_	_
 3	که	که	SCONJ	_	_	2	fixed	_	_
@@ -1165,6 +1260,8 @@
 38	است	است	VERB	_	_	28	ccomp	_	_
 39	.	.	PUNCT	_	_	38	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--48
+# text = آن‌طور که می‌گفتند وزارت حقیقت شامل سه‌هزار اتاق دربالای طبقه همکف و همین تعداد اتاق در زیرزمین بود .
 1	آن‌طور	آن‌طور	PRON	_	_	0	root	_	_
 2	که	که	SCONJ	_	_	3	mark	_	_
 3	می‌گفتند	گفت	VERB	_	_	1	acl:relcl	_	_
@@ -1185,6 +1282,8 @@
 18	بود	بود	VERB	_	_	3	ccomp	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--49
+# text = در تمام شهر لندن تنها سه ساختمان دیگر با این اندازه و شکل وجود داشت .
 1	در	در	ADP	_	_	3	case	_	_
 2	تمام	تمام	DET	_	_	3	det	_	_
 3	شهر	شهر	NOUN	_	_	15	obl	_	_
@@ -1202,6 +1301,8 @@
 15	داشت	داشت	VERB	_	_	0	root	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--50
+# text = این چهار ساختمان , کلیه عمارت‌های اطراف را تحت‌الشعاع قرار داده بودند , و از بالای عمارت پیروزی هر چهار تای آنها دیده می‌شد .
 1	این	این	DET	_	_	3	det	_	_
 2	چهار	چهار	NUM	_	_	3	nummod	_	_
 3	ساختمان	ساختمان	NOUN	_	_	11	advmod	_	_
@@ -1228,6 +1329,8 @@
 24	می‌شد	شد	AUX	_	_	23	cop	_	_
 25	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--51
+# text = محل استقرار چهار وزارتخانه‌ای بودند که کل تشکیلات دولت بین آنها تقسیم شده بود : وزارت حقیقت که با اخبار , تفریحات , آموزش و هنرهای زیبا سروکار داشت ؛ وزارت صلح که به امور جنگ می‌پرداخت ؛ وزارت عشق که برقراری قانون و نظم را بر عهده داشت ؛ و وزارت فراوانی که مسئول امور اقتصادی بود .
 1	محل	محل	NOUN	_	_	0	root	_	_
 2	استقرار	استقرار	NOUN	_	_	1	nmod:poss	_	_
 3	چهار	چهار	NUM	_	_	4	nummod	_	_
@@ -1288,6 +1391,8 @@
 58	بود	بود	VERB	_	_	52	advcl	_	_
 59	.	.	PUNCT	_	_	52	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--52
+# text = نام وزارتخانه‌ها در زبان نوین چنین بود : مینی‌ترو , مینی‌پکس , مینی‌لاو و مینی‌پلینتی .
 1	نام	نام	NOUN	_	_	7	nsubj	_	_
 2	وزارتخانه‌ها	وزارتخانه	NOUN	_	_	1	flat	_	_
 3	در	در	ADP	_	_	4	case	_	_
@@ -1305,6 +1410,8 @@
 15	مینی‌پلینتی	مینی‌پلینتی	PROPN	_	_	13	conj	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--53
+# text = ترسناک‌ترین وزارتخانه , وزارت عشق بود .
 1	ترسناک‌ترین	ترسناک	ADJ	_	_	2	amod	_	_
 2	وزارتخانه	وزارتخانه	NOUN	_	_	6	nsubj	_	_
 3	,	,	PUNCT	_	_	6	punct	_	_
@@ -1313,6 +1420,8 @@
 6	بود	بود	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--54
+# text = هیچ پنجره‌ای در آن نبود .
 1	هیچ	هیچ	DET	_	_	2	det	_	_
 2	پنجره‌ای	پنجره	NOUN	_	_	5	nsubj	_	_
 3	در	در	ADP	_	_	4	case	_	_
@@ -1320,6 +1429,8 @@
 5	نبود	بود	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--55
+# text = وینستون تا به حال به آنجا نرفته بود و حتی از پانصدمتری اش هم رد نشده بود .
 1	وینستون	وینستون	PROPN	_	_	7	mark	_	_
 2	تا	تا	ADP	_	_	4	case	_	_
 3	به	به	ADP	_	_	2	fixed	_	_
@@ -1339,6 +1450,8 @@
 17	بود	بود	AUX	_	_	16	cop	_	_
 18	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--56
+# text = ورود به آنجا فقط برای انجام کارهای اداری و آن هم پس‌از عبور از موانع پیچ‌درپیچ ، سیم‌های خاردار ، درهای فولادی و مسلسل‌های مخفی ممکن بود .
 1	ورود	ورود	NOUN	_	_	0	root	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	آنجا	آنجا	PRON	_	_	1	nmod	_	_
@@ -1368,6 +1481,8 @@
 27	بود	بود	VERB	_	_	26	aux	_	_
 28	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--57
+# text = حتی در خیابان‌هایی که به آنجا ختم می‌شد , دائما نگهبان‌هایی با چهره‌های خشن که به یونیفرم سیاه ملبس بودند و باتون‌های تاشو داشتند , مشغول گشت‌زنی بودند .
 1	حتی	حتی	CONJ	_	_	11	advmod	_	_
 2	در	در	ADP	_	_	3	case	_	_
 3	خیابان‌هایی	خیابان	NOUN	_	_	11	advcl	_	_
@@ -1398,6 +1513,8 @@
 28	بودند	بود	VERB	_	_	26	aux	_	_
 29	.	.	PUNCT	_	_	24	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--58
+# text = وینستون ناگهان رو یش را برگرداند .
 1	وینستون	وینستون	PROPN	_	_	6	advmod	_	_
 2	ناگهان	ناگهان	ADV	_	_	6	advmod	_	_
 3	رو	رو	NOUN	_	_	6	obj	_	_
@@ -1406,6 +1523,8 @@
 6	برگرداند	برگرداند	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--59
+# text = هنگام رویارویی با صفحه سخنگو عاقلانه‌تر بود که چهره اش آرامشی توام با خوش‌بینی را نشان دهد و او نیز چنین حالتی به خود گرفت .
 1	هنگام	هنگام	NOUN	_	_	7	nsubj	_	_
 2	رویارویی	رویارویی	NOUN	_	_	1	nmod:poss	_	_
 3	با	با	ADP	_	_	4	case	_	_
@@ -1433,6 +1552,8 @@
 25	گرفت	گرفت	VERB	_	_	17	conj	_	_
 26	.	.	PUNCT	_	_	25	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--60
+# text = برای رفتن به آشپزخانه , از اتاق گذشت .
 1	برای	برای	ADP	_	_	2	case	_	_
 2	رفتن	رفتن	NOUN	_	_	8	obl	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -1443,6 +1564,8 @@
 8	گذشت	گذشت	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--61
+# text = با ترک وزارتخانه در این ساعت روز , ناهار اداره را از دست داده بود و می‌دانست در آشپزخانه اش هم جز تکه‌ای نان سیاه که برای صبحانه فردا ذخیره کرده بود , چیز دیگری یافت نمی‌شود .
 1	با	با	ADP	_	_	2	case	_	_
 2	ترک	ترک	NOUN	_	_	14	obl	_	_
 3	وزارتخانه	وزارتخانه	NOUN	_	_	14	advmod	_	_
@@ -1482,6 +1605,8 @@
 37	نمی‌شود	شو	VERB	_	_	31	ccomp	_	_
 38	.	.	PUNCT	_	_	31	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--62
+# text = از داخل قفسه یک بطری بیرون آورد که حاوی ماده‌ای بی‌رنگ بود و روی برچسب سفید و ساده آن نوشته بود : « جین پیروزی » .
 1	از	از	ADP	_	_	2	case	_	_
 2	داخل	داخل	NOUN	_	_	7	obl	_	_
 3	قفسه	قفسه	NOUN	_	_	7	obj	_	_
@@ -1510,6 +1635,8 @@
 26	»	»	PUNCT	_	_	24	punct	_	_
 27	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--63
+# text = در بطری را که باز کرد بوی چربی تهوع‌آوری , شبیه بوی عرق برنج چینی , به مشام ش خورد .
 1	در	در	NOUN	_	_	6	mark	_	_
 2	بطری	بطری	NOUN	_	_	1	fixed	_	_
 3	را	را	ADP	_	_	1	fixed	_	_
@@ -1532,6 +1659,8 @@
 20	خورد	خورد	VERB	_	_	6	ccomp	_	_
 21	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--64
+# text = یک استکان برای خود ریخت , و مانند دارو آن را سرکشید .
 1	یک	یک	NUM	_	_	5	advmod	_	_
 2	استکان	استکان	NOUN	_	_	1	fixed	_	_
 3	برای	برای	ADP	_	_	4	case	_	_
@@ -1546,6 +1675,8 @@
 12	سرکشید	سرکشید	VERB	_	_	0	root	_	_
 13	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--65
+# text = بلافاصله صورت ش به سرخی گرایید و اشک از چشم‌ها یش سرازیر شد .
 1	بلافاصله	بلافاصله	ADV	_	_	6	advmod	_	_
 2	صورت	صورت	NOUN	_	_	6	obj	_	_
 3	ش	او	PRON	_	_	2	nmod:poss	_	_
@@ -1561,6 +1692,8 @@
 13	شد	شد	VERB	_	_	6	conj	_	_
 14	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--66
+# text = مانند اسیدنیتریک بود و تازه وقتی آن را قورت می‌دادی گویی با گرزی پلاستیکی به پشت سر ت کوبیده باشند .
 1	مانند	مانند	ADP	_	_	2	case	_	_
 2	اسیدنیتریک	اسیدنیتریک	NOUN	_	_	3	obl	_	_
 3	بود	بود	VERB	_	_	0	root	_	_
@@ -1583,6 +1716,8 @@
 20	باشند	باش	AUX	_	_	19	cop	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--67
+# text = اما لحظه‌ای بعد , سوزش درون معده اش برطرف شد و همه چیز رنگی زیبا به خود گرفت .
 1	اما	اما	CONJ	_	_	18	mark	_	_
 2	لحظه‌ای	لحظه	NOUN	_	_	10	advmod	_	_
 3	بعد	بعد	ADV	_	_	10	advmod	_	_
@@ -1603,6 +1738,8 @@
 18	گرفت	گرفت	VERB	_	_	0	root	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--68
+# text = پاکت سیگار مچاله‌شده اش را , که آن هم « سیگار پیروزی » نام داشت , از جیب ش بیرون کشید و تا به خود بیاید سیگار اول به زمین افتاد .
 1	پاکت	پاکت	NOUN	_	_	15	advmod	_	_
 2	سیگار	سیگار	NOUN	_	_	1	fixed	_	_
 3	مچاله‌شده	مچاله‌شده	ADJ	_	_	2	amod	_	_
@@ -1636,6 +1773,8 @@
 31	افتاد	افتاد	VERB	_	_	21	conj	_	_
 32	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--69
+# text = ولی سیگار دوم را با موفقیت روشن کرد .
 1	ولی	ولی	CONJ	_	_	8	punct	_	_
 2	سیگار	سیگار	NOUN	_	_	8	obj	_	_
 3	دوم	دو	NUM	_	_	2	nummod	_	_
@@ -1646,6 +1785,8 @@
 8	کرد	کرد	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--70
+# text = به اتاق نشیمن بازگشت و روی میز کوچکی که در سمت چپ صفحه سخنگو قرار داشت , نشست .
 1	به	به	ADP	_	_	2	case	_	_
 2	اتاق	اتاق	NOUN	_	_	4	obl	_	_
 3	نشیمن	نشیمن	NOUN	_	_	4	obj	_	_
@@ -1666,6 +1807,8 @@
 18	نشست	نشست	VERB	_	_	16	ccomp	_	_
 19	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--71
+# text = از کشوی میز یک قلمدان , شیشه‌ای جوهر و یک کتابچه سفید قطور با جلد قرمز و طرح مرمرین , بیرون آورد .
 1	از	از	ADP	_	_	2	case	_	_
 2	کشوی	کشو	NOUN	_	_	0	root	_	_
 3	میز	میز	NOUN	_	_	7	nmod:poss	_	_
@@ -1690,6 +1833,8 @@
 22	آورد	آورد	VERB	_	_	23	conj	_	_
 23	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--72
+# text = صفحه سخنگوی اتاق نشیمن , به‌جای آن‌که طبق معمول برروی دیوار انتهایی نصب شود تا به تمام اتاق اشراف داشته باشد , بنابه دلایلی , برروی دیوار جانبی و درست روبروی پنجره قرار داشت .
 1	صفحه	صفحه	NOUN	_	_	14	advmod	_	_
 2	سخنگوی	سخنگو	ADJ	_	_	14	amod	_	_
 3	اتاق	اتاق	NOUN	_	_	14	nmod:poss	_	_
@@ -1726,6 +1871,8 @@
 34	داشت	داشت	VERB	_	_	14	ccomp	_	_
 35	.	.	PUNCT	_	_	34	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--73
+# text = در یک طرف آن یک تورفتگی در دیوار بود که هنگام ساختن عمارت , گویا برای قراردادن قفسه کتاب در نظر گرفته شده و اکنون وینستون همان جا نشسته بود .
 1	در	در	ADP	_	_	6	case	_	_
 2	یک	یک	DET	_	_	3	det	_	_
 3	طرف	طرف	NOUN	_	_	1	fixed	_	_
@@ -1758,6 +1905,8 @@
 30	بود	بود	AUX	_	_	29	cop	_	_
 31	.	.	PUNCT	_	_	29	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--74
+# text = وینستون در این گوشه از اتاق می‌توانست از محدوده دید صفحه سخنگو در امان بماند .
 1	وینستون	وینستون	PROPN	_	_	15	advmod	_	_
 2	در	در	ADP	_	_	4	case	_	_
 3	این	این	DET	_	_	4	det	_	_
@@ -1775,6 +1924,8 @@
 15	بماند	مان	VERB	_	_	0	root	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--75
+# text = البته صدا یش شنیده می‌شد .
 1	البته	البته	ADV	_	_	4	advmod	_	_
 2	صدا	صدا	NOUN	_	_	4	nsubj	_	_
 3	یش	او	PRON	_	_	4	obj	_	_
@@ -1782,6 +1933,8 @@
 5	می‌شد	شد	AUX	_	_	4	cop	_	_
 6	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--76
+# text = شاید کاری که هم‌اکنون در صدد انجام آن بود , به‌دلیل همین موقعیت خاص اتاق به ذهن ش خطور کرده بود .
 1	شاید	شاید	ADV	_	_	2	advmod	_	_
 2	کاری	کار	NOUN	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	9	mark	_	_
@@ -1805,6 +1958,8 @@
 21	بود	بود	AUX	_	_	20	cop	_	_
 22	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--77
+# text = کتابچه‌ای هم که از کشو بیرون آورده بود , در شکل‌گیری این اندیشه , نقش داشت .
 1	کتابچه‌ای	کتابچه	NOUN	_	_	16	nsubj	_	_
 2	هم	هم	CONJ	_	_	16	advmod	_	_
 3	که	که	SCONJ	_	_	7	mark	_	_
@@ -1823,6 +1978,8 @@
 16	داشت	داشت	VERB	_	_	0	root	_	_
 17	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--78
+# text = این کتابچه , زیبایی خاصی داشت .
 1	این	این	DET	_	_	2	det	_	_
 2	کتابچه	کتابچه	NOUN	_	_	6	nsubj	_	_
 3	,	,	PUNCT	_	_	6	punct	_	_
@@ -1831,6 +1988,8 @@
 6	داشت	داشت	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--79
+# text = ورق‌های صاف و نرم آن که براثر مرور زمان کمی زرد شده بودند , از آن‌نوع کاغذهایی بودند که بیش از چهل سال , دیگر تولید نمی‌شد .
 1	ورق‌های	ورق	NOUN	_	_	0	root	_	_
 2	صاف	صاف	ADJ	_	_	1	amod	_	_
 3	و	و	CONJ	_	_	4	cc	_	_
@@ -1860,6 +2019,8 @@
 27	نمی‌شد	شد	VERB	_	_	18	ccomp	_	_
 28	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--80
+# text = اما او حدس می‌زد که کتابچه از آن هم قدیمی‌تر است .
 1	اما	اما	CONJ	_	_	11	mark	_	_
 2	او	او	PRON	_	_	4	nsubj	_	_
 3	حدس	حدس	NOUN	_	_	4	compound:lvc	_	_
@@ -1873,6 +2034,8 @@
 11	است	است	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--81
+# text = آن را پشت ویترین مغازه خرت‌وپرت‌فروشی یکی از محله‌های فقیرنشین شهر پیدا کرده بود ( به یاد نداشت دقیقا کدام محله ) و در همان موقع اشتیاق غیرقابل‌مقاومتی برای تملک آن در خود احساس کرده بود .
 1	آن	آن	PRON	_	_	13	obj	_	_
 2	را	را	ADP	_	_	1	case	_	_
 3	پشت	پشت	ADP	_	_	4	case	_	_
@@ -1911,6 +2074,8 @@
 36	بود	بود	AUX	_	_	35	aux	_	_
 37	.	.	PUNCT	_	_	35	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--82
+# text = اعضای حزب مجاز نبودند به مغازه‌های عادی ( که می‌گفتند سروکار شان با بازار سیاه است ) بروند , اما این اصل چندان رعایت نمی‌شد ؛ چون چیزهایی مانند بند کفش و یا تیغ ریش‌تراشی را از هیچ جای دیگر نمی‌شد تهیه کرد .
 1	اعضای	عضو	NOUN	_	_	0	root	_	_
 2	حزب	حزب	NOUN	_	_	4	obj	_	_
 3	مجاز	مجاز	ADJ	_	_	2	amod	_	_
@@ -1956,6 +2121,8 @@
 43	کرد	کرد	VERB	_	_	25	advcl	_	_
 44	.	.	PUNCT	_	_	43	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--83
+# text = او نگاهی سریع به اطراف خیابان انداخت و داخل مغازه شد و کتابچه را به بهای دو دلار و پنجاه سنت خرید .
 1	او	او	PRON	_	_	7	nsubj	_	_
 2	نگاهی	نگاه	NOUN	_	_	7	compound:lvc	_	_
 3	سریع	سریع	ADJ	_	_	7	xcomp	_	_
@@ -1980,6 +2147,8 @@
 22	خرید	خر	VERB	_	_	18	conj	_	_
 23	.	.	PUNCT	_	_	22	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--84
+# text = در آن موقع , مورد استفاده خاصی برای آن در نظر نداشت .
 1	در	در	ADP	_	_	3	case	_	_
 2	آن	آن	DET	_	_	3	det	_	_
 3	موقع	موقع	NOUN	_	_	12	obl	_	_
@@ -1994,6 +2163,8 @@
 12	نداشت	داشت	VERB	_	_	0	root	_	_
 13	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--85
+# text = مانند آدم‌های گناهکار , آن را داخل کیف دستی اش گذاشت و به خانه برد .
 1	مانند	مانند	ADP	_	_	2	case	_	_
 2	آدم‌های	آدم	NOUN	_	_	11	obl	_	_
 3	گناهکار	گناهکار	ADJ	_	_	2	amod	_	_
@@ -2011,6 +2182,8 @@
 15	برد	برد	VERB	_	_	11	conj	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--86
+# text = باوجوداینکه چیزی درون کتابچه نوشته نشده بود , ولی حتی مالکیت آن هم نوعی عمل خلاف محسوب می‌شد .
 1	باوجوداینکه	باوجوداینکه	SCONJ	_	_	5	advmod	_	_
 2	چیزی	چیز	NOUN	_	_	5	obj	_	_
 3	درون	درون	ADP	_	_	4	case	_	_
@@ -2031,6 +2204,8 @@
 18	می‌شد	شد	VERB	_	_	0	root	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--87
+# text = وینستون خیال داشت خاطرات روزانه خود را در آن یادداشت کند .
 1	وینستون	وینستون	PROPN	_	_	3	advmod	_	_
 2	خیال	خیال	NOUN	_	_	3	compound:lvc	_	_
 3	داشت	داشت	VERB	_	_	0	root	_	_
@@ -2044,6 +2219,8 @@
 11	کند	کن	VERB	_	_	3	ccomp	_	_
 12	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--88
+# text = این کار غیرقانونی نبود ( در واقع هیچ کاری غیرقانونی نبود , چون اصلا قانونی وجود نداشت ) .
 1	این	این	DET	_	_	2	det	_	_
 2	کار	کار	NOUN	_	_	4	nsubj	_	_
 3	غیرقانونی	غیرقانونی	ADJ	_	_	2	amod	_	_
@@ -2064,6 +2241,8 @@
 18	)	)	PUNCT	_	_	11	punct	_	_
 19	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--89
+# text = اما اگر متوجه می‌شدند , به طور حتم مجازات مرگ و یا حداقل بیست‌وپنج سال محکومیت در اردوگاه کار اجباری در انتظار ش بود .
 1	اما	اما	CONJ	_	_	0	root	_	_
 2	اگر	اگر	SCONJ	_	_	3	mark	_	_
 3	متوجه	متوجه	ADJ	_	_	1	advcl	_	_
@@ -2090,6 +2269,8 @@
 24	بود	بود	VERB	_	_	14	conj	_	_
 25	.	.	PUNCT	_	_	24	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--90
+# text = وینستون , سرقلمی به قلم خود وصل کرد و آن را به‌درون جوهر فروبرد .
 1	وینستون	وینستون	PROPN	_	_	8	advmod	_	_
 2	,	,	PUNCT	_	_	8	punct	_	_
 3	سرقلمی	سرقلمی	NOUN	_	_	8	obj	_	_
@@ -2106,6 +2287,8 @@
 14	فروبرد	فروبرد	VERB	_	_	8	conj	_	_
 15	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--91
+# text = قلم , ابزار منسوخ‌شده‌ای بود که دیگر به‌ندرت حتی برای امضاکردن به کار می‌رفت و او صرفا به‌این‌دلیل‌که نمی‌خواست آن کاغذ خوش‌رنگ و زیبا را با یک خودکار خط‌خطی کند , ترجیح داده بود این قلم را با دردسر زیاد و به طور پنهانی تهیه کند .
 1	قلم	قلم	NOUN	_	_	0	root	_	_
 2	,	,	PUNCT	_	_	3	punct	_	_
 3	ابزار	ابزار	NOUN	_	_	1	conj	_	_
@@ -2154,6 +2337,8 @@
 46	کند	کن	VERB	_	_	33	ccomp	_	_
 47	.	.	PUNCT	_	_	30	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--92
+# text = او در واقع زیاد به نوشتن با دست عادت نداشت چون آنها به طور معمول , همه چیز را , به‌جز برخی نوشته‌های بسیار کوتاه , به دستگاه « گفته‌نگار » دیکته می‌کردند , اما بی‌شک برای هدف فعلی امکان استفاده از آن نبود .
 1	او	او	PRON	_	_	10	nsubj	_	_
 2	در	در	ADP	_	_	3	case	_	_
 3	واقع	واقع	NOUN	_	_	10	obl	_	_
@@ -2200,6 +2385,8 @@
 44	نبود	بود	VERB	_	_	33	ccomp	_	_
 45	.	.	PUNCT	_	_	33	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--93
+# text = بنابراین قلم را در جوهر فروبرد و سپس برای لحظه‌ای کوتاه دچار تردید شد .
 1	بنابراین	بنابراین	ADV	_	_	6	advmod	_	_
 2	قلم	قلم	NOUN	_	_	6	obj	_	_
 3	را	را	ADP	_	_	2	case	_	_
@@ -2216,11 +2403,15 @@
 14	شد	شد	VERB	_	_	6	conj	_	_
 15	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--94
+# text = به دلشوره افتاد .
 1	به	به	ADP	_	_	2	case	_	_
 2	دلشوره	دلشوره	NOUN	_	_	3	obl	_	_
 3	افتاد	افتاد	VERB	_	_	0	root	_	_
 4	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--95
+# text = نوشتن روی کاغذ نیاز به عزمی راسخ داشت .
 1	نوشتن	نوشتن	NOUN	_	_	8	advmod	_	_
 2	روی	رو	ADP	_	_	3	case	_	_
 3	کاغذ	کاغذ	NOUN	_	_	8	obl	_	_
@@ -2231,6 +2422,8 @@
 8	داشت	داشت	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--96
+# text = با حروف ریز و مغشوشی نوشت :
 1	با	با	ADP	_	_	2	case	_	_
 2	حروف	حرف	NOUN	_	_	6	obl	_	_
 3	ریز	ریز	ADJ	_	_	2	amod	_	_
@@ -2239,18 +2432,24 @@
 6	نوشت	نوشت	VERB	_	_	0	root	_	_
 7	:	:	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--97
+# text = چهارم آوریل , 1984 .
 1	چهارم	چهار	NUM	_	_	2	nummod	_	_
 2	آوریل	آوریل	NOUN	_	_	0	root	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
 4	1984	1984	NUM	_	_	2	nummod	_	_
 5	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--98
+# text = به عقب تکیه داد .
 1	به	به	ADP	_	_	2	case	_	_
 2	عقب	عقب	NOUN	_	_	4	obl	_	_
 3	تکیه	تکیه	NOUN	_	_	4	compound:lvc	_	_
 4	داد	داد	VERB	_	_	0	root	_	_
 5	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--99
+# text = احساس درماندگی همه وجود ش را فراگرفت .
 1	احساس	احساس	NOUN	_	_	7	nsubj	_	_
 2	درماندگی	درماندگی	NOUN	_	_	1	nmod:poss	_	_
 3	همه	همه	DET	_	_	4	det	_	_
@@ -2260,6 +2459,8 @@
 7	فراگرفت	فراگرفت	VERB	_	_	0	root	_	_
 8	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--100
+# text = حتی اطمینان نداشت که سال , سال 1984 باشد .
 1	حتی	حتی	CONJ	_	_	3	advmod	_	_
 2	اطمینان	اطمینان	NOUN	_	_	3	compound:lvc	_	_
 3	نداشت	داشت	VERB	_	_	0	root	_	_
@@ -2271,6 +2472,8 @@
 9	باشد	باش	VERB	_	_	3	ccomp	_	_
 10	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--101
+# text = ازآنجاکه تقریبا مطمئن بود سی‌ونه سال دارد و باور داشت که سال تولد ش 1944 یا 1945 بوده است , حدس زد که باید حدود سال 1984 باشد ؛ اما این روزها هیچ تاریخی را نمی‌شد دقیق و بدون یکی دو سال جابجایی تعیین کرد .
 1	ازآنجاکه	ازآنجاکه	SCONJ	_	_	4	advmod	_	_
 2	تقریبا	تقریبا	ADV	_	_	4	advmod	_	_
 3	مطمئن	مطمئن	ADJ	_	_	4	advmod	_	_
@@ -2318,6 +2521,8 @@
 45	کرد	کرد	VERB	_	_	22	ccomp	_	_
 46	.	.	PUNCT	_	_	45	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--102
+# text = ناگهان فکری به ذهن ش هجوم آورد , خاطرات ش را برای چه کسی می‌نویسد ؟
 1	ناگهان	ناگهان	ADV	_	_	7	advmod	_	_
 2	فکری	فکر	NOUN	_	_	7	obj	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -2335,6 +2540,8 @@
 15	می‌نویسد	نویس	VERB	_	_	7	conj	_	_
 16	؟	؟	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--103
+# text = برای آیندگان , کسانی که هنوز زاده نشده اند .
 1	برای	برای	ADP	_	_	2	case	_	_
 2	آیندگان	آینده	NOUN	_	_	4	nmod	_	_
 3	,	,	PUNCT	_	_	4	punct	_	_
@@ -2346,6 +2553,8 @@
 9	اند	است	AUX	_	_	4	cop	_	_
 10	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--104
+# text = برای لحظه‌ای افکار ش برروی قطعی‌نبودن تاریخ بالای صفحه دور زد , و سپس متوجه کلمه « دوگانه‌باوری » در زبان نوین شد .
 1	برای	برای	ADP	_	_	11	case	_	_
 2	لحظه‌ای	لحظه	NOUN	_	_	11	advmod	_	_
 3	افکار	فکر	NOUN	_	_	11	nsubj	_	_
@@ -2371,6 +2580,8 @@
 23	شد	شد	VERB	_	_	0	root	_	_
 24	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--105
+# text = برای اولین بار عظمت کاری را که به عهده گرفته بود , احساس کرد .
 1	برای	برای	ADP	_	_	14	case	_	_
 2	اولین	اول	NUM	_	_	14	nummod	_	_
 3	بار	بار	NOUN	_	_	14	obl	_	_
@@ -2387,6 +2598,8 @@
 14	کرد	کرد	VERB	_	_	0	root	_	_
 15	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--106
+# text = چه‌طور می‌توانست با آینده ارتباط برقرار کند ؟
 1	چه‌طور	چه‌طور	ADV	_	_	7	advmod	_	_
 2	می‌توانست	توانست	VERB	_	_	7	aux	_	_
 3	با	با	ADP	_	_	4	case	_	_
@@ -2396,6 +2609,8 @@
 7	کند	کن	VERB	_	_	0	root	_	_
 8	؟	؟	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--107
+# text = این کار اصولا غیرممکن بود .
 1	این	این	DET	_	_	2	det	_	_
 2	کار	کار	NOUN	_	_	5	nsubj	_	_
 3	اصولا	اصولا	ADV	_	_	4	advmod	_	_
@@ -2403,6 +2618,8 @@
 5	بود	بود	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--108
+# text = یا آینده به زمان حال شباهت داشت که دراین‌صورت به حرف‌های او توجه نمی‌کردند و یا با آن تفاوت داشت , و همه دغدغه‌های او بی‌معنی می‌شد .
 1	یا	یا	CONJ	_	_	7	cc	_	_
 2	آینده	آینده	NOUN	_	_	7	nsubj	_	_
 3	به	به	ADP	_	_	6	case	_	_
@@ -2432,6 +2649,8 @@
 27	می‌شد	شد	VERB	_	_	20	conj	_	_
 28	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--109
+# text = مدتی نشست و به طرز احمقانه‌ای به کاغذ خیره شد .
 1	مدتی	مدت	NOUN	_	_	2	advmod	_	_
 2	نشست	نشست	VERB	_	_	0	root	_	_
 3	و	و	CONJ	_	_	10	punct	_	_
@@ -2444,6 +2663,8 @@
 10	شد	شد	VERB	_	_	2	conj	_	_
 11	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--110
+# text = صفحه سخنگو موزیک نظامی پخش می‌کرد .
 1	صفحه	صفحه	NOUN	_	_	6	advmod	_	_
 2	سخنگو	سخنگو	ADJ	_	_	6	amod	_	_
 3	موزیک	موزیک	NOUN	_	_	6	obj	_	_
@@ -2452,6 +2673,8 @@
 6	می‌کرد	کرد	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--111
+# text = عجیب بود که نه‌تنها توانایی بیان افکار ش را نداشت , بلکه به کلی چیزهایی را که قصد گفتن ش را داشت , فراموش کرده بود .
 1	عجیب	عجیب	ADJ	_	_	2	amod	_	_
 2	بود	بود	VERB	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	10	mark	_	_
@@ -2480,6 +2703,8 @@
 26	بود	بود	AUX	_	_	25	cop	_	_
 27	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--112
+# text = هفته‌ها بود که خود را برای این لحظه آماده کرده بود و در تمام این مدت به فکر ش هم نرسیده که ممکن است به‌جز شهامت به چیز دیگری هم نیاز داشته باشد .
 1	هفته‌ها	هفته	NOUN	_	_	21	nsubj	_	_
 2	بود	بود	VERB	_	_	1	fixed	_	_
 3	که	که	SCONJ	_	_	10	mark	_	_
@@ -2515,6 +2740,8 @@
 33	باشد	باش	AUX	_	_	32	cop	_	_
 34	.	.	PUNCT	_	_	32	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--113
+# text = عمل نوشتن کار ساده‌ای بود .
 1	عمل	عمل	NOUN	_	_	5	nsubj	_	_
 2	نوشتن	نوشتن	NOUN	_	_	1	nmod:poss	_	_
 3	کار	کار	NOUN	_	_	2	nmod:poss	_	_
@@ -2522,6 +2749,8 @@
 5	بود	بود	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--114
+# text = فقط باید گفتگوی پایان‌ناپذیر و بی‌امان درون ش را که سال‌ها در مغز ش جریان داشت , به‌روی کاغذ می‌آورد .
 1	فقط	فقط	ADV	_	_	20	advmod	_	_
 2	باید	باید	VERB	_	_	20	aux	_	_
 3	گفتگوی	گفتگو	NOUN	_	_	20	obj	_	_
@@ -2544,6 +2773,8 @@
 20	می‌آورد	آورد	VERB	_	_	0	root	_	_
 21	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--115
+# text = ولی حالا گفتگوی درونی اش هم قطع شده بود .
 1	ولی	ولی	CONJ	_	_	8	mark	_	_
 2	حالا	حالا	ADV	_	_	8	advmod	_	_
 3	گفتگوی	گفتگو	NOUN	_	_	8	nsubj	_	_
@@ -2555,6 +2786,8 @@
 9	بود	بود	AUX	_	_	8	cop	_	_
 10	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--116
+# text = به‌علاوه , زخم واریس پا یش هم به طور غیرقابل‌تحملی درد گرفته بود .
 1	به‌علاوه	به‌علاوه	ADV	_	_	11	advmod	_	_
 2	,	,	PUNCT	_	_	11	punct	_	_
 3	زخم	زخم	NOUN	_	_	11	nsubj	_	_
@@ -2570,6 +2803,8 @@
 13	بود	بود	AUX	_	_	11	cop	_	_
 14	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--117
+# text = جرات نمی‌کرد به آن دست بزند , زیرا دراین‌صورت متورم می‌شد .
 1	جرات	جرات	NOUN	_	_	2	compound:lvc	_	_
 2	نمی‌کرد	کرد	VERB	_	_	0	root	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -2583,10 +2818,14 @@
 11	می‌شد	شد	VERB	_	_	2	conj	_	_
 12	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--118
+# text = ثانیه‌ها می‌گذشتند .
 1	ثانیه‌ها	ثانیه	NOUN	_	_	2	obj	_	_
 2	می‌گذشتند	گذشت	VERB	_	_	0	root	_	_
 3	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--119
+# text = غیراز خالی‌ماندن صفحه کاغذ جلوی رو یش , درد پوست بالای قوزک ش , سروصدای موزیک و مستی ناشی از مشروب , به چیز دیگری فکر نمی‌کرد .
 1	غیراز	غیراز	ADP	_	_	3	case	_	_
 2	خالی‌ماندن	خالی‌ماندن	NOUN	_	_	3	advmod	_	_
 3	صفحه	صفحه	NOUN	_	_	0	root	_	_
@@ -2616,6 +2855,8 @@
 27	نمی‌کرد	کرد	VERB	_	_	28	conj	_	_
 28	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--120
+# text = ناگهان در اوج ترس مطلق و بدون هوشیاری کامل درباره آنچه که می‌خواهد بنویسد , شروع به نوشتن کرد .
 1	ناگهان	ناگهان	ADV	_	_	3	advmod	_	_
 2	در	در	ADP	_	_	3	case	_	_
 3	اوج	اوج	NOUN	_	_	0	root	_	_
@@ -2637,6 +2878,8 @@
 19	کرد	کرد	VERB	_	_	11	acl:relcl	_	_
 20	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--121
+# text = دست‌خط ریز و بچگانه اش روی کاغذ بالا و پایین می‌رفت , ابتدا جملات را با حروف بزرگ آغاز می‌کرد ولی به تدریج آن را نیز رعایت نکرد :
 1	دست‌خط	دست‌خط	NOUN	_	_	0	root	_	_
 2	ریز	ریز	ADJ	_	_	1	conj	_	_
 3	و	و	CONJ	_	_	11	cc	_	_
@@ -2667,12 +2910,16 @@
 28	نکرد	کرد	VERB	_	_	11	conj	_	_
 29	:	:	PUNCT	_	_	28	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--122
+# text = چهارم آوریل , 1984 .
 1	چهارم	چهار	NUM	_	_	2	nummod	_	_
 2	آوریل	آوریل	NOUN	_	_	0	root	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
 4	1984	1984	NUM	_	_	2	nummod	_	_
 5	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--123
+# text = شب گذشته به سینما رفتم .
 1	شب	شب	NOUN	_	_	5	advmod	_	_
 2	گذشته	گذشته	ADJ	_	_	1	fixed	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -2680,10 +2927,14 @@
 5	رفتم	رفت	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--124
+# text = فیلم‌های جنگی .
 1	فیلم‌های	فیلم	NOUN	_	_	0	root	_	_
 2	جنگی	جنگی	ADJ	_	_	1	amod	_	_
 3	.	.	PUNCT	_	_	1	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--125
+# text = یکی از آنها محشر بود , درباره یک کشتی پر از پناهندگان بود که جایی در مدیترانه بمباران شد .
 1	یکی	یک	NUM	_	_	5	nsubj	_	_
 2	از	از	ADP	_	_	3	case	_	_
 3	آنها	آنها	PRON	_	_	5	obl	_	_
@@ -2705,6 +2956,8 @@
 19	شد	شد	VERB	_	_	13	ccomp	_	_
 20	.	.	PUNCT	_	_	19	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--126
+# text = فریادهای مرد عظیم‌الجثه چاقی که هلیکوپتر به‌دنبال او بود و سعی داشت شناکنان فرار کند , تماشاچیان را به هیجان آورد .
 1	فریادهای	فریاد	NOUN	_	_	12	nsubj	_	_
 2	مرد	مرد	NOUN	_	_	12	obl	_	_
 3	عظیم‌الجثه	عظیم‌الجثه	ADJ	_	_	2	amod	_	_
@@ -2728,6 +2981,8 @@
 21	آورد	آورد	VERB	_	_	15	conj	_	_
 22	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--127
+# text = ابتدا مانند مارماهی در آب به سختی پیش می‌رفت , بعد او را از درون نشانه‌گیر اسلحه هلیکوپتر نشان داد , سپس بدن ش را سوراخ‌سوراخ کردند و آب‌های اطراف ش به رنگ صورتی درآمد و چنان غرق شد که گویا از همه آن سوراخ‌ها , آب به داخل بدن ش نفوذ کرده است .
 1	ابتدا	ابتدا	ADV	_	_	9	advmod	_	_
 2	مانند	مانند	ADP	_	_	3	case	_	_
 3	مارماهی	مارماهی	NOUN	_	_	9	obl	_	_
@@ -2784,6 +3039,8 @@
 54	است	است	AUX	_	_	53	cop	_	_
 55	.	.	PUNCT	_	_	39	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--128
+# text = هنگامی‌که غرق شد , تماشاچی‌ها خنده‌کنان فریاد می‌زدند .
 1	هنگامی‌که	هنگام‌که	SCONJ	_	_	3	advmod	_	_
 2	غرق	غرق	ADJ	_	_	3	compound:lvc	_	_
 3	شد	شد	VERB	_	_	0	root	_	_
@@ -2794,6 +3051,8 @@
 8	می‌زدند	زد	VERB	_	_	3	ccomp	_	_
 9	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--129
+# text = بعد قایق نجاتی را نشان داد که پر از بچه بود و هلیکوپتری بالای سر آن در حال پرواز بود .
 1	بعد	بعد	ADV	_	_	6	advmod	_	_
 2	قایق	قایق	NOUN	_	_	6	obj	_	_
 3	نجاتی	نجات	NOUN	_	_	2	flat	_	_
@@ -2816,6 +3075,8 @@
 20	بود	بود	VERB	_	_	11	conj	_	_
 21	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--130
+# text = زن میانه‌سالی که احتمالا یهودی بود , بر دماغه قایق نشسته و پسربچه‌ای حدودا سه‌ساله را در آغوش گرفته بود .
 1	زن	زن	NOUN	_	_	0	root	_	_
 2	میانه‌سالی	میانه‌سال	ADJ	_	_	1	amod	_	_
 3	که	که	SCONJ	_	_	6	mark	_	_
@@ -2838,6 +3099,8 @@
 20	بود	بود	AUX	_	_	19	cop	_	_
 21	.	.	PUNCT	_	_	19	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--131
+# text = پسرک وحشت‌زده جیغ می‌کشید و سر ش را طوری به سینه زن می‌فشرد که گویی می‌خواهد در درون آن پناه بگیرد و زن او را در آغوش گرفته بود و باوجوداینکه چهره خودش هم از ترس کبود شده بود سعی داشت پسرک را آرام کند .
 1	پسرک	پسرک	NOUN	_	_	4	advmod	_	_
 2	وحشت‌زده	وحشت‌زده	ADV	_	_	4	advmod	_	_
 3	جیغ	جیغ	NOUN	_	_	4	compound:lvc	_	_
@@ -2885,6 +3148,8 @@
 45	کند	کن	VERB	_	_	13	ccomp	_	_
 46	.	.	PUNCT	_	_	45	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--132
+# text = تمام مدت آن‌چنان او را در بازوان ش گرفته بود که انگار می‌پنداشت با دست‌ها یش می‌تواند جلوی اصابت گلوله‌ها را بگیرد .
 1	تمام	تمام	DET	_	_	2	det	_	_
 2	مدت	مدت	NOUN	_	_	9	advmod	_	_
 3	آن‌چنان	آن‌چنان	ADV	_	_	9	advmod	_	_
@@ -2909,6 +3174,8 @@
 22	بگیرد	گیر	VERB	_	_	13	ccomp	_	_
 23	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--133
+# text = بعد هلیکوپتر یک بمب بیست‌کیلویی روی سر آنها انداخت و قایق با انفجاری عظیم تبدیل به خاکستر شد .
 1	بعد	بعد	ADV	_	_	9	advmod	_	_
 2	هلیکوپتر	هلیکوپتر	NOUN	_	_	1	fixed	_	_
 3	یک	یک	NUM	_	_	4	nummod	_	_
@@ -2929,6 +3196,8 @@
 18	شد	شد	VERB	_	_	9	conj	_	_
 19	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--134
+# text = بعد دست یک بچه به هوا پرتاب شد و بالا و بالا و بالاتر رفت , انگار یک هلیکوپتر که دوربینی به دماغه اش بسته بود , آن را دنبال می‌کرد .
 1	بعد	بعد	ADV	_	_	8	advmod	_	_
 2	دست	دست	NOUN	_	_	8	advmod	_	_
 3	یک	یک	DET	_	_	4	det	_	_
@@ -2962,6 +3231,8 @@
 31	می‌کرد	کرد	VERB	_	_	15	conj	_	_
 32	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--135
+# text = بعد افرادی که در جایگاه متعلق به حزب نشسته بودند شروع به کف‌زدن کردند .
 1	بعد	بعد	ADV	_	_	2	advmod	_	_
 2	افرادی	فرد	NOUN	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	9	mark	_	_
@@ -2978,6 +3249,8 @@
 14	کردند	کرد	VERB	_	_	2	ccomp	_	_
 15	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--136
+# text = اما زنی که در جایگاه کارگران نشسته بود , ناگهان جاروجنجال راه انداخت که شما حق ندارید جلوی بچه‌ها این چیزها را نشان بدهید , درست نیست این صحنه‌ها را به بچه‌ها نشان داد , درست نیست .
 1	اما	اما	CONJ	_	_	13	advmod	_	_
 2	زنی	زن	NOUN	_	_	13	dep	_	_
 3	که	که	SCONJ	_	_	7	mark	_	_
@@ -3017,6 +3290,8 @@
 37	نیست	است	VERB	_	_	34	conj	_	_
 38	.	.	PUNCT	_	_	34	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--137
+# text = تااینکه پلیس او را بیرون کرد .
 1	تااینکه	تااینکه	SCONJ	_	_	6	advmod	_	_
 2	پلیس	پلیس	NOUN	_	_	6	obj	_	_
 3	او	او	PRON	_	_	2	nmod:poss	_	_
@@ -3025,6 +3300,8 @@
 6	کرد	کرد	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--138
+# text = من فکر نمی‌کنم هر بلایی سر ش بیاورند برای کسی اهمیت داشته باشد .
 1	من	من	PRON	_	_	3	nsubj	_	_
 2	فکر	فکر	NOUN	_	_	3	compound:lvc	_	_
 3	نمی‌کنم	کن	VERB	_	_	0	root	_	_
@@ -3040,6 +3317,8 @@
 13	باشد	باش	AUX	_	_	12	cop	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--139
+# text = آنها اصلا به حرف‌های طبقه کارگر گوش نمی‌دهند و به اعتراض آنها هیچ اهمیتی …
 1	آنها	آنها	PRON	_	_	8	nsubj	_	_
 2	اصلا	اصلا	ADV	_	_	8	advmod	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -3056,6 +3335,8 @@
 14	اهمیتی	اهمیت	NOUN	_	_	15	obl	_	_
 15	…	…	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--140
+# text = وینستون که انگار عضلات ش دچار انقباض شده بود , از نوشتن دست کشید .
 1	وینستون	وینستون	PROPN	_	_	0	root	_	_
 2	که	که	SCONJ	_	_	8	mark	_	_
 3	انگار	انگار	ADV	_	_	8	advmod	_	_
@@ -3072,6 +3353,8 @@
 14	کشید	کشید	VERB	_	_	8	ccomp	_	_
 15	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--141
+# text = نمی‌دانست چه چیز او را وادار به نوشتن این چرندیات کرده است .
 1	نمی‌دانست	دانست	VERB	_	_	0	root	_	_
 2	چه	چه	DET	_	_	3	det	_	_
 3	چیز	چیز	NOUN	_	_	11	nsubj	_	_
@@ -3086,6 +3369,8 @@
 12	است	است	AUX	_	_	11	cop	_	_
 13	.	.	PUNCT	_	_	1	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--142
+# text = موضوع جالب این بود که تا دست به قلم برده , چنین خاطره‌ای در ذهن ش نقش بسته بود و ازطریق قلم برروی کاغذ جاری شده بود .
 1	موضوع	موضوع	NOUN	_	_	3	nsubj	_	_
 2	جالب	جالب	ADJ	_	_	3	amod	_	_
 3	این	این	PRON	_	_	0	root	_	_
@@ -3115,6 +3400,8 @@
 27	بود	بود	AUX	_	_	26	cop	_	_
 28	.	.	PUNCT	_	_	26	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--143
+# text = حالا می‌فهمید چرا ناگهان تصمیم گرفته بود به خانه برگردد و همین امروز نوشتن خاطرات ش را شروع کند .
 1	حالا	حالا	NOUN	_	_	2	advmod	_	_
 2	می‌فهمید	فهمید	VERB	_	_	0	root	_	_
 3	چرا	چرا	ADV	_	_	6	advmod	_	_
@@ -3136,6 +3423,8 @@
 19	کند	کن	VERB	_	_	10	conj	_	_
 20	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--144
+# text = اگر چنین چیز مبهم و گنگی را بتوان گفت که امکان وقوع دارد , همان روز صبح در وزارتخانه اتفاق افتاده بود .
 1	اگر	اگر	SCONJ	_	_	9	mark	_	_
 2	چنین	چنین	DET	_	_	3	det	_	_
 3	چیز	چیز	NOUN	_	_	9	nsubj	_	_
@@ -3160,6 +3449,8 @@
 22	بود	بود	AUX	_	_	21	cop	_	_
 23	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--145
+# text = حدود ساعت یازده صبح در « بخش اسناد و مدارک » , محل کار وینستون , عده‌ای مشغول بیرون‌آوردن صندلی‌ها از داخل اتاقک‌ها و چیدن آنها در وسط سالن , روبروی صفحه سخنگوی بزرگ بودند تا برای برگزاری دو دقیقه ابراز تنفر آماده شوند .
 1	حدود	حد	ADV	_	_	2	advmod	_	_
 2	ساعت	ساعت	NOUN	_	_	4	advmod	_	_
 3	یازده	یازده	NUM	_	_	4	nummod	_	_
@@ -3206,6 +3497,8 @@
 44	شوند	شو	VERB	_	_	35	ccomp	_	_
 45	.	.	PUNCT	_	_	35	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--146
+# text = هنگامی‌که وینستون می‌خواست در یکی از ردیف‌های میانی جایی برای خود پیدا کند , دو نفر که آنها را قبلا دیده بود ولی با آنها هم‌صحبت نشده بود , به طور غیرمنتظره وارد سالن شدند .
 1	هنگامی‌که	هنگام‌که	SCONJ	_	_	27	advmod	_	_
 2	وینستون	وینستون	PROPN	_	_	27	punct	_	_
 3	می‌خواست	خواست	VERB	_	_	13	aux	_	_
@@ -3243,6 +3536,8 @@
 35	شدند	شد	VERB	_	_	27	ccomp	_	_
 36	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--147
+# text = یکی از آنها , دختری بود که وینستون اغلب در راهروها از کنار ش رد شده بود .
 1	یکی	یک	NUM	_	_	0	root	_	_
 2	از	از	ADP	_	_	3	case	_	_
 3	آنها	آنها	PRON	_	_	5	nmod	_	_
@@ -3262,6 +3557,8 @@
 17	بود	بود	AUX	_	_	16	aux	_	_
 18	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--148
+# text = او را به اسم نمی‌شناخت ولی می‌دانست در بخش « ادبیات داستانی » کار می‌کند .
 1	او	او	PRON	_	_	5	obj	_	_
 2	را	را	ADP	_	_	1	case	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -3279,6 +3576,8 @@
 15	می‌کند	کن	VERB	_	_	0	root	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--149
+# text = از قرار معلوم کار او فنی و دررابطه‌با ماشین‌های داستان‌نویسی بود , چون وینستون گاهی او را با دست‌های روغنی و آچار به دست دیده بود .
 1	از	از	ADP	_	_	2	case	_	_
 2	قرار	قرار	NOUN	_	_	0	root	_	_
 3	معلوم	معلوم	ADJ	_	_	4	amod	_	_
@@ -3307,6 +3606,8 @@
 26	بود	بود	AUX	_	_	25	cop	_	_
 27	.	.	PUNCT	_	_	25	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--150
+# text = دختری جسور به نظر می‌رسید و حدودا بیست‌وهفت‌ساله بود , با موهایی پرپشت و سیاه , صورتی کک‌مکی , و حرکاتی مانند ورزشکاران , فرز و چابک .
 1	دختری	دختر	NOUN	_	_	5	advmod	_	_
 2	جسور	جسور	ADJ	_	_	1	fixed	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -3336,6 +3637,8 @@
 27	چابک	چابک	ADJ	_	_	25	conj	_	_
 28	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--151
+# text = حمایل باریک و سرخ‌رنگی را که سمبل « انجمن جوانان ضدسکس » بود , چند بار به دور کمر ش بسته و آن‌قدر آن را محکم کرده بود که برجستگی کفل‌ها یش را به خوبی نمایش می‌داد .
 1	حمایل	حمایل	NOUN	_	_	0	root	_	_
 2	باریک	باریک	ADJ	_	_	1	conj	_	_
 3	و	و	CONJ	_	_	4	cc	_	_
@@ -3375,6 +3678,8 @@
 37	می‌داد	داد	VERB	_	_	27	ccomp	_	_
 38	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--152
+# text = وینستون , از همان اولین برخورد از او خوش ش نیامد .
 1	وینستون	وینستون	PROPN	_	_	0	root	_	_
 2	,	,	PUNCT	_	_	5	punct	_	_
 3	از	از	ADP	_	_	5	case	_	_
@@ -3388,6 +3693,8 @@
 11	نیامد	آمد	VERB	_	_	5	conj	_	_
 12	.	.	PUNCT	_	_	1	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--153
+# text = دلیل اش را هم می‌دانست .
 1	دلیل	دلیل	NOUN	_	_	5	obj	_	_
 2	اش	آن	PRON	_	_	1	nmod:poss	_	_
 3	را	را	ADP	_	_	1	case	_	_
@@ -3395,6 +3702,8 @@
 5	می‌دانست	دانست	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--154
+# text = این دختر حال‌وهوای میدان‌های بازی هاکی , حمام‌های یخ و پیاده‌روی‌های جمعی و جلسات عمومی پالایش اندیشه را با خود همراه داشت .
 1	این	این	DET	_	_	2	det	_	_
 2	دختر	دختر	NOUN	_	_	22	nsubj	_	_
 3	حال‌وهوای	حال‌وهوا	NOUN	_	_	22	obj	_	_
@@ -3419,6 +3728,8 @@
 22	داشت	داشت	VERB	_	_	0	root	_	_
 23	.	.	PUNCT	_	_	22	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--155
+# text = وینستون تقریبا از هیچ زنی خوش ش نمی‌آمد , خصوصا اگر جوان و زیبا بود .
 1	وینستون	وینستون	PROPN	_	_	8	punct	_	_
 2	تقریبا	تقریبا	ADV	_	_	8	advmod	_	_
 3	از	از	ADP	_	_	5	case	_	_
@@ -3436,6 +3747,8 @@
 15	بود	بود	VERB	_	_	14	aux	_	_
 16	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--156
+# text = متعصب‌ترین طرفداران حزب , آنها که شعارها را دربست می‌پذیرفتند , جاسوس‌های تازه‌کار و کسانی که به‌دنبال نقاط ضعف بقیه می‌گشتند , زن‌ها و خصوصا زنان جوان بودند .
 1	متعصب‌ترین	متعصب	ADJ	_	_	3	amod	_	_
 2	طرفداران	طرفدار	NOUN	_	_	3	punct	_	_
 3	حزب	حزب	NOUN	_	_	0	root	_	_
@@ -3466,6 +3779,8 @@
 28	بودند	بود	VERB	_	_	29	cop	_	_
 29	.	.	PUNCT	_	_	24	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--157
+# text = اما این یکی به نظر او از اکثر آنها خطرناک‌تر بود .
 1	اما	اما	CONJ	_	_	11	mark	_	_
 2	این	این	DET	_	_	3	det	_	_
 3	یکی	یک	NUM	_	_	11	nsubj	_	_
@@ -3479,6 +3794,8 @@
 11	بود	بود	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--158
+# text = یک بار که در راهرو از کنار هم می‌گذشتند , دخترک زیرچشمی چنان نگاهی به او انداخت که تا عمق وجود ش رسوخ کرد و برای لحظه‌ای قلب وینستون سرشار از وحشت شد .
 1	یک	یک	DET	_	_	2	det	_	_
 2	بار	بار	NOUN	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	9	mark	_	_
@@ -3514,6 +3831,8 @@
 33	شد	شد	VERB	_	_	24	ccomp	_	_
 34	.	.	PUNCT	_	_	33	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--159
+# text = حتی به فکر ش رسید که شاید او از عوامل پلیس افکار باشد .
 1	حتی	حتی	CONJ	_	_	5	advmod	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	فکر	فکر	NOUN	_	_	5	obl	_	_
@@ -3529,6 +3848,8 @@
 13	باشد	باش	VERB	_	_	5	ccomp	_	_
 14	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--160
+# text = اما بعید به نظر می‌رسید .
 1	اما	اما	CONJ	_	_	5	dep	_	_
 2	بعید	بعید	ADJ	_	_	5	advmod	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -3536,6 +3857,8 @@
 5	می‌رسید	رسید	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--161
+# text = بااین‌وجود , هرزمان که دخترک به او نزدیک می‌شد , احساس ناراحتی می‌کرد , و آمیزه‌ای از ترس و خصومت , وجود ش را فرامی‌گرفت .
 1	بااین‌وجود	بااین‌وجود	ADV	_	_	25	advmod	_	_
 2	,	,	PUNCT	_	_	3	punct	_	_
 3	هرزمان	هرزمان	SCONJ	_	_	25	advmod	_	_
@@ -3563,6 +3886,8 @@
 25	فرامی‌گرفت	فراگرفت	VERB	_	_	0	root	_	_
 26	.	.	PUNCT	_	_	25	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--162
+# text = دیگری مردی به نام ابراین , از اعضای کمیته مرکزی حزب بود که چندین شغل و مسئولیت مهم بر عهده داشت و وینستون چیز زیادی راجع‌به کارهای متعدد او نمی‌دانست .
 1	دیگری	دیگری	PRON	_	_	5	nsubj	_	_
 2	مردی	مرد	NOUN	_	_	5	advmod	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -3595,6 +3920,8 @@
 30	نمی‌دانست	دانست	VERB	_	_	21	punct	_	_
 31	.	.	PUNCT	_	_	30	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--163
+# text = افرادی که در اطراف صندلی‌ها بودند با دیدن شخصی که به آنها نزدیک می‌شد و یونیفرم سیاه اعضای کمیته مرکزی حزب را به تن داشت , برای لحظه‌ای ساکت شدند .
 1	افرادی	فرد	NOUN	_	_	9	nsubj	_	_
 2	که	که	SCONJ	_	_	6	mark	_	_
 3	در	در	ADP	_	_	5	case	_	_
@@ -3627,6 +3954,8 @@
 30	شدند	شد	VERB	_	_	25	ccomp	_	_
 31	.	.	PUNCT	_	_	25	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--164
+# text = ابراین مردی تنومند و قوی‌هیکل با صورتی زمخت , مضحک و خشن بود .
 1	ابراین	ابراین	PROPN	_	_	3	punct	_	_
 2	مردی	مرد	NOUN	_	_	3	advmod	_	_
 3	تنومند	تنومند	ADJ	_	_	0	root	_	_
@@ -3642,6 +3971,8 @@
 13	بود	بود	VERB	_	_	12	aux	_	_
 14	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--165
+# text = اما برخلاف ظاهر ناخوشایند ش , ظرافت خاصی در رفتار داشت .
 1	اما	اما	CONJ	_	_	3	cc	_	_
 2	برخلاف	برخلاف	CONJ	_	_	3	advmod	_	_
 3	ظاهر	ظاهر	NOUN	_	_	0	root	_	_
@@ -3655,6 +3986,8 @@
 11	داشت	داشت	VERB	_	_	3	conj	_	_
 12	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--166
+# text = بنابه عادت , عینک ش را طوری روی بینی جابجا می‌کرد که آرامش‌بخش و به نحو غیرقابل‌توصیفی متمدنانه به نظر می‌رسید .
 1	بنابه	بنابه	ADP	_	_	2	case	_	_
 2	عادت	عادت	NOUN	_	_	11	obl	_	_
 3	,	,	PUNCT	_	_	11	punct	_	_
@@ -3678,6 +4011,8 @@
 21	می‌رسید	رسید	VERB	_	_	11	ccomp	_	_
 22	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--167
+# text = این حرکت او آدم را به یاد اشراف‌زاده‌ای از قرن هجدهم می‌انداخت که انگار می‌خواهد انفیه‌دان ش را تعارف کند .
 1	این	این	DET	_	_	2	det	_	_
 2	حرکت	حرکت	NOUN	_	_	12	obl	_	_
 3	او	او	PRON	_	_	12	nsubj	_	_
@@ -3700,6 +4035,8 @@
 20	کند	کن	VERB	_	_	12	ccomp	_	_
 21	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--168
+# text = وینستون در این چندین سال شاید فقط دوازده بار او را دیده بود .
 1	وینستون	وینستون	PROPN	_	_	12	advmod	_	_
 2	در	در	ADP	_	_	5	case	_	_
 3	این	این	DET	_	_	5	det	_	_
@@ -3715,6 +4052,8 @@
 13	بود	بود	AUX	_	_	12	cop	_	_
 14	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--169
+# text = احساس کشش عمیقی نسبت‌به او می‌کرد که فقط به‌دلیل کنجکاوی ش درمورد تضاد بین رفتار فرهیخته و ظاهر بوکسورمانند او نبود , بلکه بیشتر به‌خاطر این باور – یا شاید این امید – بود که وفاداری ابراین به عقاید سیاسی رایج , چندان سفت‌وسخت نیست .
 1	احساس	احساس	NOUN	_	_	6	compound:lvc	_	_
 2	کشش	کشش	NOUN	_	_	6	obj	_	_
 3	عمیقی	عمیق	ADJ	_	_	2	amod	_	_
@@ -3762,6 +4101,8 @@
 45	نیست	است	VERB	_	_	34	ccomp	_	_
 46	.	.	PUNCT	_	_	45	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--170
+# text = حالتی انکارناپذیر در چهره اش , این را نشان می‌داد .
 1	حالتی	حالت	NOUN	_	_	10	advmod	_	_
 2	انکارناپذیر	انکارناپذیر	ADJ	_	_	1	amod	_	_
 3	در	در	ADP	_	_	4	case	_	_
@@ -3774,6 +4115,8 @@
 10	می‌داد	داد	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--171
+# text = شاید هم این عدم‌وفاداری نبود که در چهره او خوانده می‌شد , بلکه فقط تیزهوشی اش بود .
 1	شاید	شاید	ADV	_	_	5	advmod	_	_
 2	هم	هم	CONJ	_	_	5	advmod	_	_
 3	این	این	PRON	_	_	5	nsubj	_	_
@@ -3793,6 +4136,8 @@
 17	بود	بود	VERB	_	_	5	conj	_	_
 18	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--172
+# text = اما به‌هرحال , آدمی بود که اگر امکان اغفال صفحه سخنگو وجود داشت و می‌توانستی او را به تنهایی پیدا کنی , می‌شد با او حرف زد .
 1	اما	اما	CONJ	_	_	5	punct	_	_
 2	به‌هرحال	به‌هرحال	ADV	_	_	5	advmod	_	_
 3	,	,	PUNCT	_	_	5	punct	_	_
@@ -3822,6 +4167,8 @@
 27	زد	زد	VERB	_	_	21	conj	_	_
 28	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--173
+# text = البته وینستون تا آن لحظه کوچک‌ترین تلاشی برای اثبات این حدس خود نکرده بود ؛ چرا‌که راهی برای این کار وجود نداشت .
 1	البته	البته	ADV	_	_	22	advmod	_	_
 2	وینستون	وینستون	PROPN	_	_	22	punct	_	_
 3	تا	تا	ADP	_	_	5	case	_	_
@@ -3846,6 +4193,8 @@
 22	نداشت	داشت	VERB	_	_	0	root	_	_
 23	.	.	PUNCT	_	_	22	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--174
+# text = در همین موقع , ابراین نگاهی به ساعت مچی اش انداخت و دید ساعت نزدیک یازده است و معلوم بود که تصمیم گرفته است تا تمام‌شدن مراسم دو دقیقه ابراز تنفر در بخش اسناد و مدارک بماند .
 1	در	در	ADP	_	_	3	case	_	_
 2	همین	همین	DET	_	_	3	det	_	_
 3	موقع	موقع	NOUN	_	_	11	obl	_	_
@@ -3885,6 +4234,8 @@
 37	بماند	مان	VERB	_	_	36	fixed	_	_
 38	.	.	PUNCT	_	_	37	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--175
+# text = در همان ردیفی که وینستون نشسته بود , به فاصله دو صندلی از او نشست .
 1	در	در	ADP	_	_	3	case	_	_
 2	همان	همان	DET	_	_	3	det	_	_
 3	ردیفی	ردیف	NOUN	_	_	0	root	_	_
@@ -3902,6 +4253,8 @@
 15	نشست	نشست	VERB	_	_	6	ccomp	_	_
 16	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--176
+# text = زن موحنایی کوچک‌اندامی که در اتاقک مجاور وینستون کار می‌کرد , دربین آنها نشسته بود .
 1	زن	زن	NOUN	_	_	0	root	_	_
 2	موحنایی	موحنایی	ADJ	_	_	1	amod	_	_
 3	کوچک‌اندامی	کوچک‌اندام	ADJ	_	_	1	amod	_	_
@@ -3919,6 +4272,8 @@
 15	بود	بود	AUX	_	_	14	cop	_	_
 16	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--177
+# text = دختر مومشکی درست پشت‌سر او بود .
 1	دختر	دختر	NOUN	_	_	6	nsubj	_	_
 2	مومشکی	مومشکی	ADJ	_	_	1	amod	_	_
 3	درست	درست	ADV	_	_	6	advmod	_	_
@@ -3927,6 +4282,8 @@
 6	بود	بود	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--178
+# text = لحظه‌ای بعد , صدای گوش‌خراش مهیبی , مانند صدای ماشین غول‌پیکری که بدون روغن کار کند , از صفحه سخنگوی بزرگ در انتهای سالن به گوش رسید .
 1	لحظه‌ای	لحظه	NOUN	_	_	27	advmod	_	_
 2	بعد	بعد	ADV	_	_	27	advmod	_	_
 3	,	,	PUNCT	_	_	27	punct	_	_
@@ -3956,6 +4313,8 @@
 27	رسید	رسید	VERB	_	_	0	root	_	_
 28	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--179
+# text = صدایی که با شنیدن آن , دندان‌های آدمی به هم فشرده می‌شد و مو بر تن راست می‌گشت .
 1	صدایی	صدا	NOUN	_	_	0	root	_	_
 2	که	که	SCONJ	_	_	11	mark	_	_
 3	با	با	ADP	_	_	4	case	_	_
@@ -3976,6 +4335,8 @@
 18	می‌گشت	گشت	VERB	_	_	11	conj	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--180
+# text = مراسم ابراز تنفر آغاز شده بود .
 1	مراسم	مراسم	NOUN	_	_	5	nsubj	_	_
 2	ابراز	ابراز	NOUN	_	_	5	obj	_	_
 3	تنفر	تنفر	NOUN	_	_	2	nmod:poss	_	_
@@ -3984,6 +4345,8 @@
 6	بود	بود	AUX	_	_	5	aux	_	_
 7	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--181
+# text = طبق معمول , چهره امانوئل گلدشتاین , دشمن مردم , روی صفحه سخنگو ظاهر شد .
 1	طبق	طبق	ADP	_	_	2	case	_	_
 2	معمول	معمول	ADJ	_	_	15	advcl	_	_
 3	,	,	PUNCT	_	_	15	punct	_	_
@@ -4001,6 +4364,8 @@
 15	شد	شد	VERB	_	_	0	root	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--182
+# text = بعضی از حضار , دیگران را دعوت به سکوت می‌کردند .
 1	بعضی	بعضی	DET	_	_	10	advmod	_	_
 2	از	از	ADP	_	_	3	case	_	_
 3	حضار	حضار	NOUN	_	_	10	obl	_	_
@@ -4013,6 +4378,8 @@
 10	می‌کردند	کرد	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--183
+# text = زن موحنایی جیغ کوتاهی ناشی از ترس و نفرت کشید .
 1	زن	زن	NOUN	_	_	10	nsubj	_	_
 2	موحنایی	موحنایی	ADJ	_	_	1	amod	_	_
 3	جیغ	جیغ	NOUN	_	_	10	obj	_	_
@@ -4025,6 +4392,8 @@
 10	کشید	کشید	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--184
+# text = گلدشتاین , خائن منحرفی بود که سال‌ها قبل ( چه مدت , هیچ کس دقیقا به یاد نداشت ) , جزو رده‌های بالای حزب و تقریبا هم‌رده با برادر بزرگ بود .
 1	گلدشتاین	گلدشتاین	PROPN	_	_	5	dep	_	_
 2	,	,	PUNCT	_	_	5	punct	_	_
 3	خائن	خائن	NOUN	_	_	5	nsubj	_	_
@@ -4058,6 +4427,8 @@
 31	بود	بود	VERB	_	_	29	conj	_	_
 32	.	.	PUNCT	_	_	31	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--185
+# text = ولی بعدها در فعالیت‌های ضدانقلابی شرکت کرده و به مرگ محکوم شده بود و سپس به طرز مرموزی گریخته و ناپدید گشته بود .
 1	ولی	ولی	CONJ	_	_	7	punct	_	_
 2	بعدها	بعد	ADV	_	_	7	advmod	_	_
 3	در	در	ADP	_	_	4	case	_	_
@@ -4083,6 +4454,8 @@
 23	بود	بود	AUX	_	_	22	cop	_	_
 24	.	.	PUNCT	_	_	22	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--186
+# text = برنامه دو دقیقه ابراز تنفر روز به روز تغییر می‌کرد , اما در هیچ جلسه‌ای نبود که گلدشتاین چهره اصلی نباشد .
 1	برنامه	برنامه	NOUN	_	_	10	advmod	_	_
 2	دو	دو	NUM	_	_	3	nummod	_	_
 3	دقیقه	دقیقه	NOUN	_	_	4	nmod	_	_
@@ -4106,6 +4479,8 @@
 21	نباشد	باش	VERB	_	_	16	ccomp	_	_
 22	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--187
+# text = او نخستین خیانت‌کار , و اولین کسی بود که به یکپارچگی و وحدت حزب آسیب رسانده بود .
 1	او	او	PRON	_	_	2	nsubj	_	_
 2	نخستین	نخست	NUM	_	_	0	root	_	_
 3	خیانت‌کار	خیانت‌کار	NOUN	_	_	2	conj	_	_
@@ -4125,6 +4500,8 @@
 17	بود	بود	AUX	_	_	16	cop	_	_
 18	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--188
+# text = تمام جرایم بعدی علیه حزب , همه خیانت‌ها , اعمال خرابکارانه , سنت‌شکنی‌ها و انحراف‌ها , از آموزه‌های او سرچشمه می‌گرفت .
 1	تمام	تمام	DET	_	_	2	det	_	_
 2	جرایم	جرم	NOUN	_	_	21	nsubj	_	_
 3	بعدی	بعدی	ADJ	_	_	2	amod	_	_
@@ -4148,6 +4525,8 @@
 21	می‌گرفت	گرفت	VERB	_	_	0	root	_	_
 22	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--189
+# text = او هنوز زنده بود و اینجا و آنجا مشغول توطئه‌چینی بود : شاید جایی در آن‌سوی دریا , تحت حمایت اربابان خارجی اش ؛ شاید هم – آن‌گونه که گاهی شایع می‌شد – در مخفیگاهی در خود اوشنیا .
 1	او	او	PRON	_	_	4	nsubj	_	_
 2	هنوز	هنوز	ADV	_	_	4	advmod	_	_
 3	زنده	زنده	ADJ	_	_	4	compound:lvc	_	_
@@ -4188,6 +4567,8 @@
 38	اوشنیا	اوشنیا	PROPN	_	_	14	conj	_	_
 39	.	.	PUNCT	_	_	38	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--190
+# text = قفسه سینه وینستون منقبض شد .
 1	قفسه	قفسه	NOUN	_	_	5	nsubj	_	_
 2	سینه	سینه	NOUN	_	_	1	nmod:poss	_	_
 3	وینستون	وینستون	PROPN	_	_	5	punct	_	_
@@ -4195,6 +4576,8 @@
 5	شد	شد	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--191
+# text = هروقت چهره گلدشتاین را می‌دید عواطف مغشوش و دردناکی سراغ ش می‌آمد .
 1	هروقت	هروقت	SCONJ	_	_	5	advmod	_	_
 2	چهره	چهره	NOUN	_	_	5	obj	_	_
 3	گلدشتاین	گلدشتاین	PROPN	_	_	2	nmod:poss	_	_
@@ -4209,6 +4592,8 @@
 12	می‌آمد	آمد	VERB	_	_	7	conj	_	_
 13	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--192
+# text = چهره لاغر و یهودی او , همراه‌با آن موهای پف‌کرده سفید و ریش بزی کوچک – چهره‌ای باهوش ولی ذاتا منزجرکننده با دماغ لاغر و دراز ش که عینکی بر‌روی آن قرار می‌گرفت , حاکی از نوعی خرفتی صاحب ش در اثر پیری بود .
 1	چهره	چهره	NOUN	_	_	33	advmod	_	_
 2	لاغر	لاغر	ADJ	_	_	33	advmod	_	_
 3	و	و	CONJ	_	_	33	punct	_	_
@@ -4255,6 +4640,8 @@
 44	بود	بود	VERB	_	_	33	ccomp	_	_
 45	.	.	PUNCT	_	_	33	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--193
+# text = هم صدا و هم چهره اش به گوسفند شباهت داشت .
 1	هم	هم	CONJ	_	_	10	advmod	_	_
 2	صدا	صدا	NOUN	_	_	10	advmod	_	_
 3	و	و	CONJ	_	_	10	cc	_	_
@@ -4267,6 +4654,8 @@
 10	داشت	داشت	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--194
+# text = گلدشتاین کماکان به حملات کینه‌توزانه خود به آرمان‌های حزب ادامه می‌داد – حملاتی آن‌چنان اغراق‌آمیز و لجوجانه که حتی یک بچه را هم نمی‌توانست فریب دهد .
 1	گلدشتاین	گلدشتاین	PROPN	_	_	0	root	_	_
 2	کماکان	کماکان	ADV	_	_	1	advmod	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -4295,6 +4684,8 @@
 26	دهد	ده	VERB	_	_	17	acl:relcl	_	_
 27	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--195
+# text = ولی درعین‌حال به قدر کافی معقول بودند تا آدم را به این فکر وادارد که شاید , بعضی افراد که چندان منطقی فکر نمی‌کنند به دام آنها بیفتند .
 1	ولی	ولی	CONJ	_	_	6	cc	_	_
 2	درعین‌حال	درعین‌حال	ADV	_	_	6	advmod	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -4325,6 +4716,8 @@
 28	بیفتند	افت	VERB	_	_	14	ccomp	_	_
 29	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--196
+# text = او به برادر بزرگتر ناسزا می‌گفت , دیکتاتوری حزب را محکوم می‌کرد , خواهان خاتمه فوری صلح با سرزمین اوراسیا بود , دم از آزادی بیان , آزادی مطبوعات , آزادی اجتماعات و آزادی اندیشه می‌زد و دیوانه‌وار فریاد می‌کشید به انقلاب خیانت شده است – و همه اینها را در قالب یک سخنرانی عجولانه و به تقلید از روش معمول سخنرانان حزبی ارائه می‌داد , و حتی از کلمات زبان نوین , بیش از اعضای حزب که معمولا در زندگی روزانه به کار می‌بردند , استفاده می‌کرد .
 1	او	او	PRON	_	_	6	nsubj	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	برادر	برادر	NOUN	_	_	6	obl	_	_
@@ -4415,6 +4808,8 @@
 88	می‌کرد	کرد	VERB	_	_	77	acl:relcl	_	_
 89	.	.	PUNCT	_	_	65	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--197
+# text = جالب این بود که در تمام این مدت , برای آنکه مبادا کسی به واقعی‌بودن گزافه‌گویی‌های دلفریب گلدشتاین شک کند , در زمینه پشت‌سر ش برروی صفحه سخنگو ستون‌های بی‌پایان ارتش اوراسیا را نشان می‌دادند که از مردمانی جدی و خشک با چهره‌های آسیایی تشکیل شده و پشت‌سر هم از کناره‌های صفحه , می‌آمدند و می‌رفتند .
 1	جالب	جالب	ADJ	_	_	2	amod	_	_
 2	این	این	PRON	_	_	3	nsubj	_	_
 3	بود	بود	VERB	_	_	0	root	_	_
@@ -4473,6 +4868,8 @@
 56	می‌رفتند	رفت	VERB	_	_	54	conj	_	_
 57	.	.	PUNCT	_	_	56	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--198
+# text = صدای مبهم و یکنواخت پوتین سربازان , پس‌زمینه صدای بع‌بع‌مانند گلدشتاین بود .
 1	صدای	صدا	NOUN	_	_	0	root	_	_
 2	مبهم	مبهم	ADJ	_	_	1	conj	_	_
 3	و	و	CONJ	_	_	5	cc	_	_
@@ -4487,6 +4884,8 @@
 12	بود	بود	VERB	_	_	11	aux	_	_
 13	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--199
+# text = تازه سی ثانیه از شروع مراسم ابراز تنفر گذشته بود که نیمی از افراد داخل سالن همهمه غیرقابل‌کنترلی ناشی از عصبانیت به راه انداختند .
 1	تازه	تازه	ADV	_	_	9	advmod	_	_
 2	سی	سی	NUM	_	_	3	nummod	_	_
 3	ثانیه	ثانیه	NOUN	_	_	9	obj	_	_
@@ -4513,6 +4912,8 @@
 24	انداختند	انداخت	VERB	_	_	9	ccomp	_	_
 25	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--200
+# text = تحمل چهره گوسفندوار و ازخودراضی گلدشتاین و قدرت مهیب ارتش اوراسیا در پشت‌سر ش , واقعا مشکل بود ؛ به‌علاوه , فقط چهره و یا فکر گلدشتاین کافی بود تا همه خودبه‌خود عصبانی شوند .
 1	تحمل	تحمل	NOUN	_	_	0	root	_	_
 2	چهره	چهره	NOUN	_	_	1	nmod:poss	_	_
 3	گوسفندوار	گوسفندوار	ADJ	_	_	2	conj	_	_
@@ -4549,6 +4950,8 @@
 34	شوند	شو	VERB	_	_	28	ccomp	_	_
 35	.	.	PUNCT	_	_	28	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--201
+# text = او خیلی بیش از اوراسیا و یا ایستاسیا مورد تنفر بود , زیرا هروقت اوشنیا با یکی از این دو قدرت در جنگ بود , معمولا با دیگری در صلح بود .
 1	او	او	PRON	_	_	4	nsubj	_	_
 2	خیلی	خیلی	ADV	_	_	4	advmod	_	_
 3	بیش	بیش	ADV	_	_	4	advmod	_	_
@@ -4582,6 +4985,8 @@
 31	بود	بود	VERB	_	_	15	aux	_	_
 32	.	.	PUNCT	_	_	31	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--202
+# text = موضوع عجیب این بود که باوجود تحقیر و تنفری که همه , هر روز و هزاران بار در روز در ایستگاه‌های قطار , صفحه سخنگو , روزنامه‌ها و کتاب‌ها نسبت‌به او ابراز می‌کردند , نظریه‌ها یشان را رد می‌کردند و در انظار عموم همانند چرندیاتی مفلوکانه به تخریب و تمسخر آنها می‌پرداختند – به‌رغم تمام اینها , به نظر نمی‌رسید از نفوذ او کاسته شده باشد .
 1	موضوع	موضوع	NOUN	_	_	4	nsubj	_	_
 2	عجیب	عجیب	ADJ	_	_	4	advmod	_	_
 3	این	این	PRON	_	_	4	nsubj	_	_
@@ -4650,6 +5055,8 @@
 66	باشد	باش	AUX	_	_	65	aux	_	_
 67	.	.	PUNCT	_	_	52	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--203
+# text = همیشه آدم‌های ساده‌لوح تازه‌ای پیدا می‌شدند که گول حرف‌های او را بخورند .
 1	همیشه	همیشه	ADV	_	_	6	advmod	_	_
 2	آدم‌های	آدم	NOUN	_	_	6	obj	_	_
 3	ساده‌لوح	ساده‌لوح	ADJ	_	_	2	amod	_	_
@@ -4664,6 +5071,8 @@
 12	بخورند	خور	VERB	_	_	6	ccomp	_	_
 13	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--204
+# text = روزی نبود که پلیس افکار چند جاسوس و خرابکار مزدور او را دستگیر نکند .
 1	روزی	روز	NOUN	_	_	2	advmod	_	_
 2	نبود	بود	VERB	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	14	mark	_	_
@@ -4680,6 +5089,8 @@
 14	نکند	کن	VERB	_	_	2	ccomp	_	_
 15	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--205
+# text = او فرمانده یک ارتش بزرگ و اسرارآمیز بود , شبکه‌ای مخفیانه از توطئه‌گرانی که هدف شان سرنگونی دولت بود .
 1	او	او	PRON	_	_	2	nsubj	_	_
 2	فرمانده	فرمانده	NOUN	_	_	0	root	_	_
 3	یک	یک	DET	_	_	4	det	_	_
@@ -4701,6 +5112,8 @@
 19	بود	بود	VERB	_	_	13	acl:relcl	_	_
 20	.	.	PUNCT	_	_	19	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--206
+# text = ازقرارمعلوم نام این شبکه , انجمن برادری بود .
 1	ازقرارمعلوم	ازقرارمعلوم	ADV	_	_	2	advmod	_	_
 2	نام	نام	NOUN	_	_	0	root	_	_
 3	این	این	DET	_	_	4	det	_	_
@@ -4711,6 +5124,8 @@
 8	بود	بود	VERB	_	_	2	aux	_	_
 9	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--207
+# text = چیزهایی هم راجع‌به کتابی مخوف در میان بود , که گلدشتاین نویسنده آن بود و چکیده‌ای از انواع سنت‌شکنی‌ها در آن بیان شده بود و مخفیانه اینجا و آنجا دست‌به‌دست می‌شد .
 1	چیزهایی	چیز	NOUN	_	_	8	advmod	_	_
 2	هم	هم	CONJ	_	_	8	advmod	_	_
 3	راجع‌به	راجع‌به	ADP	_	_	4	case	_	_
@@ -4744,6 +5159,8 @@
 31	می‌شد	شد	VERB	_	_	23	ccomp	_	_
 32	.	.	PUNCT	_	_	31	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--208
+# text = این کتاب عنوان نداشت و مردم , اگر می‌خواستند از آن صحبت کنند فقط کلمه « همان کتاب » را به کار می‌بردند .
 1	این	این	DET	_	_	2	det	_	_
 2	کتاب	کتاب	NOUN	_	_	4	nsubj	_	_
 3	عنوان	عنوان	NOUN	_	_	4	compound:lvc	_	_
@@ -4769,6 +5186,8 @@
 23	می‌بردند	برد	VERB	_	_	13	ccomp	_	_
 24	.	.	PUNCT	_	_	13	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--209
+# text = اما اطلاعات مردم فقط بر مبنای شایعات مبهم بود .
 1	اما	اما	CONJ	_	_	9	punct	_	_
 2	اطلاعات	اطلاع	NOUN	_	_	9	nsubj	_	_
 3	مردم	مردم	NOUN	_	_	2	nmod:poss	_	_
@@ -4780,6 +5199,8 @@
 9	بود	بود	VERB	_	_	0	root	_	_
 10	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--210
+# text = همه اعضای عادی حزب تا جایی که می‌شد , سعی داشتند از اشاره به « همان کتاب » و یا « انجمن برادری » اجتناب کنند .
 1	همه	همه	DET	_	_	2	det	_	_
 2	اعضای	عضو	NOUN	_	_	26	nsubj	_	_
 3	عادی	عادی	ADJ	_	_	2	amod	_	_
@@ -4808,6 +5229,8 @@
 26	کنند	کن	VERB	_	_	0	root	_	_
 27	.	.	PUNCT	_	_	26	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--211
+# text = در دقیقه دوم , مراسم ابراز تنفر , تبدیل به طغیان شد .
 1	در	در	ADP	_	_	2	case	_	_
 2	دقیقه	دقیقه	NOUN	_	_	12	obl	_	_
 3	دوم	دو	NUM	_	_	2	nummod	_	_
@@ -4822,6 +5245,8 @@
 12	شد	شد	VERB	_	_	0	root	_	_
 13	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--212
+# text = مردم از جای خود بلند شده بودند و برای خاموش‌کردن صدای بع‌بع‌مانند دیوانه‌کننده‌ای که از صفحه سخنگو برمی‌خاست , با آخرین توان فریاد می‌زدند .
 1	مردم	مردم	NOUN	_	_	6	nsubj	_	_
 2	از	از	ADP	_	_	4	case	_	_
 3	جای	جا	NOUN	_	_	2	fixed	_	_
@@ -4848,6 +5273,8 @@
 24	می‌زدند	زد	VERB	_	_	18	conj	_	_
 25	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--213
+# text = چهره زن موحنایی کاملا به رنگ صورتی درآمده بود و دهان ش مانند ماهی افتاده در خشکی , باز و بسته می‌شد .
 1	چهره	چهره	NOUN	_	_	8	advmod	_	_
 2	زن	زن	NOUN	_	_	8	nsubj	_	_
 3	موحنایی	موحنایی	ADJ	_	_	2	amod	_	_
@@ -4872,6 +5299,8 @@
 22	می‌شد	شد	VERB	_	_	8	conj	_	_
 23	.	.	PUNCT	_	_	22	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--214
+# text = حتی چهره جدی ابراین هم برافروخته شده بود .
 1	حتی	حتی	SCONJ	_	_	7	advmod	_	_
 2	چهره	چهره	NOUN	_	_	7	nsubj	_	_
 3	جدی	جدی	ADJ	_	_	2	amod	_	_
@@ -4882,6 +5311,8 @@
 8	بود	بود	AUX	_	_	7	cop	_	_
 9	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--215
+# text = روی صندلی ش راست نشسته بود و سینه اش با تنفسی عمیق بالا و پایین می‌رفت .
 1	روی	رو	ADP	_	_	2	case	_	_
 2	صندلی	صندلی	NOUN	_	_	5	obl	_	_
 3	ش	خود	PRON	_	_	2	nmod:poss	_	_
@@ -4900,6 +5331,8 @@
 16	می‌رفت	رفت	VERB	_	_	5	ccomp	_	_
 17	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--216
+# text = گویی دربرابر یورشی وحشیانه مقاومت می‌کند .
 1	گویی	گویی	ADV	_	_	6	advmod	_	_
 2	دربرابر	دربرابر	ADP	_	_	3	case	_	_
 3	یورشی	یورش	NOUN	_	_	6	obl	_	_
@@ -4908,6 +5341,8 @@
 6	می‌کند	کن	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--217
+# text = دختر مومشکی که پشت‌سر وینستون نشسته بود با صدای بلند فریاد زد : « خوک ! خوک ! خوک ! » و با حرکتی ناگهانی یک جلد فرهنگ لغت سنگین زبان نوین را برداشت و به‌سمت صفحه سخنگو پرتاب کرد .
 1	دختر	دختر	NOUN	_	_	0	root	_	_
 2	مومشکی	مومشکی	ADJ	_	_	1	amod	_	_
 3	که	که	SCONJ	_	_	6	mark	_	_
@@ -4950,6 +5385,8 @@
 40	کرد	کرد	VERB	_	_	34	conj	_	_
 41	.	.	PUNCT	_	_	40	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--218
+# text = کتاب به بینی گلدشتاین خورد و افتاد ; ولی صدای گلدشتاین بی‌وقفه ادامه داشت .
 1	کتاب	کتاب	NOUN	_	_	5	advmod	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	بینی	بینی	NOUN	_	_	5	obl	_	_
@@ -4966,6 +5403,8 @@
 14	داشت	داشت	VERB	_	_	7	ccomp	_	_
 15	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--219
+# text = وینستون یک لحظه به خود آمد و دریافت او هم مانند دیگران در حال فریادزدن است و با پاشنه پا به چوب حایل پایین صندلی ش می‌کوبد .
 1	وینستون	وینستون	PROPN	_	_	6	advmod	_	_
 2	یک	یک	NUM	_	_	3	nummod	_	_
 3	لحظه	لحظه	NOUN	_	_	6	obl	_	_
@@ -4995,6 +5434,8 @@
 27	می‌کوبد	کوب	VERB	_	_	16	conj	_	_
 28	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--220
+# text = نکته تکان‌دهنده درمورد مراسم‌های دو دقیقه ابراز تنفر این بود که کسی را وادار به شرکت در آن نمی‌کردند ولی انسان خودش نمی‌توانست با دیگران همراهی نکند .
 1	نکته	نکته	NOUN	_	_	10	nsubj	_	_
 2	تکان‌دهنده	تکان‌دهنده	ADJ	_	_	1	amod	_	_
 3	درمورد	درمورد	ADP	_	_	4	case	_	_
@@ -5024,6 +5465,8 @@
 27	نکند	کن	VERB	_	_	10	ccomp	_	_
 28	.	.	PUNCT	_	_	27	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--221
+# text = به‌خاطر سی ثانیه , نیازی به هیچ‌گونه تظاهر نبود .
 1	به‌خاطر	به‌خاطر	ADP	_	_	5	case	_	_
 2	سی	سی	NUM	_	_	3	nummod	_	_
 3	ثانیه	ثانیه	NOUN	_	_	5	nmod	_	_
@@ -5035,6 +5478,8 @@
 9	نبود	بود	VERB	_	_	0	root	_	_
 10	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--222
+# text = به نظر می‌رسید اشتیاق شدیدی که آمیزه‌ای از ترس و انتقام‌جویی بود , میل به کشتن , شکنجه‌کردن و خردکردن صورت‌ها با پتک را مثل جریان برق به همه مردم سرایت می‌داد و موجب می‌شد انسان حتی برخلاف میل خودش شکلک درآورد و مانند روانی‌ها جیغ بکشد .
 1	به	به	ADP	_	_	2	case	_	_
 2	نظر	نظر	NOUN	_	_	3	obl	_	_
 3	می‌رسید	رسید	VERB	_	_	0	root	_	_
@@ -5084,6 +5529,8 @@
 47	بکشد	کش	VERB	_	_	42	conj	_	_
 48	.	.	PUNCT	_	_	42	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--223
+# text = بااین‌همه , عصبانیتی که فرد احساس می‌کرد بی‌هدف و انتزاعی بود و همچون شعله یک مشعل می‌توانست از سویی به سوی دیگر تغییر جهت دهد .
 1	بااین‌همه	بااین‌همه	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	7	punct	_	_
 3	عصبانیتی	عصبانیت	NOUN	_	_	7	advmod	_	_
@@ -5111,6 +5558,8 @@
 25	دهد	ده	VERB	_	_	11	conj	_	_
 26	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--224
+# text = به همین دلیل در یک لحظه وینستون متوجه شد که ابدا از گلدشتاین متنفر نیست بلکه کاملا برعکس , از برادر بزرگ , حزب و پلیس افکار تنفر دارد ; و همان موقع دل ش برای چهره تنهای روی صفحه سخنگو , سنت‌شکنی که مورد تمسخر قرار گرفته بود , او که تنها پاسدار حقیقت و عقلانیت در جهانی پر از دروغ بود سوخت .
 1	به	به	ADP	_	_	3	case	_	_
 2	همین	همین	DET	_	_	3	det	_	_
 3	دلیل	دلیل	NOUN	_	_	9	obl	_	_
@@ -5177,6 +5626,8 @@
 64	سوخت	سوخت	VERB	_	_	63	ccomp	_	_
 65	.	.	PUNCT	_	_	63	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--225
+# text = باوجوداین , درست لحظه‌ای بعد , با جمعیت پیرامون ش هم‌عقیده شد و به نظر ش آمد همه چیزهایی که درباره گلدشتاین می‌گفتند درست است .
 1	باوجوداین	باوجوداین	ADV	_	_	12	advmod	_	_
 2	,	,	PUNCT	_	_	12	punct	_	_
 3	درست	درست	ADV	_	_	12	advmod	_	_
@@ -5204,6 +5655,8 @@
 25	است	است	VERB	_	_	23	ccomp	_	_
 26	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--226
+# text = اکنون تنفر پنهان ش نسبت‌به برادر بزرگ به تحسین تبدیل شد و برادر بزرگ در نظر ش ارزش بیشتری یافت , او را حامی راسخ و شجاعی دید که چون کوهی استوار دربرابر همه آسیا ایستادگی می‌کرد , و گلدشتاین , به‌رغم انزوا و بی‌پناهی و تردیدی که درباره زنده‌بودن ش وجود داشت , همچون جادوگری شریر و بدنهاد به نظر ش آمد که فقط با استفاده از قدرت سخنرانی اش می‌توانست دنیای متمدن را در هم بکوبد .
 1	اکنون	اکنون	ADV	_	_	11	advmod	_	_
 2	تنفر	تنفر	NOUN	_	_	11	nsubj	_	_
 3	پنهان	پنهان	ADJ	_	_	11	advcl	_	_
@@ -5284,6 +5737,8 @@
 78	بکوبد	کوب	VERB	_	_	63	ccomp	_	_
 79	.	.	PUNCT	_	_	63	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--227
+# text = حتی می‌شد چند ثانیه‌ای را , به گونه‌ای داوطلبانه , حس نفرت خود را به‌سمت دیگری نشانه‌گیری کرد .
 1	حتی	حتی	CONJ	_	_	18	advmod	_	_
 2	می‌شد	شد	VERB	_	_	18	aux	_	_
 3	چند	چند	DET	_	_	4	det	_	_
@@ -5304,6 +5759,8 @@
 18	کرد	کرد	VERB	_	_	0	root	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--228
+# text = وینستون ناگهان با همان کوششی که انسان , در هنگام دیدن کابوس در بلندکردن سر ش ازروی بالش می‌کند , توانست با تغییر جهت نگاه ش , تنفری را که نسبت‌به چهره روی صفحه سخنگو داشت متوجه دختر مومشکی پشت‌سر ش کند .
 1	وینستون	وینستون	PROPN	_	_	19	advmod	_	_
 2	ناگهان	ناگهان	ADV	_	_	19	advmod	_	_
 3	با	با	ADP	_	_	5	case	_	_
@@ -5348,6 +5805,8 @@
 42	کند	کن	VERB	_	_	19	conj	_	_
 43	.	.	PUNCT	_	_	42	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--229
+# text = اوهام و تصورات روشن و زیبایی در ذهن ش جرقه زد .
 1	اوهام	اوهام	NOUN	_	_	11	advmod	_	_
 2	و	و	CONJ	_	_	11	punct	_	_
 3	تصورات	تصور	NOUN	_	_	11	advmod	_	_
@@ -5361,6 +5820,8 @@
 11	زد	زد	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--230
+# text = می‌توانست با یک باتون پلاستیکی دخترک را تا سرحد مرگ بزند .
 1	می‌توانست	توانست	VERB	_	_	11	aux	_	_
 2	با	با	ADP	_	_	4	case	_	_
 3	یک	یک	DET	_	_	4	det	_	_
@@ -5374,6 +5835,8 @@
 11	بزند	زن	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--231
+# text = می‌توانست او را عریان به دیرکی ببندد و مانند سن‌باستین با تیروکمان تمام بدن ش را سوراخ‌سوراخ کند .
 1	می‌توانست	توانست	VERB	_	_	7	aux	_	_
 2	او	او	PRON	_	_	7	obj	_	_
 3	را	را	ADP	_	_	2	case	_	_
@@ -5394,6 +5857,8 @@
 18	کند	کن	VERB	_	_	7	conj	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--232
+# text = می‌توانست به او تجاوز کند و در اوج لذت , گلو یش را ببرد .
 1	می‌توانست	توانست	VERB	_	_	5	aux	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	او	او	PRON	_	_	5	obl	_	_
@@ -5410,6 +5875,8 @@
 14	ببرد	بر	VERB	_	_	5	conj	_	_
 15	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--233
+# text = از این گذشته , حالا خیلی بهتر از قبل می‌فهمید که چرا از او نفرت دارد .
 1	از	از	ADP	_	_	2	case	_	_
 2	این	این	PRON	_	_	10	obl	_	_
 3	گذشته	گذشته	ADJ	_	_	2	amod	_	_
@@ -5428,6 +5895,8 @@
 16	دارد	دار	VERB	_	_	10	ccomp	_	_
 17	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--234
+# text = او زیبا و جوان و از‌لحاظ جنسی غیرقابل‌دسترس بود .
 1	او	او	PRON	_	_	2	nsubj	_	_
 2	زیبا	زیبا	ADJ	_	_	0	root	_	_
 3	و	و	CONJ	_	_	4	cc	_	_
@@ -5439,6 +5908,8 @@
 9	بود	بود	VERB	_	_	8	aux	_	_
 10	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--235
+# text = وینستون دوست داشت با او معاشقه کند ولی هرگز موفق به این کار نشده بود , چون آن حمایل سرخ نفرت‌انگیز , همان نماد عفت , به دور کمر دخترک پیچیده شده بود – کمری که وینستون همواره وسوسه در آغوش گرفتن ش را داشت .
 1	وینستون	وینستون	PROPN	_	_	3	obj	_	_
 2	دوست	دوست	NOUN	_	_	3	compound:lvc	_	_
 3	داشت	داشت	VERB	_	_	0	root	_	_
@@ -5486,6 +5957,8 @@
 45	داشت	داشت	VERB	_	_	35	acl:relcl	_	_
 46	.	.	PUNCT	_	_	45	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--236
+# text = مراسم ابراز تنفر به اوج خود رسید .
 1	مراسم	مراسم	NOUN	_	_	7	nsubj	_	_
 2	ابراز	ابراز	NOUN	_	_	7	obj	_	_
 3	تنفر	تنفر	NOUN	_	_	2	nmod:poss	_	_
@@ -5495,6 +5968,8 @@
 7	رسید	رسید	VERB	_	_	0	root	_	_
 8	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--237
+# text = اکنون دیگر صدای گلدشتاین به بع‌بع گوسفند تبدیل شده بود و برای لحظه‌ای چهره اش نیز کاملا شبیه گوسفند شد .
 1	اکنون	اکنون	ADV	_	_	3	advmod	_	_
 2	دیگر	دیگر	ADV	_	_	3	advmod	_	_
 3	صدای	صدا	NOUN	_	_	0	root	_	_
@@ -5517,6 +5992,8 @@
 20	شد	شد	VERB	_	_	9	ccomp	_	_
 21	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--238
+# text = سپس چهره گوسفند به یک سرباز مهاجم اوراسیایی تغییر شکل یافت و مسلسل دستی اش به گونه‌ای سهمگین و وحشتناک می‌غرید و گویی داشت از صفحه سخنگو بیرون می‌آمد , به‌همین‌جهت افراد ردیف جلو در جا یشان خود را عقب کشیدند .
 1	سپس	سپس	ADV	_	_	29	advmod	_	_
 2	چهره	چهره	NOUN	_	_	29	nsubj	_	_
 3	گوسفند	گوسفند	NOUN	_	_	2	nmod:poss	_	_
@@ -5560,6 +6037,8 @@
 41	کشیدند	کشید	VERB	_	_	29	ccomp	_	_
 42	.	.	PUNCT	_	_	29	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--239
+# text = اما در همان لحظه , چهره متخاصم محو شد و چهره برادر بزرگ با موها و سبیل‌های مشکی اش نمایان شد .
 1	اما	اما	CONJ	_	_	9	mark	_	_
 2	در	در	ADP	_	_	4	case	_	_
 3	همان	همان	DET	_	_	4	det	_	_
@@ -5583,6 +6062,8 @@
 21	شد	شد	VERB	_	_	9	conj	_	_
 22	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--240
+# text = چهره‌ای سرشار از قدرت و آرامش عجیب و آن‌چنان بزرگ که تقریبا همه صفحه را پوشاند .
 1	چهره‌ای	چهره	NOUN	_	_	0	root	_	_
 2	سرشار	سرشار	ADJ	_	_	1	conj	_	_
 3	از	از	ADP	_	_	4	case	_	_
@@ -5601,6 +6082,8 @@
 16	پوشاند	پوشاند	VERB	_	_	10	acl:relcl	_	_
 17	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--241
+# text = هیچ کس نمی‌شنید برادر بزرگ چه می‌گوید .
 1	هیچ	هیچ	DET	_	_	2	det	_	_
 2	کس	کس	NOUN	_	_	3	nsubj	_	_
 3	نمی‌شنید	شنید	VERB	_	_	0	root	_	_
@@ -5610,6 +6093,8 @@
 7	می‌گوید	گو	VERB	_	_	3	ccomp	_	_
 8	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--242
+# text = صحبت‌ها یش فقط چند کلمه تشویق‌کننده بود , مانند چیزهایی که در بحبوحه میدان جنگ می‌گویند , تک‌تک آنها را نمی‌توان تشخیص داد ولی صرف بیان‌شدن شان اعتمادبه‌نفس ایجاد می‌کند .
 1	صحبت‌ها	صحبت	NOUN	_	_	7	nsubj	_	_
 2	یش	او	PRON	_	_	1	nmod:poss	_	_
 3	فقط	فقط	ADV	_	_	7	advmod	_	_
@@ -5642,6 +6127,8 @@
 30	می‌کند	کن	VERB	_	_	23	ccomp	_	_
 31	.	.	PUNCT	_	_	30	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--243
+# text = بعد کم‌کم چهره برادر بزرگ کم‌رنگ شد و به‌جای آن سه شعار حزب با حروف سیاه و بزرگ خودنمایی کرد : جنگ صلح است آزادی بردگی است نادانی توانایی است .
 1	بعد	بعد	ADV	_	_	7	advmod	_	_
 2	کم‌کم	کم‌کم	ADV	_	_	3	advmod	_	_
 3	چهره	چهره	NOUN	_	_	7	advmod	_	_
@@ -5674,6 +6161,8 @@
 30	است	است	VERB	_	_	24	ccomp	_	_
 31	.	.	PUNCT	_	_	30	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--244
+# text = ظاهرا تصویر برادر بزرگ چند ثانیه دیگر هم برروی صفحه باقی بود , چنان‌که گویی تاثیر او بر مردمک چشم آدم‌ها آن‌قدر پایدار است که بلافاصله پاک نمی‌شود .
 1	ظاهرا	ظاهرا	ADV	_	_	24	advmod	_	_
 2	تصویر	تصویر	NOUN	_	_	24	advmod	_	_
 3	برادر	برادر	NOUN	_	_	24	nsubj	_	_
@@ -5704,6 +6193,8 @@
 28	نمی‌شود	شو	VERB	_	_	24	ccomp	_	_
 29	.	.	PUNCT	_	_	24	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--245
+# text = زن موحنایی خود را به پشتی صندلی جلویی اش تکیه داد .
 1	زن	زن	NOUN	_	_	11	obj	_	_
 2	موحنایی	موحنایی	ADJ	_	_	1	amod	_	_
 3	خود	خود	PRON	_	_	1	nmod:poss	_	_
@@ -5717,6 +6208,8 @@
 11	داد	داد	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--246
+# text = با نجوایی آرام و صدایی لرزان چیزی شبیه « ای نجات‌دهنده من ! » می‌گفت و دست ش را به‌سمت صفحه سخنگو دراز کرده بود .
 1	با	با	ADP	_	_	2	case	_	_
 2	نجوایی	نجوا	NOUN	_	_	24	obl	_	_
 3	آرام	آرام	ADJ	_	_	24	xcomp	_	_
@@ -5744,6 +6237,8 @@
 25	بود	بود	AUX	_	_	24	cop	_	_
 26	.	.	PUNCT	_	_	24	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--247
+# text = پیدا بود در حال رازونیاز و عبادت است .
 1	پیدا	پیدا	ADJ	_	_	2	advmod	_	_
 2	بود	بود	VERB	_	_	0	root	_	_
 3	در	در	ADP	_	_	4	case	_	_
@@ -5754,6 +6249,8 @@
 8	است	است	VERB	_	_	7	aux	_	_
 9	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--248
+# text = در این موقع جمعیت با صدایی آهسته و عمیق , شروع به ترنم سرودی خوش‌آهنگ کرد : « ب-ب ! … ب-ب ! … ب-ب ! » بارها و بارها آن را تکرار کردند و بین « ب » اول و « ب » دوم مکثی طولانی می‌کردند , صدایی نجواگونه و عمیق و به نحوی عجیب ددمنشانه , که در زمینه آن می‌شد صدای پاهای برهنه‌ای را که بر زمین کوبیده می‌شد و زبان طبل‌ها را شنید .
 1	در	در	ADP	_	_	3	case	_	_
 2	این	این	DET	_	_	3	det	_	_
 3	موقع	موقع	NOUN	_	_	16	obl	_	_
@@ -5834,6 +6331,8 @@
 78	شنید	شنید	VERB	_	_	16	ccomp	_	_
 79	.	.	PUNCT	_	_	78	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--249
+# text = آنها تقریبا سی ثانیه به نجوا ادامه دادند .
 1	آنها	آنها	PRON	_	_	8	nsubj	_	_
 2	تقریبا	تقریبا	ADV	_	_	8	advmod	_	_
 3	سی	سی	NUM	_	_	8	advmod	_	_
@@ -5844,6 +6343,8 @@
 8	دادند	داد	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--250
+# text = این سرود زمزمه‌وار , ترجیع‌بندی بود که اغلب در لحظات غلبه شدید عواطف شنیده می‌شد .
 1	این	این	DET	_	_	2	det	_	_
 2	سرود	سرود	NOUN	_	_	5	advmod	_	_
 3	زمزمه‌وار	زمزمه‌وار	ADJ	_	_	2	amod	_	_
@@ -5861,6 +6362,8 @@
 15	می‌شد	شد	AUX	_	_	14	cop	_	_
 16	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--251
+# text = در واقع علاوه‌براینکه سرودی مذهبی در ستایش عقل و ابهت برادر بزرگتر بود , نوعی فعالیت خودهیپنوتیزمی بود که خودآگاهی فرد را با آهنگ موزون ش تحت‌الشعاع قرار می‌داد .
 1	در	در	ADP	_	_	2	case	_	_
 2	واقع	واقع	NOUN	_	_	4	fixed	_	_
 3	علاوه‌براینکه	علاوه‌براینکه	SCONJ	_	_	4	advmod	_	_
@@ -5892,6 +6395,8 @@
 29	می‌داد	داد	VERB	_	_	11	acl:relcl	_	_
 30	.	.	PUNCT	_	_	29	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--252
+# text = گویی درون بدن وینستون در حال سردشدن بود .
 1	گویی	گویی	ADV	_	_	8	advmod	_	_
 2	درون	درون	ADP	_	_	3	case	_	_
 3	بدن	بدن	NOUN	_	_	8	obl	_	_
@@ -5902,6 +6407,8 @@
 8	بود	بود	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--253
+# text = طی مراسم دودقیقه‌ای ابراز تنفر توانسته بود از همراهی با هیجان همگانی خودداری کند , اما این زمزمه احمقانه « ب-ب ! … ب-ب ! » همیشه حس انزجار او را برمی‌انگیخت .
 1	طی	طی	ADP	_	_	2	case	_	_
 2	مراسم	مراسم	NOUN	_	_	6	obl	_	_
 3	دودقیقه‌ای	دودقیقه	ADJ	_	_	2	amod	_	_
@@ -5936,6 +6443,8 @@
 32	برمی‌انگیخت	برانگیخت	VERB	_	_	14	conj	_	_
 33	.	.	PUNCT	_	_	32	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--254
+# text = البته با دیگران همراهی می‌کرد : نمی‌توانست طور دیگری رفتار کند .
 1	البته	البته	ADV	_	_	5	advmod	_	_
 2	با	با	ADP	_	_	3	case	_	_
 3	دیگران	دیگر	PRON	_	_	5	obl	_	_
@@ -5949,6 +6458,8 @@
 11	کند	کن	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--255
+# text = مخفی‌کردن احساسات , کنترل حرکات چهره و داشتن رفتاری همانند دیگران , واکنشی غریزی بود .
 1	مخفی‌کردن	مخفی‌کردن	NOUN	_	_	0	root	_	_
 2	احساسات	احساس	NOUN	_	_	4	conj	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
@@ -5966,6 +6477,8 @@
 15	بود	بود	VERB	_	_	13	aux	_	_
 16	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--256
+# text = اما حدودا دو ثانیه طول کشید تا واکنش نشان دهد و احتمالا حالات چشمان ش در آن دو ثانیه او را لو داده بود .
 1	اما	اما	CONJ	_	_	6	punct	_	_
 2	حدودا	حدودا	ADV	_	_	6	advmod	_	_
 3	دو	دو	NUM	_	_	4	nummod	_	_
@@ -5992,6 +6505,8 @@
 24	بود	بود	AUX	_	_	23	cop	_	_
 25	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--257
+# text = درست در همین وقت هم بود که آن اتفاق مهم روی داد – البته , اگر بتوان آن را اتفاق نامید .
 1	درست	درست	ADV	_	_	5	advmod	_	_
 2	در	در	ADP	_	_	4	case	_	_
 3	همین	همین	DET	_	_	4	det	_	_
@@ -6015,6 +6530,8 @@
 21	نامید	نامید	VERB	_	_	12	conj	_	_
 22	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--258
+# text = یک لحظه چشم ش به چشم ابراین افتاد .
 1	یک	یک	NUM	_	_	8	nummod	_	_
 2	لحظه	لحظه	NOUN	_	_	8	advmod	_	_
 3	چشم	چشم	NOUN	_	_	8	obj	_	_
@@ -6025,11 +6542,15 @@
 8	افتاد	افتاد	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--259
+# text = او ایستاده بود .
 1	او	او	PRON	_	_	2	nsubj	_	_
 2	ایستاده	ایستاد	VERB	_	_	0	root	_	_
 3	بود	بود	AUX	_	_	2	cop	_	_
 4	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--260
+# text = عینک ش را برداشته بود و می‌خواست دوباره آن را با همان ژست همیشگی به چشم بزند .
 1	عینک	عینک	NOUN	_	_	4	obj	_	_
 2	ش	خود	PRON	_	_	1	fixed	_	_
 3	را	را	ADP	_	_	1	case	_	_
@@ -6049,6 +6570,8 @@
 17	بزند	زن	VERB	_	_	0	root	_	_
 18	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--261
+# text = در مدتی کمتر از یک ثانیه چشم در چشم شدند و همان موقع وینستون فهمید که – بله , او می‌داند !
 1	در	در	ADP	_	_	2	case	_	_
 2	مدتی	مدت	NOUN	_	_	10	obl	_	_
 3	کمتر	کم	ADJ	_	_	10	advmod	_	_
@@ -6072,6 +6595,8 @@
 21	می‌داند	دان	VERB	_	_	15	ccomp	_	_
 22	!	!	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--262
+# text = – ابراین هم به همان چیزی می‌اندیشید که او فکر می‌کرد .
 1	–	–	PUNCT	_	_	7	punct	_	_
 2	ابراین	ابراین	PROPN	_	_	7	punct	_	_
 3	هم	هم	CONJ	_	_	7	advmod	_	_
@@ -6085,6 +6610,8 @@
 11	می‌کرد	کرد	VERB	_	_	7	ccomp	_	_
 12	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--263
+# text = پیام به درستی منتقل شده بود .
 1	پیام	پیام	NOUN	_	_	5	nsubj	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	درستی	درستی	NOUN	_	_	4	nmod	_	_
@@ -6093,6 +6620,8 @@
 6	بود	بود	AUX	_	_	5	aux	_	_
 7	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--264
+# text = گویی مغز هر دو باز شده بود و افکار از راه چشم‌ها از ذهن یکی به ذهن دیگری جریان یافته بود .
 1	گویی	گویی	ADV	_	_	6	advmod	_	_
 2	مغز	مغز	NOUN	_	_	6	nsubj	_	_
 3	هر	هر	DET	_	_	4	det	_	_
@@ -6116,6 +6645,8 @@
 21	بود	بود	AUX	_	_	20	cop	_	_
 22	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--265
+# text = گویی ابراین به او می‌گفت : « من با تو هستم , دقیقا می‌دانم چه احساسی داری و همه چیز را درباره سرافکندگی , تنفر و حس انزجار ت می‌دانم .
 1	گویی	گویی	ADV	_	_	5	advmod	_	_
 2	ابراین	ابراین	PROPN	_	_	5	punct	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -6148,11 +6679,15 @@
 30	می‌دانم	دان	VERB	_	_	17	conj	_	_
 31	.	.	PUNCT	_	_	30	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--266
+# text = اما نگران نباش .
 1	اما	اما	CONJ	_	_	3	cc	_	_
 2	نگران	نگران	ADJ	_	_	3	advmod	_	_
 3	نباش	باش	VERB	_	_	0	root	_	_
 4	.	.	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--267
+# text = من طرف تو هستم ! »
 1	من	من	PRON	_	_	4	nsubj	_	_
 2	طرف	طرف	NOUN	_	_	3	case	_	_
 3	تو	تو	PRON	_	_	4	obl	_	_
@@ -6160,6 +6695,8 @@
 5	!	!	PUNCT	_	_	4	punct	_	_
 6	»	»	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--268
+# text = و بعد القای افکار متوقف شد و چهره ابراین همان حالت مبهم و ناشناخته دیگران را به خود گرفت .
 1	و	و	CONJ	_	_	6	cc	_	_
 2	بعد	بعد	ADV	_	_	6	advmod	_	_
 3	القای	القا	NOUN	_	_	6	nsubj	_	_
@@ -6181,6 +6718,8 @@
 19	گرفت	گرفت	VERB	_	_	6	conj	_	_
 20	.	.	PUNCT	_	_	19	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--269
+# text = کل ماجرا همین بود و او اصلا مطمئن نبود که واقعا چنین چیزی اتفاق افتاده است .
 1	کل	خود	DET	_	_	2	det	_	_
 2	ماجرا	ماجرا	NOUN	_	_	4	nsubj	_	_
 3	همین	همین	PRON	_	_	4	advmod	_	_
@@ -6199,6 +6738,8 @@
 16	است	است	AUX	_	_	15	cop	_	_
 17	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--270
+# text = چنین وقایعی هیچ دنباله و پیامدی نداشتند .
 1	چنین	چنین	DET	_	_	2	det	_	_
 2	وقایعی	واقعه	NOUN	_	_	7	advmod	_	_
 3	هیچ	هیچ	DET	_	_	4	det	_	_
@@ -6208,6 +6749,8 @@
 7	نداشتند	داشت	VERB	_	_	0	root	_	_
 8	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--271
+# text = فقط این عقیده , یا امید , را در دل انسان زنده نگه می‌داشت که دیگران هم مانند او دشمنان حزب هستند .
 1	فقط	فقط	ADV	_	_	14	advmod	_	_
 2	این	این	DET	_	_	3	det	_	_
 3	عقیده	عقیده	NOUN	_	_	14	nsubj	_	_
@@ -6232,6 +6775,8 @@
 22	هستند	است	VERB	_	_	14	ccomp	_	_
 23	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--272
+# text = شاید شایعاتی که درمورد توطئه‌های گسترده مخفیانه بیان می‌شد , حقیقت داشت – شاید انجمن برادری واقعا وجود داشت !
 1	شاید	شاید	ADV	_	_	2	advmod	_	_
 2	شایعاتی	شایعه	NOUN	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	9	mark	_	_
@@ -6253,6 +6798,8 @@
 19	داشت	داشت	VERB	_	_	12	conj	_	_
 20	!	!	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--273
+# text = امکان نداشت که باوجود دستگیری‌های فراوان و اعتراف‌ها و اعدام‌ها با اطمینان گفت انجمن برادری فقط یک افسانه است .
 1	امکان	امکان	NOUN	_	_	2	obj	_	_
 2	نداشت	داشت	VERB	_	_	0	root	_	_
 3	که	که	SCONJ	_	_	5	mark	_	_
@@ -6274,6 +6821,8 @@
 19	است	است	VERB	_	_	13	ccomp	_	_
 20	.	.	PUNCT	_	_	13	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--274
+# text = وینستون بعضی اوقات به وجود آن باور داشت و بعضی اوقات نه .
 1	وینستون	وینستون	PROPN	_	_	8	punct	_	_
 2	بعضی	بعضی	DET	_	_	8	advmod	_	_
 3	اوقات	وقت	NOUN	_	_	2	fixed	_	_
@@ -6288,6 +6837,8 @@
 12	نه	نه	INTJ	_	_	10	fixed	_	_
 13	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--275
+# text = هیچ دلیل و مدرکی وجود نداشت فقط نگاه‌های زودگذر که می‌توانست به معنی همه چیز یا هیچ چیز باشد : زمزمه‌هایی که از گوشه‌وکنار شنیده می‌شد , نوشته‌های بدخط و کمرنگ روی دیوار توالت‌ها – یک بار دو نفر غریبه با هم ملاقات کردند و با دست‌های خود حرکت کوچکی انجام دادند که گویی علامت شناخت یکدیگر بود .
 1	هیچ	هیچ	DET	_	_	2	det	_	_
 2	دلیل	دلیل	NOUN	_	_	6	advmod	_	_
 3	و	و	CONJ	_	_	6	cc	_	_
@@ -6348,6 +6899,8 @@
 58	بود	بود	VERB	_	_	44	aux	_	_
 59	.	.	PUNCT	_	_	58	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--276
+# text = اما همه اینها حدس بود : احتمال زیاد داشت که همه چیز را تصور کرده باشد .
 1	اما	اما	CONJ	_	_	5	punct	_	_
 2	همه	همه	DET	_	_	3	det	_	_
 3	اینها	اینها	PRON	_	_	5	nsubj	_	_
@@ -6366,6 +6919,8 @@
 16	باشد	باش	AUX	_	_	15	cop	_	_
 17	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--277
+# text = او بدون نگاه به ابراین به اتاقک خود برگشته بود .
 1	او	او	PRON	_	_	9	nsubj	_	_
 2	بدون	بدون	ADP	_	_	3	case	_	_
 3	نگاه	نگاه	NOUN	_	_	9	obl	_	_
@@ -6378,6 +6933,8 @@
 10	بود	بود	AUX	_	_	9	cop	_	_
 11	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--278
+# text = به فکر ش هم نرسید که برخورد کوتاه شان را پیگیری کند .
 1	به	به	ADP	_	_	2	case	_	_
 2	فکر	فکر	NOUN	_	_	5	obl	_	_
 3	ش	او	PRON	_	_	2	nmod:poss	_	_
@@ -6392,6 +6949,8 @@
 12	کند	کن	VERB	_	_	5	ccomp	_	_
 13	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--279
+# text = حتی اگر می‌دانست که چه‌طور باید این کار را انجام دهد , باز هم خطر این کار , غیرقابل‌تصور بود .
 1	حتی	حتی	SCONJ	_	_	20	advmod	_	_
 2	اگر	اگر	SCONJ	_	_	20	mark	_	_
 3	می‌دانست	دانست	VERB	_	_	20	advcl	_	_
@@ -6414,6 +6973,8 @@
 20	بود	بود	VERB	_	_	0	root	_	_
 21	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--280
+# text = برای یکی دو ثانیه , نگاهی مشکوک با همدیگر ردوبدل کرده بودند و موضوع تمام شده بود .
 1	برای	برای	ADP	_	_	11	case	_	_
 2	یکی	یک	NUM	_	_	11	nsubj	_	_
 3	دو	دو	NUM	_	_	11	advmod	_	_
@@ -6433,6 +6994,8 @@
 17	بود	بود	AUX	_	_	16	cop	_	_
 18	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--281
+# text = اما در قفس تنهایی خود که همه مجبور به زندگی در آن بودند , همان نگاه هم به‌یادماندنی بود .
 1	اما	اما	CONJ	_	_	4	cc	_	_
 2	در	در	ADP	_	_	3	case	_	_
 3	قفس	قفس	NOUN	_	_	4	nmod	_	_
@@ -6454,6 +7017,8 @@
 19	بود	بود	VERB	_	_	13	conj	_	_
 20	.	.	PUNCT	_	_	19	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--282
+# text = وینستون خودش را بالا کشید و در جا یش استوارتر نشست .
 1	وینستون	وینستون	PROPN	_	_	5	advmod	_	_
 2	خودش	خود	PRON	_	_	5	obj	_	_
 3	را	را	ADP	_	_	2	case	_	_
@@ -6467,10 +7032,14 @@
 11	نشست	نشست	VERB	_	_	5	conj	_	_
 12	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--283
+# text = آروغی زد .
 1	آروغی	آروغ	NOUN	_	_	2	compound:lvc	_	_
 2	زد	زد	VERB	_	_	0	root	_	_
 3	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--284
+# text = اثر « جین » کم‌کم خنثی می‌شد .
 1	اثر	اثر	NOUN	_	_	7	nsubj	_	_
 2	«	«	PUNCT	_	_	1	punct	_	_
 3	جین	جین	NOUN	_	_	1	nmod:poss	_	_
@@ -6480,6 +7049,8 @@
 7	می‌شد	شد	VERB	_	_	0	root	_	_
 8	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--285
+# text = مجددا به صفحه کاغذ خیره شد .
 1	مجددا	مجددا	ADV	_	_	6	advmod	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	صفحه	صفحه	NOUN	_	_	5	nmod	_	_
@@ -6488,6 +7059,8 @@
 6	شد	شد	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--286
+# text = دریافت در تمام مدتی که مایوسانه در فکر فرورفته بود انگار به گونه‌ای غیرارادی مشغول نوشتن بوده است .
 1	دریافت	دریافت	VERB	_	_	17	aux	_	_
 2	در	در	ADP	_	_	4	case	_	_
 3	تمام	تمام	DET	_	_	4	det	_	_
@@ -6508,6 +7081,8 @@
 18	است	است	AUX	_	_	17	aux	_	_
 19	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--287
+# text = دستخط ش هم مانند قبل ناجور و خرچنگ‌قورباغه نبود .
 1	دستخط	دستخط	NOUN	_	_	9	nsubj	_	_
 2	ش	او	PRON	_	_	1	nmod:poss	_	_
 3	هم	هم	CONJ	_	_	9	punct	_	_
@@ -6519,6 +7094,8 @@
 9	نبود	بود	VERB	_	_	0	root	_	_
 10	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--288
+# text = قلم ش با رغبت برروی کاغذ نرم حرکت کرده بود و با حروف بزرگ نوشته بود : مرگ بر برادر بزرگ مرگ بر برادر بزرگ مرگ بر برادر بزرگ مرگ بر برادر بزرگ مرگ بر برادر بزرگ مرگ بر برادر بزرگ , تکرار آن نیمی از صفحه را پر کرده بود .
 1	قلم	قلم	NOUN	_	_	9	nsubj	_	_
 2	ش	او	PRON	_	_	1	nmod:poss	_	_
 3	با	با	ADP	_	_	4	case	_	_
@@ -6572,6 +7149,8 @@
 51	بود	بود	AUX	_	_	50	cop	_	_
 52	.	.	PUNCT	_	_	50	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--289
+# text = نمی‌توانست جلوی احساس ترس خود را بگیرد .
 1	نمی‌توانست	توانست	VERB	_	_	7	aux	_	_
 2	جلوی	جلو	NOUN	_	_	7	advmod	_	_
 3	احساس	احساس	NOUN	_	_	7	obj	_	_
@@ -6581,6 +7160,8 @@
 7	بگیرد	گیر	VERB	_	_	0	root	_	_
 8	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--290
+# text = کار بیهوده‌ای بود , زیرا اقدام به نوشتن دفتر خاطرات به مراتب خطرناک‌تر از نوشتن آن کلمات خاص بود ؛ ولی برای لحظه‌ای وسوسه شد که صفحات سیاه‌شده را پاره کند و کار را به کلی کنار بگذارد .
 1	کار	کار	NOUN	_	_	3	nsubj	_	_
 2	بیهوده‌ای	بیهوده	ADJ	_	_	1	amod	_	_
 3	بود	بود	VERB	_	_	0	root	_	_
@@ -6621,6 +7202,8 @@
 38	بگذارد	گذار	VERB	_	_	31	conj	_	_
 39	.	.	PUNCT	_	_	38	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--291
+# text = اما نمی‌توانست این کار را بکند , زیرا می‌دانست بی‌فایده خواهد بود .
 1	اما	اما	CONJ	_	_	6	cc	_	_
 2	نمی‌توانست	توانست	VERB	_	_	6	aux	_	_
 3	این	این	DET	_	_	4	det	_	_
@@ -6635,6 +7218,8 @@
 12	بود	بود	VERB	_	_	6	conj	_	_
 13	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--292
+# text = نوشتن یا ننوشتن مرگ بر برادر بزرگ هیچ فرقی نمی‌کرد .
 1	نوشتن	نوشتن	NOUN	_	_	10	advmod	_	_
 2	یا	یا	CONJ	_	_	10	cc	_	_
 3	ننوشتن	ننوشتن	NOUN	_	_	10	nsubj	_	_
@@ -6647,6 +7232,8 @@
 10	نمی‌کرد	کرد	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--293
+# text = به نوشتن دفتر خاطرات ادامه می‌داد یا نمی‌داد هیچ فرقی نمی‌کرد .
 1	به	به	ADP	_	_	2	case	_	_
 2	نوشتن	نوشتن	NOUN	_	_	6	obl	_	_
 3	دفتر	دفتر	NOUN	_	_	6	advmod	_	_
@@ -6660,6 +7247,8 @@
 11	نمی‌کرد	کرد	VERB	_	_	8	ccomp	_	_
 12	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--294
+# text = پلیس افکار , در هر دو حالت دستگیر ش می‌کرد .
 1	پلیس	پلیس	NOUN	_	_	10	nsubj	_	_
 2	افکار	فکر	NOUN	_	_	10	conj	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
@@ -6672,6 +7261,8 @@
 10	می‌کرد	کرد	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--295
+# text = حتی اگر یک کلمه هم روی کاغذ ننوشته بود باز هم جرم اصلی را که شامل تمام جرایم دیگر می‌شد , مرتکب شده بود .
 1	حتی	حتی	SCONJ	_	_	8	advmod	_	_
 2	اگر	اگر	SCONJ	_	_	8	mark	_	_
 3	یک	یک	NUM	_	_	4	nummod	_	_
@@ -6698,6 +7289,8 @@
 24	بود	بود	AUX	_	_	12	cop	_	_
 25	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--296
+# text = به این جرم می‌گفتند : « جرم فکری » .
 1	به	به	ADP	_	_	3	case	_	_
 2	این	این	DET	_	_	3	det	_	_
 3	جرم	جرم	NOUN	_	_	4	obl	_	_
@@ -6709,6 +7302,8 @@
 9	»	»	PUNCT	_	_	7	punct	_	_
 10	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--297
+# text = جرم فکری چیزی نبود که برای همیشه بتوان آن را مخفی کرد .
 1	جرم	جرم	NOUN	_	_	4	nsubj	_	_
 2	فکری	فکری	ADJ	_	_	1	amod	_	_
 3	چیزی	چیز	NOUN	_	_	4	obj	_	_
@@ -6723,6 +7318,8 @@
 12	کرد	کرد	VERB	_	_	4	ccomp	_	_
 13	.	.	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--298
+# text = ممکن بود آدم برای مدتی یا حتی چند سال از دست شان فرار کند ولی دیر یا زود موفق به دستگیری اش می‌شدند .
 1	ممکن	ممکن	ADJ	_	_	0	root	_	_
 2	بود	بود	VERB	_	_	23	aux	_	_
 3	آدم	آدم	NOUN	_	_	23	advmod	_	_
@@ -6748,6 +7345,8 @@
 23	می‌شدند	شد	VERB	_	_	1	ccomp	_	_
 24	.	.	PUNCT	_	_	23	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--299
+# text = دستگیری‌ها , بدون استثنا شبانه انجام می‌شد .
 1	دستگیری‌ها	دستگیری	NOUN	_	_	7	nsubj	_	_
 2	,	,	PUNCT	_	_	7	punct	_	_
 3	بدون	بدون	ADP	_	_	4	case	_	_
@@ -6757,6 +7356,8 @@
 7	می‌شد	شد	VERB	_	_	0	root	_	_
 8	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--300
+# text = یک تکان ناگهانی که آدم را از خواب می‌پراند , دست خشنی که شانه آدم را تکان می‌داد , نوری که در چشم می‌تابید , چهره‌های خشنی که اطراف تختخواب حلقه زده بودند .
 1	یک	یک	DET	_	_	2	det	_	_
 2	تکان	تکان	NOUN	_	_	0	root	_	_
 3	ناگهانی	ناگهانی	ADJ	_	_	2	amod	_	_
@@ -6792,6 +7393,8 @@
 33	بودند	بود	AUX	_	_	32	cop	_	_
 34	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--301
+# text = در بیشتر موارد نه گزارشی درباره دستگیری و نه دادگاهی وجود داشت .
 1	در	در	ADP	_	_	3	case	_	_
 2	بیشتر	بیش	DET	_	_	3	det	_	_
 3	موارد	مورد	NOUN	_	_	12	obl	_	_
@@ -6806,6 +7409,8 @@
 12	داشت	داشت	VERB	_	_	0	root	_	_
 13	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--302
+# text = فقط افراد ناپدید می‌شدند , همیشه هم شب‌ها این اتفاق می‌افتاد .
 1	فقط	فقط	ADV	_	_	4	advmod	_	_
 2	افراد	فرد	NOUN	_	_	4	obj	_	_
 3	ناپدید	ناپدید	ADJ	_	_	2	amod	_	_
@@ -6819,6 +7424,8 @@
 11	می‌افتاد	افتاد	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--303
+# text = نام فرد را از دفاتر ثبت پاک می‌کردند , همه اسنادی را که مربوط به کارهای او بود , نابود می‌کردند , موجودیت او را انکار می‌کردند و سپس طرف را به فراموشی می‌سپردند .
 1	نام	نام	NOUN	_	_	8	obj	_	_
 2	فرد	فرد	NOUN	_	_	1	fixed	_	_
 3	را	را	ADP	_	_	1	case	_	_
@@ -6855,6 +7462,8 @@
 34	می‌سپردند	سپرد	VERB	_	_	27	conj	_	_
 35	.	.	PUNCT	_	_	34	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--304
+# text = آدمی نیست و نابود می‌شد .
 1	آدمی	آدم	NOUN	_	_	2	nsubj	_	_
 2	نیست	نیست	ADJ	_	_	0	root	_	_
 3	و	و	CONJ	_	_	5	punct	_	_
@@ -6862,6 +7471,8 @@
 5	می‌شد	شد	VERB	_	_	2	conj	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--305
+# text = در این‌جور مواقع می‌گفتند : فلانی « بخار » شد و به هوا رفت .
 1	در	در	ADP	_	_	3	case	_	_
 2	این‌جور	این‌جور	DET	_	_	3	det	_	_
 3	مواقع	موقع	NOUN	_	_	4	obl	_	_
@@ -6878,6 +7489,8 @@
 14	رفت	رفت	VERB	_	_	10	conj	_	_
 15	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--306
+# text = لحظه‌ای دچار حالت هیستری شد .
 1	لحظه‌ای	لحظه	NOUN	_	_	5	advmod	_	_
 2	دچار	دچار	ADJ	_	_	5	xcomp	_	_
 3	حالت	حالت	NOUN	_	_	2	nmod:poss	_	_
@@ -6885,6 +7498,8 @@
 5	شد	شد	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--307
+# text = با عجله و بدخط شروع به نوشتن کرد :
 1	با	با	ADP	_	_	2	case	_	_
 2	عجله	عجله	NOUN	_	_	8	obl	_	_
 3	و	و	CONJ	_	_	8	punct	_	_
@@ -6895,6 +7510,8 @@
 8	کرد	کرد	VERB	_	_	0	root	_	_
 9	:	:	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--308
+# text = من و می‌کشن من اهمیتی نمی‌دم به پشت گردن م شلیک می‌کنن اهمیتی نمی‌دم مرگ بر برادر بزرگ اونا همیشه به پشت گردن آدم شلیک می‌کنن باشه من اهمیتی نمی‌دم مرگ بر برادر بزرگ …
 1	من	من	PRON	_	_	3	nsubj	_	_
 2	و	را	ADP	_	_	3	compound:prt	_	_
 3	می‌کشن	کش	VERB	_	_	0	root	_	_
@@ -6931,6 +7548,8 @@
 34	بزرگ	بزرگ	ADJ	_	_	33	amod	_	_
 35	…	…	PUNCT	_	_	33	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--309
+# text = به پشتی صندلی تکیه داد , از خودش شرمنده بود , قلم را زمین گذاشت .
 1	به	به	ADP	_	_	2	case	_	_
 2	پشتی	پشتی	NOUN	_	_	15	obl	_	_
 3	صندلی	صندلی	NOUN	_	_	15	advmod	_	_
@@ -6948,6 +7567,8 @@
 15	گذاشت	گذاشت	VERB	_	_	0	root	_	_
 16	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--310
+# text = لحظه‌ای بعد , با وحشت از جا پرید .
 1	لحظه‌ای	لحظه	NOUN	_	_	8	advmod	_	_
 2	بعد	بعد	ADV	_	_	8	advmod	_	_
 3	,	,	PUNCT	_	_	8	punct	_	_
@@ -6958,6 +7579,8 @@
 8	پرید	پرید	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--311
+# text = ضربه‌ای به در آپارتمان خورد .
 1	ضربه‌ای	ضربه	NOUN	_	_	5	advmod	_	_
 2	به	به	ADP	_	_	3	case	_	_
 3	در	در	NOUN	_	_	5	obl	_	_
@@ -6965,11 +7588,15 @@
 5	خورد	خورد	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--312
+# text = به این زودی !
 1	به	به	ADP	_	_	3	case	_	_
 2	این	این	DET	_	_	3	det	_	_
 3	زودی	زودی	NOUN	_	_	0	root	_	_
 4	!	!	PUNCT	_	_	3	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--313
+# text = با این امید واهی که شاید شخص پشت در , بعداز یک بار درزدن راه ش را گرفته و برود , مثل یک موش ساکت و بی‌حرکت نشست .
 1	با	با	ADP	_	_	3	case	_	_
 2	این	این	DET	_	_	3	det	_	_
 3	امید	امید	NOUN	_	_	7	nmod	_	_
@@ -7000,6 +7627,8 @@
 28	نشست	نشست	VERB	_	_	18	punct	_	_
 29	.	.	PUNCT	_	_	28	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--314
+# text = اما نه , ضربه تکرار شد .
 1	اما	اما	CONJ	_	_	6	punct	_	_
 2	نه	نه	INTJ	_	_	6	dep	_	_
 3	,	,	PUNCT	_	_	6	punct	_	_
@@ -7008,6 +7637,8 @@
 6	شد	شد	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--315
+# text = تاخیر برای بازکردن در , بدترین چیز بود .
 1	تاخیر	تاخیر	NOUN	_	_	8	advmod	_	_
 2	برای	برای	ADP	_	_	3	case	_	_
 3	بازکردن	بازکردن	NOUN	_	_	8	obl	_	_
@@ -7018,6 +7649,8 @@
 8	بود	بود	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--316
+# text = قلب ش به شدت می‌تپید , اما بنابه عادت دیرین , چهره اش بی‌تفاوت بود .
 1	قلب	قلب	NOUN	_	_	5	nsubj	_	_
 2	ش	او	PRON	_	_	1	nmod:poss	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -7035,6 +7668,8 @@
 15	بود	بود	VERB	_	_	9	aux	_	_
 16	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--317
+# text = برخاست و به آرامی به‌سمت در رفت .
 1	برخاست	برخاست	VERB	_	_	0	root	_	_
 2	و	و	CONJ	_	_	7	cc	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -7044,6 +7679,8 @@
 7	رفت	رفت	VERB	_	_	1	conj	_	_
 8	.	.	PUNCT	_	_	1	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--318
+# text = به‌محض‌آنکه دستگیره در را گرفت باز کند , به یاد آورد که دفتر خاطرات روی میز باز است .
 1	به‌محض‌آنکه	به‌محض‌آنکه	SCONJ	_	_	7	advmod	_	_
 2	دستگیره	دستگیره	NOUN	_	_	7	obj	_	_
 3	در	در	NOUN	_	_	7	obj	_	_
@@ -7064,6 +7701,8 @@
 18	است	است	VERB	_	_	11	ccomp	_	_
 19	.	.	PUNCT	_	_	18	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--319
+# text = شعار مرگ بر برادر بزرگ درروی کتابچه با چنان حروف بزرگی نوشته شده بود که از همه جای اتاق می‌شد آن را دید .
 1	شعار	شعار	NOUN	_	_	12	nsubj	_	_
 2	مرگ	مرگ	NOUN	_	_	12	xcomp	_	_
 3	بر	بر	ADP	_	_	4	case	_	_
@@ -7089,6 +7728,8 @@
 23	دید	دید	VERB	_	_	12	ccomp	_	_
 24	.	.	PUNCT	_	_	12	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--320
+# text = این کار واقعا احمقانه بود .
 1	این	این	DET	_	_	2	det	_	_
 2	کار	کار	NOUN	_	_	5	nsubj	_	_
 3	واقعا	واقعا	ADV	_	_	4	advmod	_	_
@@ -7096,6 +7737,8 @@
 5	بود	بود	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--321
+# text = اما دریافت که باوجود وحشت زیادی که داشت نخواسته بود با بستن کتابچه , باعث پخش‌شدن جوهر خیس شود و ورق‌های شیری‌رنگ کتابچه را کثیف کند .
 1	اما	اما	CONJ	_	_	26	punct	_	_
 2	دریافت	دریافت	VERB	_	_	26	aux	_	_
 3	که	که	SCONJ	_	_	9	mark	_	_
@@ -7124,6 +7767,8 @@
 26	کند	کن	VERB	_	_	0	root	_	_
 27	.	.	PUNCT	_	_	26	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--322
+# text = نفس ش را حبس کرد و در را گشود .
 1	نفس	نفس	NOUN	_	_	5	obj	_	_
 2	ش	خود	PRON	_	_	1	fixed	_	_
 3	را	را	ADP	_	_	1	case	_	_
@@ -7135,6 +7780,8 @@
 9	گشود	گشود	VERB	_	_	5	conj	_	_
 10	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--323
+# text = بلافاصله خیال ش راحت شد .
 1	بلافاصله	بلافاصله	ADV	_	_	5	advmod	_	_
 2	خیال	خیال	NOUN	_	_	5	nsubj	_	_
 3	ش	او	PRON	_	_	2	nmod:poss	_	_
@@ -7142,6 +7789,8 @@
 5	شد	شد	VERB	_	_	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--324
+# text = زنی با چهره بی‌حال و بی‌رنگ‌ورو , که موهای کم‌پشتی داشت بیرون ایستاده بود .
 1	زنی	زن	NOUN	_	_	0	root	_	_
 2	با	با	ADP	_	_	3	case	_	_
 3	چهره	چهره	NOUN	_	_	1	nmod	_	_
@@ -7158,6 +7807,8 @@
 14	بود	بود	AUX	_	_	13	cop	_	_
 15	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--325
+# text = زن با صدای زیر و کسل‌کننده‌ای گفت : « اوه , رفیق , صدای پا یتان را شنیدم که آمدید .
 1	زن	زن	NOUN	_	_	7	nsubj	_	_
 2	با	با	ADP	_	_	3	case	_	_
 3	صدای	صدا	NOUN	_	_	7	obl	_	_
@@ -7180,6 +7831,8 @@
 20	آمدید	آمد	VERB	_	_	18	ccomp	_	_
 21	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--326
+# text = می‌توانید بیایید به ظرفشویی آشپزخانه ما نگاهی بیندازید ؟
 1	می‌توانید	توان	VERB	_	_	8	aux	_	_
 2	بیایید	آ	VERB	_	_	8	aux	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -7190,6 +7843,8 @@
 8	بیندازید	انداز	VERB	_	_	0	root	_	_
 9	؟	؟	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--327
+# text = لوله اش کاملا گرفته و … »
 1	لوله	لوله	NOUN	_	_	4	nsubj	_	_
 2	اش	آن	PRON	_	_	1	nmod:poss	_	_
 3	کاملا	کاملا	ADV	_	_	4	advmod	_	_
@@ -7198,6 +7853,8 @@
 6	…	…	PUNCT	_	_	4	punct	_	_
 7	»	»	PUNCT	_	_	4	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--328
+# text = خانم پارسونز زن همسایه‌ای بود که در همان طبقه ساکن بودند .
 1	خانم	خانم	NOUN	_	_	5	nsubj	_	_
 2	پارسونز	پارسونز	PROPN	_	_	5	punct	_	_
 3	زن	زن	NOUN	_	_	5	nsubj	_	_
@@ -7211,6 +7868,8 @@
 11	بودند	بود	VERB	_	_	5	ccomp	_	_
 12	.	.	PUNCT	_	_	5	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--329
+# text = ( کلمه « خانم » موردتایید حزب نبود – همه باید همدیگر را « رفیق » خطاب می‌کردند – اما دربرابر بعضی زن‌ها آدم به طور غریزی از این کلمه استفاده می‌کرد . )
 1	(	(	PUNCT	_	_	2	punct	_	_
 2	کلمه	کلمه	NOUN	_	_	18	dep	_	_
 3	«	«	PUNCT	_	_	2	punct	_	_
@@ -7246,6 +7905,8 @@
 33	.	.	PUNCT	_	_	32	punct	_	_
 34	)	)	PUNCT	_	_	32	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--330
+# text = حدود سی سال داشت ولی خیلی پیرتر به نظر می‌رسید .
 1	حدود	حد	ADV	_	_	2	advmod	_	_
 2	سی	سی	NUM	_	_	4	advmod	_	_
 3	سال	سال	NOUN	_	_	4	advmod	_	_
@@ -7258,6 +7919,8 @@
 10	می‌رسید	رسید	VERB	_	_	0	root	_	_
 11	.	.	PUNCT	_	_	10	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--331
+# text = آدم گمان می‌کرد خطوط صورت ش را خاک گرفته است .
 1	آدم	آدم	NOUN	_	_	9	nsubj	_	_
 2	گمان	گمان	NOUN	_	_	3	compound:lvc	_	_
 3	می‌کرد	کرد	VERB	_	_	9	advcl	_	_
@@ -7270,6 +7933,8 @@
 10	است	است	AUX	_	_	9	cop	_	_
 11	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--332
+# text = وینستون در راهرو به‌دنبال او به راه افتاد .
 1	وینستون	وینستون	PROPN	_	_	8	advmod	_	_
 2	در	در	ADP	_	_	3	case	_	_
 3	راهرو	راهرو	NOUN	_	_	8	obl	_	_
@@ -7280,6 +7945,8 @@
 8	افتاد	افتاد	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--333
+# text = این‌قبیل کارهای تعمیراتی پیش‌پاافتاده دردسر همه‌روزه اش بود .
 1	این‌قبیل	این‌قبیل	DET	_	_	2	det	_	_
 2	کارهای	کار	NOUN	_	_	8	dep	_	_
 3	تعمیراتی	تعمیراتی	ADJ	_	_	2	amod	_	_
@@ -7290,6 +7957,8 @@
 8	بود	بود	VERB	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--334
+# text = آپارتمان‌های عمارت پیروزی قدیمی بودند , حوالی سال 1930 ساخته شده بودند و کم مانده بود بندبند شان از هم جدا شود .
 1	آپارتمان‌های	آپارتمان	NOUN	_	_	10	advmod	_	_
 2	عمارت	عمارت	NOUN	_	_	1	fixed	_	_
 3	پیروزی	پیروزی	NOUN	_	_	10	advcl	_	_
@@ -7314,6 +7983,8 @@
 22	شود	شو	VERB	_	_	15	ccomp	_	_
 23	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--335
+# text = دائما از سقف و دیوارها گچ می‌ریخت , لوله‌ها با هر یخ‌بندانی می‌ترکید , هروقت برف می‌آمد بام‌ها چکه می‌کرد , سیستم‌های گرمایی در بهترین حالت که به‌دلیل طرح‌های صرفه‌جویی اقتصادی کاملا بسته نبود , با نصف ظرفیت کار می‌کرد .
 1	دائما	دائما	ADV	_	_	7	advmod	_	_
 2	از	از	ADP	_	_	3	case	_	_
 3	سقف	سقف	NOUN	_	_	7	obl	_	_
@@ -7356,6 +8027,8 @@
 40	می‌کرد	کرد	VERB	_	_	26	acl:relcl	_	_
 41	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--336
+# text = تعمیرات باید با تصویب کمیته‌های رده‌بالا صورت می‌گرفت که گاهی انداختن شیشه یک پنجره را دو سال طول می‌دادند .
 1	تعمیرات	تعمیر	NOUN	_	_	8	nsubj	_	_
 2	باید	باید	VERB	_	_	8	aux	_	_
 3	با	با	ADP	_	_	4	case	_	_
@@ -7377,6 +8050,8 @@
 19	می‌دادند	داد	VERB	_	_	8	ccomp	_	_
 20	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--337
+# text = مگر آنکه خود شخص بتواند تعمیرات را انجام دهد .
 1	مگر	مگر	ADP	_	_	3	case	_	_
 2	آنکه	آنکه	PRON	_	_	1	fixed	_	_
 3	خود	خود	PRON	_	_	9	obl	_	_
@@ -7388,6 +8063,8 @@
 9	دهد	ده	VERB	_	_	0	root	_	_
 10	.	.	PUNCT	_	_	9	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--338
+# text = خانم پارسونز به طور سربسته گفت : « البته به‌خاطراینکه تام خانه نیست . »
 1	خانم	خانم	NOUN	_	_	0	root	_	_
 2	پارسونز	پارسونز	PROPN	_	_	1	fixed	_	_
 3	به	به	ADP	_	_	4	case	_	_
@@ -7404,6 +8081,8 @@
 14	.	.	PUNCT	_	_	13	punct	_	_
 15	»	»	PUNCT	_	_	13	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--339
+# text = آپارتمان خانواده پارسونز بزرگ‌تر از آپارتمان وینستون بود اما دلگیری و بی‌نظمی مخصوص به خود را داشت .
 1	آپارتمان	آپارتمان	NOUN	_	_	2	advmod	_	_
 2	خانواده	خانواده	NOUN	_	_	0	root	_	_
 3	پارسونز	پارسونز	PROPN	_	_	7	punct	_	_
@@ -7423,6 +8102,8 @@
 17	داشت	داشت	VERB	_	_	8	conj	_	_
 18	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--340
+# text = همه چیز درهم‌ریخته بود ؛ انگار همان موقع حیوانی بزرگ و وحشی از آنجا عبور کرده بود .
 1	همه	همه	DET	_	_	2	det	_	_
 2	چیز	چیز	NOUN	_	_	4	nsubj	_	_
 3	درهم‌ریخته	درهم‌ریخته	ADJ	_	_	2	amod	_	_
@@ -7442,6 +8123,8 @@
 17	بود	بود	AUX	_	_	16	cop	_	_
 18	.	.	PUNCT	_	_	16	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--341
+# text = وسایل بازی – چوب‌های هاکی و دستکش‌های بوکس , توپ فوتبال ترکیده , یک شلوارک عرق‌آلود پشت‌روشده – همه جا پراکنده بود و روی میز , ظرف‌های کثیف غذا و کتاب‌های تمرین با ورق‌های جمع‌شده بود .
 1	وسایل	وسیله	NOUN	_	_	0	root	_	_
 2	بازی	بازی	NOUN	_	_	1	conj	_	_
 3	–	–	PUNCT	_	_	4	punct	_	_
@@ -7480,6 +8163,8 @@
 36	بود	بود	VERB	_	_	22	conj	_	_
 37	.	.	PUNCT	_	_	36	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--342
+# text = برروی دیوارها پرچم‌های سرخ انجمن جوانان و جاسوسان و یک پوستر تمام‌قد از برادر بزرگ به چشم می‌خورد .
 1	برروی	بررو	ADP	_	_	2	case	_	_
 2	دیوارها	دیوار	NOUN	_	_	0	root	_	_
 3	پرچم‌های	پرچم	NOUN	_	_	5	nmod:poss	_	_
@@ -7500,6 +8185,8 @@
 18	می‌خورد	خورد	VERB	_	_	19	conj	_	_
 19	.	.	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--343
+# text = بوی کلم پخته اینجا هم مانند تمام نقاط ساختمان به مشام می‌رسید , ولی با بوی گند عرق تن آمیخته شده بود .
 1	بوی	بو	NOUN	_	_	2	dep	_	_
 2	کلم	کلم	NOUN	_	_	0	root	_	_
 3	پخته	پخته	ADJ	_	_	2	amod	_	_
@@ -7524,6 +8211,8 @@
 22	بود	بود	AUX	_	_	21	aux	_	_
 23	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--344
+# text = در اتاق دیگر یک نفر با شانه و تکه‌ای دستمال کاغذی در دست , مشغول همراهی با مارش نظامی بود که همچنان از صفحه سخنگو پخش می‌شد .
 1	در	در	ADP	_	_	2	case	_	_
 2	اتاق	اتاق	NOUN	_	_	15	nmod	_	_
 3	دیگر	دیگر	ADJ	_	_	2	amod	_	_
@@ -7553,6 +8242,8 @@
 27	می‌شد	شد	VERB	_	_	20	ccomp	_	_
 28	.	.	PUNCT	_	_	20	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--345
+# text = خانم پارسونز با دلخوری نگاهی به‌سمت اتاق کرد و گفت : « تقصیر بچه‌ها ست , امروز بیرون نرفته اند .
 1	خانم	خانم	NOUN	_	_	8	advmod	_	_
 2	پارسونز	پارسونز	PROPN	_	_	8	advmod	_	_
 3	با	با	ADP	_	_	4	case	_	_
@@ -7575,10 +8266,14 @@
 20	اند	است	AUX	_	_	19	cop	_	_
 21	.	.	PUNCT	_	_	15	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--346
+# text = برای‌همین – »
 1	برای‌همین	برای‌همین	CONJ	_	_	0	root	_	_
 2	–	–	PUNCT	_	_	1	punct	_	_
 3	»	»	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--347
+# text = عادت داشت جمله‌ها یش را نیمه‌کاره بگذارد .
 1	عادت	عادت	NOUN	_	_	2	compound:lvc	_	_
 2	داشت	داشت	VERB	_	_	0	root	_	_
 3	جمله‌ها	جمله	NOUN	_	_	7	obj	_	_
@@ -7588,6 +8283,8 @@
 7	بگذارد	گذار	VERB	_	_	2	ccomp	_	_
 8	.	.	PUNCT	_	_	2	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--348
+# text = ظرفشویی تقریبا تا لبه پر بود از آب کثیف سبزرنگی که حتی از کلم هم بدبوتر بود .
 1	ظرفشویی	ظرفشویی	NOUN	_	_	6	advmod	_	_
 2	تقریبا	تقریبا	ADV	_	_	1	fixed	_	_
 3	تا	تا	ADP	_	_	4	case	_	_
@@ -7607,6 +8304,8 @@
 17	بود	بود	VERB	_	_	10	acl:relcl	_	_
 18	.	.	PUNCT	_	_	17	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--349
+# text = وینستون روی زانو نشست و لوله سیفون زیر لگن ظرفشویی را امتحان کرد .
 1	وینستون	وینستون	PROPN	_	_	4	advmod	_	_
 2	روی	رو	ADP	_	_	3	case	_	_
 3	زانو	زانو	NOUN	_	_	4	obl	_	_
@@ -7622,6 +8321,8 @@
 13	کرد	کرد	VERB	_	_	4	ccomp	_	_
 14	.	.	PUNCT	_	_	13	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--350
+# text = دولاشدن معمولا او را به سرفه می‌انداخت , و از هر کاری که باید با دست انجام می‌داد بیزار بود .
 1	دولاشدن	دولاشدن	NOUN	_	_	7	advmod	_	_
 2	معمولا	معمولا	ADV	_	_	7	advmod	_	_
 3	او	او	PRON	_	_	7	obj	_	_
@@ -7644,6 +8345,8 @@
 20	بود	بود	VERB	_	_	18	aux	_	_
 21	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--351
+# text = خانم پارسونز که مایوسانه او را نگاه می‌کرد گفت : « البته اگر تام خانه بود خیلی سریع درست ش می‌کرد .
 1	خانم	خانم	NOUN	_	_	0	root	_	_
 2	پارسونز	پارسونز	PROPN	_	_	1	fixed	_	_
 3	که	که	SCONJ	_	_	8	mark	_	_
@@ -7667,6 +8370,8 @@
 21	می‌کرد	کرد	VERB	_	_	9	advcl	_	_
 22	.	.	PUNCT	_	_	21	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--352
+# text = این‌جور کارها را خیلی دوست داره .
 1	این‌جور	این‌جور	DET	_	_	2	det	_	_
 2	کارها	کار	NOUN	_	_	6	obj	_	_
 3	را	را	ADP	_	_	2	case	_	_
@@ -7675,6 +8380,8 @@
 6	داره	دار	VERB	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--353
+# text = از دستها ش هم خیلی خوب استفاده می‌کنه . »
 1	از	از	ADP	_	_	2	case	_	_
 2	دستها	دست	NOUN	_	_	8	obl	_	_
 3	ش	خود	PRON	_	_	2	nmod:poss	_	_
@@ -7686,6 +8393,8 @@
 9	.	.	PUNCT	_	_	8	punct	_	_
 10	»	»	PUNCT	_	_	8	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--354
+# text = پارسونز همکار وینستون در وزارت حقیقت بود .
 1	پارسونز	پارسونز	PROPN	_	_	7	punct	_	_
 2	همکار	همکار	NOUN	_	_	7	advmod	_	_
 3	وینستون	وینستون	PROPN	_	_	7	punct	_	_
@@ -7695,6 +8404,8 @@
 7	بود	بود	VERB	_	_	0	root	_	_
 8	.	.	PUNCT	_	_	7	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--355
+# text = مردی چاق و تنومند , ولی فعال و به نحوی باورنکردنی خنگ و احمق , نمونه کاملی از اشتیاق ابلهانه – یکی از آن آدم‌های زحمتکش و سرسپرده مطلق که حزب برای ثبات خود بیش از پلیس افکار به آنها متکی بود .
 1	مردی	مرد	NOUN	_	_	0	root	_	_
 2	چاق	چاق	ADJ	_	_	1	amod	_	_
 3	و	و	CONJ	_	_	4	cc	_	_
@@ -7739,6 +8450,8 @@
 42	بود	بود	VERB	_	_	29	acl:relcl	_	_
 43	.	.	PUNCT	_	_	42	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--356
+# text = در سن سی‌وپنج‌سالگی , با بی‌میلی و حسرت از انجمن جوانان بیرون آمد – اگرچه تا آن موقع هم یک سال بیش از موعد قانونی در انجمن مانده بود .
 1	در	در	ADP	_	_	2	case	_	_
 2	سن	سن	NOUN	_	_	13	obl	_	_
 3	سی‌وپنج‌سالگی	سی‌وپنج‌سالگی	NOUN	_	_	13	conj	_	_
@@ -7770,6 +8483,8 @@
 29	بود	بود	AUX	_	_	28	cop	_	_
 30	.	.	PUNCT	_	_	28	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--357
+# text = در وزارتخانه شغل پیش‌پاافتاده‌ای به او دادند که نیازی به هوش و ذکاوت نداشت .
 1	در	در	ADP	_	_	2	case	_	_
 2	وزارتخانه	وزارتخانه	NOUN	_	_	7	obl	_	_
 3	شغل	شغل	NOUN	_	_	7	obj	_	_
@@ -7786,6 +8501,8 @@
 14	نداشت	داشت	VERB	_	_	7	ccomp	_	_
 15	.	.	PUNCT	_	_	14	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--358
+# text = اما در عوض ، چهره فعال کمیته‌های ورزشی و سایر کمیته‌هایی بود که کار شان دررابطه‌با ترتیب‌دادن راه‌پیمایی‌ها ، انواع تظاهرات خودجوش ، رقابت‌های صرفه‌جویی و سایر کارهای داوطلبانه بود .
 1	اما	اما	CONJ	_	_	0	root	_	_
 2	در	در	ADP	_	_	3	case	_	_
 3	عوض	عوض	NOUN	_	_	1	obl	_	_
@@ -7818,6 +8535,8 @@
 30	بود	بود	VERB	_	_	25	conj	_	_
 31	.	.	PUNCT	_	_	30	punct	_	_
 
+# source_sent_id = . . autogen--data.parsemetsv--359
+# text = در فاصله میان پک‌هایی که به پیپ می‌زد با افتخار برای ت تعریف می‌کرد که در چهار سال گذشته هر شب در « مرکز اجتماعات » حضور داشته است .
 1	در	در	ADP	_	_	2	case	_	_
 2	فاصله	فاصله	NOUN	_	_	14	obl	_	_
 3	میان	میان	ADP	_	_	4	case	_	_

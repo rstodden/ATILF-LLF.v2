@@ -25,6 +25,9 @@ for lang in ["FA", "RO", "EL",  "BG", "DE", "EL", "EN", "ES", "EU", "FR", "HE", 
             elif line == "\n":
                 parseme_content += "\n"
                 conllu_content += "\n"
+            else:
+                parseme_content += line.strip()+"\n"
+                conllu_content += line.strip()+"\n"
 
         with open("../sharedtask_11/"+lang+"/"+filetype+".parsemetsv", "w") as f:
             f.write(parseme_content)
