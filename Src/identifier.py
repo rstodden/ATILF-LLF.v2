@@ -67,6 +67,6 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 logging.basicConfig(level=logging.WARNING)
 
-# XPParams.realExper = True
-XPParams.useCrossValidation = True
+XPParams.realExper = True
+XPParams.useCrossValidation = False
 identify()

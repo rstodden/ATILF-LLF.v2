@@ -4,7 +4,7 @@ import os
 
 
 class XPParams:
-    realExper = False
+    realExper = True
     baseline = False
     useUniversalPOSTag = True
 
@@ -66,7 +66,7 @@ class Paths:
     languageName = ''
     projectPath = os.path.dirname(__file__)[:-len(os.path.basename(os.path.dirname(__file__)))]
     configsFolder = os.path.join(projectPath, 'FeatureGroups')
-    corporaPath = os.path.join(projectPath, "sharedtask/")
+    corporaPath = os.path.join(projectPath, "sharedtask_11/") # os.path.join(projectPath, "sharedtask/")
     iterationPath = os.path.join(projectPath, "Results/")
     langResultFolder = os.path.join(projectPath, "Results/")
     rootResultFolder = os.path.join(projectPath, "Results/")
@@ -145,7 +145,11 @@ class FeatParams:
             FeatParams.useS0B0Distance = config["S0B0Distance"]
             FeatParams.useS0S1Distance = config["S0S1Distance"]
             FeatParams.useStackLength = config["useStackLength"]
-            FeatParams.useSyntax = config["UseLinguistInfo"]["useSytax"]
+            if "useSytax" in config["UseLinguistInfo"].keys():
+		FeatParams.useSyntax = config["UseLinguistInfo"]["useSytax"]
+	    if "useSyntax" in config["UseLinguistInfo"].keys():
+                FeatParams.useSyntax = config["UseLinguistInfo"]["useSyntax"]
+
             FeatParams.generateS0B2Bigram = config["generateS0B2Bigram"]
 
             FeatParams.useDictionary = config["useDictionary"]
@@ -253,10 +257,17 @@ class FeatParams:
 class Counters:
     shiftNum, completeNum, mWTCompleteNum, mergeNum = 0, 0, 0, 0
     reduceNum, whiteMergeNum, blackMergeNum = 0, 0, 0
-    mergeAsIDNum, mergeAsLVCNum, mergeAsVPCNum, mergeAsIReflVNum, mergeAsOTHNum, mergeAsMWTNum = 0, 0, 0, 0, 0, 0
+    mergeAsIDNum, mergeAsLVCCauseNum, mergeAsLVCFullNum = 0, 0, 0
+    mergeAsVPCSemiNum, mergeAsVPCFullNum = 0, 0
+    mergeAsIReflVNum, mergeAsOTHNum, mergeAsMWTNum = 0, 0, 0
+    mergeAsMVCNum, mergeAsIAVNum = 0, 0
+    mergeAsLSICVNum = 0
 
     @staticmethod
     def initCounters():
         Counters.shiftNum, Counters.completeNum, Counters.mWTCompleteNum, Counters.mergeNum = 0, 0, 0, 0
         Counters.reduceNum, Counters.whiteMergeNum, Counters.blackMergeNum = 0, 0, 0
-        Counters.mergeAsIDNum, Counters.mergeAsLVCNum, Counters.mergeAsVPCNum, Counters.mergeAsIReflVNum, Counters.mergeAsOTHNum, Counters.mergeAsMWTNum = 0, 0, 0, 0, 0, 0
+        Counters.mergeAsIDNum, Counters.mergeAsLVCCauseNum, Counters.mergeLVCFullNum = 0, 0, 0
+        Counters.mergeAsVPCCauseNum, Counters.mergeAsVPCFullNum = 0, 0
+        Counters.mergeAsIReflVNum, Counters.mergeAsOTHNum, Counters.mergeAsMWTNum = 0, 0, 0
+        Counters.mergeAsIAVNum, Counters.mergeAsMVCNum, Counters.mergeAsLSICVNum = 0, 0, 0

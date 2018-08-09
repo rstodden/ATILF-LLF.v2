@@ -26,7 +26,7 @@ class Corpus:
         path = os.path.join(Paths.corporaPath, langName)
         self.sentNum, self.tokenNum, self.mweNum, self.intereavingNum, self.emeddedNum, self.singleWordExp, \
         self.continousExp, self.trainingSents, self.testingSents, self.trainDataSet, mweFile, testMweFile = \
-            0, 0, 0, 0, 0, 0, 0, [], [], [], os.path.join(path, 'train.parsemetsv'), os.path.join(path,
+            0, 0, 0, 0, 0, 0, 0, [], [], [], os.path.join(path, 'train.dev.parsemetsv'), os.path.join(path,
                                                                                                   'test.parsemetsv')
         conlluFile, testConllu = self.getTrainAndTestConlluPath(path)
 
@@ -80,8 +80,8 @@ class Corpus:
             conlluFile = os.path.join(path, 'train.conllu.autoPOS')
             if os.path.isfile(os.path.join(path, 'test.conllu.autoPOS')):
                 testConllu = os.path.join(path, 'test.conllu.autoPOS')
-        elif os.path.isfile(os.path.join(path, 'train.conllu')):
-            conlluFile = os.path.join(path, 'train.conllu')
+        elif os.path.isfile(os.path.join(path, 'train.dev.conllu')):
+            conlluFile = os.path.join(path, 'train.dev.conllu')
             if os.path.isfile(os.path.join(path, 'test.conllu')):
                 testConllu = os.path.join(path, 'test.conllu')
         return conlluFile, testConllu
@@ -144,7 +144,7 @@ class Corpus:
                     morpho = ''
                     if lineParts[5] != '_':
                         morpho = lineParts[5].split('|')
-                    if lineParts[6] != '_':
+                    if lineParts[6] != '_' and lineParts[6] != '-':
                         token = Token(lineParts[0], lineParts[1].lower(), lemma=lineParts[2],
                                       abstractPosTag=lineParts[3], morphologicalInfo=morpho,
                                       dependencyParent=int(lineParts[6]),

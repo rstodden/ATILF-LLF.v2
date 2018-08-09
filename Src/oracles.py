@@ -1,5 +1,6 @@
 import datetime
 import logging
+import os 
 
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.multiclass import OutputCodeClassifier
@@ -14,12 +15,15 @@ class EmbeddingOracle:
     @staticmethod
     def train(corpus):
         time = datetime.datetime.now()
+        folder = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "Results/")
+        print(folder)
         logging.info('Static Embedding Oracle')
         Y, X_dic = EmbeddingOracle.parseCorpus(corpus.trainingSents, EmbeddingOracle)
         vec = DictVectorizer()
         X = vec.fit_transform(X_dic)
         clf = OutputCodeClassifier(LinearSVC(random_state=0), code_size=2, random_state=0)
         clf.fit(X, Y)
+        print("finished training")
         logging.info('Traingin Time: ' + str(int((datetime.datetime.now() - time).seconds / 60.)))
         return clf, vec
 

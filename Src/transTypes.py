@@ -10,11 +10,16 @@ class TransitionType(Enum):
     MWT_COMPLETE = 3
     REDUCE = 4
     WHITE_MERGE = 5
-    MERGE_AS_LVC = 10
-    MERGE_AS_VPC = 6
-    MERGE_AS_IReflV = 7
-    MERGE_AS_OTH = 8
-    MERGE_AS_ID = 9
+    MERGE_AS_VPC_FULL = 6
+    MERGE_AS_VPC_SEMI = 7
+    MERGE_AS_IReflV = 8
+    MERGE_AS_OTH = 9
+    MERGE_AS_ID = 10
+    MERGE_AS_LVC_FULL = 11
+    MERGE_AS_LVC_CAUSE = 12
+    MERGE_AS_MVC = 14
+    MERGE_AS_IAV = 15
+    MERGE_AS_LS_ICV = 16
 
     @staticmethod
     def getAllClasses():
@@ -29,6 +34,11 @@ class TransitionType(Enum):
 
     @staticmethod
     def getType(idx):
+        """
+        :param idx: integer of transition
+        :return: if transition in TransitionsType or MWTTransitionType then return object
+        else return None
+        """
         for tType in TransitionType:
             if tType.value == idx:
                 return tType
@@ -64,11 +74,14 @@ class TransitionType(Enum):
                     result.append(elem)
         else:
             for elem in transTypes:
-                if elem == MWTTransitionType.MERGE_AS_MWT_VPC or elem == MWTTransitionType.MERGE_AS_MWT_LVC or elem == MWTTransitionType.MERGE_AS_MWT_ID or elem == MWTTransitionType.MERGE_AS_MWT_IREFLV:
+                if elem == MWTTransitionType.MERGE_AS_MWT_VPC or elem == MWTTransitionType.MERGE_AS_MWT_LVC or \
+                        elem == MWTTransitionType.MERGE_AS_MWT_ID or elem == MWTTransitionType.MERGE_AS_MWT_IREFLV or elem == MWTTransitionType.MERGE_AS_MWT_IAV or elem == MWTTransitionType.MERGE_AS_MWT_MVC:
                     result.append(elem)
             for elem in transTypes:
-                if elem == TransitionType.MERGE_AS_ID or elem == TransitionType.MERGE_AS_IReflV or elem == TransitionType.MERGE_AS_VPC \
-                        or elem == TransitionType.MERGE_AS_LVC or elem == TransitionType.MERGE_AS_OTH:
+                if elem == TransitionType.MERGE_AS_ID or elem == TransitionType.MERGE_AS_IReflV or \
+                        elem == TransitionType.MERGE_AS_VPC or elem == TransitionType.MERGE_AS_LVC or \
+                        elem == TransitionType.MERGE_AS_OTH or elem == TransitionType.MERGE_AS_IAV or \
+                        elem == TransitionType.MERGE_AS_MVC:
                     result.append(elem)
             for elem in transTypes:
                 if elem == TransitionType.WHITE_MERGE:
@@ -86,17 +99,28 @@ class EmbedTransType(Enum):
     SHIFT = 0
     REDUCE = 4
     WHITE_MERGE = 5
-    MERGE_AS_LVC = 10
-    MERGE_AS_VPC = 6
-    MERGE_AS_IReflV = 7
-    MERGE_AS_OTH = 8
-    MERGE_AS_ID = 9
-    MERGE_AS_MWT = 11
+    MERGE_AS_VPC_FULL = 6
+    MERGE_AS_VPC_SEMI = 7
+    MERGE_AS_IReflV = 8
+    MERGE_AS_OTH = 9
+    MERGE_AS_ID = 10
+    MERGE_AS_LVC_FULL = 11
+    MERGE_AS_LVC_CAUSE = 12
+    MERGE_AS_MWT = 13
+    MERGE_AS_MVC = 14
+    MERGE_AS_IAV = 15
+    MERGE_AS_LS_ICV = 16
 
 
 class MWTTransitionType(Enum):
-    MERGE_AS_MWT_VPC = 20
-    MERGE_AS_MWT_IREFLV = 21
-    MERGE_AS_MWT_ID = 22
-    MERGE_AS_MWT_LVC = 23
-    MERGE_AS_MWT_OTH = 24
+    MERGE_AS_MWT_VPC_FULL = 17
+    MERGE_AS_MWT_VPC_SEMI = 18
+    MERGE_AS_MWT_IREFLV = 19
+    MERGE_AS_MWT_ID = 20
+    MERGE_AS_MWT_LVC_FULL = 21
+    MERGE_AS_MWT_LVC_CAUSE = 22
+    MERGE_AS_MWT_OTH = 23
+    MERGE_AS_MWT_MVC = 24
+    MERGE_AS_MWT_IAV = 25
+    MERGE_AS_MWT_LS_ICV = 26
+
