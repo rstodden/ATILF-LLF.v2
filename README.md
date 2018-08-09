@@ -12,4 +12,4 @@ With slight modifications (adding MWE types) it is possible to use it also for t
 
 **Requirements**: scikit-learn version 0.14.1 not higher!
 
-**Run** sh ./Scripts/run_atil_llf.sh to run the system and evaluate the results
+**Run** ````sh ./Scripts/run_atil_llf.sh to run the system and evaluate the results````
