@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=243/675=0.3600 R=243/500=0.4860 F=0.4136
+* Tok-based: P=601/1462=0.4111 R=601/1150=0.5226 F=0.4602
+
+## Per-category evaluation (partition of Global)
+* IAV: MWE-proportion: gold=64/500=13% pred=127/675=19%
+* IAV: MWE-based: P=41/127=0.3228 R=41/64=0.6406 F=0.4293
+* IAV: Tok-based: P=93/287=0.3240 R=93/148=0.6284 F=0.4276
+* IRV: MWE-proportion: gold=121/500=24% pred=230/675=34%
+* IRV: MWE-based: P=79/230=0.3435 R=79/121=0.6529 F=0.4501
+* IRV: Tok-based: P=161/460=0.3500 R=161/242=0.6653 F=0.4587
+* LVC.cause: MWE-proportion: gold=28/500=6% pred=23/675=3%
+* LVC.cause: MWE-based: P=4/23=0.1739 R=4/28=0.1429 F=0.1569
+* LVC.cause: Tok-based: P=11/35=0.3143 R=11/63=0.1746 F=0.2245
+* LVC.full: MWE-proportion: gold=85/500=17% pred=71/675=11%
+* LVC.full: MWE-based: P=24/71=0.3380 R=24/85=0.2824 F=0.3077
+* LVC.full: Tok-based: P=52/147=0.3537 R=52/176=0.2955 F=0.3220
+* MVC: MWE-proportion: gold=106/500=21% pred=175/675=26%
+* MVC: MWE-based: P=52/175=0.2971 R=52/106=0.4906 F=0.3701
+* MVC: Tok-based: P=131/397=0.3300 R=131/249=0.5261 F=0.4056
+* VID: MWE-proportion: gold=95/500=19% pred=45/675=7%
+* VID: MWE-based: P=21/45=0.4667 R=21/95=0.2211 F=0.3000
+* VID: Tok-based: P=69/126=0.5476 R=69/270=0.2556 F=0.3485
+* VPC.full: MWE-proportion: gold=1/500=0% pred=4/675=1%
+* VPC.full: MWE-based: P=0/4=0.0000 R=0/1=0.0000 F=0.0000
+* VPC.full: Tok-based: P=0/10=0.0000 R=0/2=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=359/500=72% pred=584/675=87%
+* Continuous: MWE-based: P=214/584=0.3664 R=214/359=0.5961 F=0.4539
+* Discontinuous: MWE-proportion: gold=141/500=28% pred=91/675=13%
+* Discontinuous: MWE-based: P=29/91=0.3187 R=29/141=0.2057 F=0.2500
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=500/500=100% pred=659/675=98%
+* Multi-token: MWE-based: P=243/659=0.3687 R=243/500=0.4860 F=0.4193
+* Single-token: MWE-proportion: gold=0/500=0% pred=16/675=2%
+* Single-token: MWE-based: P=0/16=0.0000 R=0/0=0.0000 F=0.0000
+

@@ -110,18 +110,20 @@ class Corpus:
             lineNum = 0
             missedUnTag = 0
             missedExTag = 0
+            new_sent = False
 
             for line in lines:
                 if len(line) > 0 and line.endswith('\n'):
                     line = line[:-1]
-                if line.startswith('# sentid:'):
-                    sentId = line.split('# sentid:')[1].strip()
+                if line.startswith('# source_sent_id'):
+                    sentId = line.split('# source_sent_id')[1].strip()
+                    new_sent = True
 
 
-                elif line.startswith('# sentence-text:'):
+                elif line.startswith('# text'):
                     continue
 
-                elif line.startswith('1\t'):
+                elif (line.startswith('1\t') or line.startswith('1-') or line.startswith('1.')) and new_sent == True  :
                     if sentId.strip() != '':
                         sent = Sentence(senIdx, sentid=sentId)
                     else:
@@ -130,14 +132,15 @@ class Corpus:
                     sentences.append(sent)
 
                 if not line.startswith('#'):
+                    new_sent = False
                     lineParts = line.split('\t')
 
-                    if len(lineParts) != 10: #or '-' in lineParts[0]:
+                    if len(lineParts) != 10 or '-' in lineParts[0] or "." in lineParts[0]:
                         continue
-                    if "-" in lineParts[0]:
-                        lineParts[0] = lineParts[0].split('-')[0]
-                    elif "." in lineParts[0]:
-                        lineParts[0] = lineParts[0].split('.')[0]
+                    #if "-" in lineParts[0]:
+                    #    lineParts[0] = lineParts[0].split('-')[0]
+                    #elif "." in lineParts[0]:
+                    #    lineParts[0] = lineParts[0].split('.')[0]
 
                     lineNum += 1
                     if lineParts[3] == '_':
@@ -178,20 +181,26 @@ class Corpus:
             lines = corpusFile.readlines()
             noSentToAssign = False
             sentIdx = 0
+            new_sent = False
             for line in lines:
-                if line == '\n' or line.startswith('# sentence-text:') or (
-                            line.startswith('# sentid:') and noSentToAssign):
+                if line == '\n' or line.startswith('# text') or (
+                            line.startswith('# source_sent_id') and noSentToAssign):
+                    new_sent = True
                     continue
                 if len(line) > 0 and line.endswith('\n'):
                     line = line[:-1]
-                if line.startswith('1\t'):
+                if (line.startswith('1\t') or line.startswith('1-') or line.startswith('1.')) and new_sent == True:
+                #if line.startswith('1\t'):
                     sent = sentences[sentIdx]
                     sentIdx += 1
+                else:
+                    new_sent = False
                 lineParts = line.split('\t')
+                #print(lineParts)
                 if '-' in lineParts[0]:
                     continue
                 if lineParts is not None and len(lineParts) == 4 and lineParts[3] != '_':
-
+                    #print(len(sent.tokens), lineParts[0])
                     token = sent.tokens[int(lineParts[0]) - 1]
                     vMWEids = lineParts[3].split(';')
                     for vMWEid in vMWEids:
@@ -239,9 +248,9 @@ class Corpus:
                     senIdx += 1
                     sentences.append(sent)
 
-                elif line.startswith('# sentence-text:'):
+                elif line.startswith('# text'):
                     if len(line.split(':')) > 1:
-                        sent.text = line.split('# sentence-text:')[1]
+                        sent.text = line.split('# text')[1]
 
                 lineParts = line.split('\t')
 

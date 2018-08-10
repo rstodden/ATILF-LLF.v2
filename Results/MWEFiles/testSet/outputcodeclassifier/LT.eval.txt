@@ -1,0 +1,27 @@
+## Global evaluation
+* MWE-based: P=109/177=0.6158 R=109/500=0.2180 F=0.3220
+* Tok-based: P=250/376=0.6649 R=250/1123=0.2226 F=0.3336
+
+## Per-category evaluation (partition of Global)
+* LVC.cause: MWE-proportion: gold=14/500=3% pred=24/177=14%
+* LVC.cause: MWE-based: P=9/24=0.3750 R=9/14=0.6429 F=0.4737
+* LVC.cause: Tok-based: P=18/33=0.5455 R=18/28=0.6429 F=0.5902
+* LVC.full: MWE-proportion: gold=284/500=57% pred=97/177=55%
+* LVC.full: MWE-based: P=81/97=0.8351 R=81/284=0.2852 F=0.4252
+* LVC.full: Tok-based: P=164/194=0.8454 R=164/569=0.2882 F=0.4299
+* VID: MWE-proportion: gold=202/500=40% pred=56/177=32%
+* VID: MWE-based: P=15/56=0.2679 R=15/202=0.0743 F=0.1163
+* VID: Tok-based: P=36/149=0.2416 R=36/526=0.0684 F=0.1067
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=302/500=60% pred=148/177=84%
+* Continuous: MWE-based: P=89/148=0.6014 R=89/302=0.2947 F=0.3956
+* Discontinuous: MWE-proportion: gold=198/500=40% pred=29/177=16%
+* Discontinuous: MWE-based: P=20/29=0.6897 R=20/198=0.1010 F=0.1762
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=500/500=100% pred=162/177=92%
+* Multi-token: MWE-based: P=109/162=0.6728 R=109/500=0.2180 F=0.3293
+* Single-token: MWE-proportion: gold=0/500=0% pred=15/177=8%
+* Single-token: MWE-based: P=0/15=0.0000 R=0/0=0.0000 F=0.0000
+

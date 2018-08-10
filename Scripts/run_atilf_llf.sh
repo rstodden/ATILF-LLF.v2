@@ -1,12 +1,17 @@
 # run system
-python ../Src/identifier.py
+#python ../Src/identifier.py
 
 #evaluate system
-dir=../Results/MWEFiles/testSet
-for language in "PT" "FA" "BG" "DE" "EL" "EN" "ES" "EU" "FR" "HE" "HI" "HR" "HU" "IT" "LT" "PL" "PT" "RO" "SL" "TR"; do
+dir=../Results/MWEFiles/testSet/outputcodeclassifier
+for language in "BG" "DE" "EL" "EN" "ES" "EU" "FA" "FR" "HE" "HI" "HR" "HU" "IT" "LT" "PL" "PT" "RO" "SL" "TR"; do
 	mkdir -p $dir/$language
-	../bin/parsemetsv2cupt.py --input ../sharedtask_11/$language/test.parsemetsv >> $dir/$language/test.system.cupt
-	../bin/evaluate.py --gold ../sharedtask_11/$language/test.cupt --pred $dir/$language/test.system.cupt >> $dir/$language.eval.txt
+	../bin/parsemetsv2cupt.py --input $dir/$language.txt >> $dir/$language/test.system.cupt
+	if [ $language = "EN" ]; then
+	    ../bin/evaluate.py --gold ../sharedtask_11/$language/test_fixed.cupt --pred $dir/$language/test.system.cupt >> $dir/$language.eval.txt
+	else
+	    ../bin/evaluate.py --gold ../sharedtask_11/$language/test.cupt --pred $dir/$language/test.system.cupt >> $dir/$language.eval.txt
+	fi
+
 
 	tok=$(grep -E "^\* Tok-based:.*" $dir/$language.eval.txt | grep  -P -o "(?<=F=)[\d|\.]{0,6}")
 	mwe=$(grep -E "^\* MWE-based:.*" $dir/$language.eval.txt | grep  -P -o "(?<=F=)[\d|\.]{0,6}")
