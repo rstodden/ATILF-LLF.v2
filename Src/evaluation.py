@@ -11,7 +11,7 @@ class Evaluation:
         tp, p, t, tpCat, pCat, tCat = Evaluation.getStatistics(corpus)
         scores = Evaluation.calculateScores(tp, p, t, 'Ordinary: ')
         scores += Evaluation.calculateScores(tpCat, pCat, tCat, 'Categorization: ')
-        catList = ['lvc', 'ireflv', 'vpc', 'id', 'oth']
+        catList = ['lvc.full', 'lvc.cause', 'irv', 'vpc.full', 'vpc.semi', 'vid', 'iav', 'mvc', 'ls.ivc', 'oth']
         for cat in catList:
             tp, p, t = Evaluation.getCategoryStatistics(corpus, cat)
             scores += Evaluation.calculateScores(tp, p, t, cat + ' categorization: ')
@@ -40,8 +40,10 @@ class Evaluation:
         tp, p, t, tpCat, pCat, tCat = 0, 0, 0, 0, 0, 0
 
         for sent in corpus.testingSents:
-            p += len(sent.vMWEs)
-            t += len(sent.identifiedVMWEs)
+            p += len(sent.vMWEs) # get number of real vMWEs in training set
+            t += len(sent.identifiedVMWEs) # get number of detected vMWEs
+
+            # true and positives for each category
             for vmw in sent.vMWEs:
                 if len(vmw.tokens) > 1:
                     tCat += 1
@@ -55,7 +57,7 @@ class Evaluation:
                     for vMWE in sent.vMWEs:
                         if m == vMWE and vMWE not in processedVmwe:
                             processedVmwe.append(vMWE)
-                            tp += 1
+                            tp += 1 # increase when real vMWe is detected
                             if m.type == vMWE.type and len(vMWE.tokens) > 1:
                                 tpCat += 1
         return tp, p, t, tpCat, pCat, tCat
@@ -128,7 +130,7 @@ class Evaluation:
     @staticmethod
     def calculateScores(tp, p, t, title):
         """
-
+        calculate fscore
         :param tp: True positive
         :param p: positive
         :param t: true

@@ -1,0 +1,40 @@
+## Global evaluation
+* MWE-based: P=461/517=0.8917 R=461/589=0.7827 F=0.8336
+* Tok-based: P=986/1095=0.9005 R=986/1268=0.7776 F=0.8345
+
+## Per-category evaluation (partition of Global)
+* IRV: MWE-proportion: gold=363/589=62% pred=346/517=67%
+* IRV: MWE-based: P=300/346=0.8671 R=300/363=0.8264 F=0.8463
+* IRV: Tok-based: P=603/692=0.8714 R=603/726=0.8306 F=0.8505
+* LVC.cause: MWE-proportion: gold=19/589=3% pred=18/517=3%
+* LVC.cause: MWE-based: P=15/18=0.8333 R=15/19=0.7895 F=0.8108
+* LVC.cause: Tok-based: P=45/50=0.9000 R=45/56=0.8036 F=0.8491
+* LVC.full: MWE-proportion: gold=34/589=6% pred=13/517=3%
+* LVC.full: MWE-based: P=13/13=1.0000 R=13/34=0.3824 F=0.5532
+* LVC.full: Tok-based: P=26/26=1.0000 R=26/71=0.3662 F=0.5361
+* VID: MWE-proportion: gold=173/589=29% pred=140/517=27%
+* VID: MWE-based: P=130/140=0.9286 R=130/173=0.7514 F=0.8307
+* VID: Tok-based: P=300/327=0.9174 R=300/415=0.7229 F=0.8086
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=393/589=67% pred=346/517=67%
+* Continuous: MWE-based: P=318/346=0.9191 R=318/393=0.8092 F=0.8606
+* Discontinuous: MWE-proportion: gold=196/589=33% pred=171/517=33%
+* Discontinuous: MWE-based: P=143/171=0.8363 R=143/196=0.7296 F=0.7793
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=589/589=100% pred=515/517=100%
+* Multi-token: MWE-based: P=461/515=0.8951 R=461/589=0.7827 F=0.8351
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=561/589=95% pred=492/517=95%
+* Seen-in-train: MWE-based: P=458/492=0.9309 R=458/561=0.8164 F=0.8699
+* Unseen-in-train: MWE-proportion: gold=28/589=5% pred=25/517=5%
+* Unseen-in-train: MWE-based: P=3/25=0.1200 R=3/28=0.1071 F=0.1132
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=65/561=12% pred=50/492=10%
+* Variant-of-train: MWE-based: P=30/50=0.6000 R=30/65=0.4615 F=0.5217
+* Identical-to-train: MWE-proportion: gold=496/561=88% pred=442/492=90%
+* Identical-to-train: MWE-based: P=428/442=0.9683 R=428/496=0.8629 F=0.9126
+

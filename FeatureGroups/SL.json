@@ -1,24 +1,32 @@
 {
   "useStackLength": true,
+  "useBufferLength": false,
+  "useSentenceLength": false,
   "S0B0Distance":true,
   "S0S1Distance":true,
   "useFirstBufferElement": true,
   "useSecondBufferElement": true,
   "generateS0B2Bigram":false,
   "useDictionary":true,
+  "useSpaceAfterInfo": false,
   "UseLinguistInfo": {
-    "useSytax": false,
+    "useSyntax": true,
     "usePOS": true,
+    "useUPOS": false,
     "useLemma": true,
     "useBiGram": true,
-    "useTriGram": true
+    "useTriGram": true,
+    "use4Gram": false, 
+    "useMorphoInfo": false, 
+    "useTokenLength": true,
+    "useLeftDeps": false,
+    "useIsHead": false
   },
   "useTransitionHistory": {
     "transitionHistoryLength1": false,
     "transitionHistoryLength2": false,
     "transitionHistoryLength3": true
   },
-
   "enhanceMerge":true,
   "enableSingleMWE" : true
 

@@ -6,8 +6,8 @@ from corpus import Token
 class Configuration:
     def __init__(self, buffer=[], stack=[], tokens=[], isInitial=False, sent=None, transition=None, isTerminal=False):
 
-        self.buffer = buffer
-        self.stack = stack
+        self.buffer = buffer # contains remaining input tokens
+        self.stack = stack #contains units under processing
         self.tokens = tokens
         self.isInitial = isInitial
         self.isTerminal = self.isTerminalConf()

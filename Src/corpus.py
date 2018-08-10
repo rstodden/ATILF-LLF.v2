@@ -12,8 +12,12 @@ class Corpus:
     """
 
     mweTokenDic, mweDictionary, mwtDictionary, mwtDictionaryWithSent = {}, {}, {}, {}
+    counter_words = collections.Counter()
+    counter_cooc = collections.Counter()
+    total_number_words = 0
+    context_window = XPParams.context_window
 
-    def __init__(self, langName):
+    def __init__(self, langName, corpus_version):
         """
             an initializer of the corpus, responsible of creating a structure of objects encapsulating all the information
             of the corpus, its sentences, tokens and MWEs.
@@ -21,20 +25,62 @@ class Corpus:
             This function iterate over the lines of corpus document to create the precedent ontology
         """
         self.testSentNum, self.testMweNum = 0, 0
+        self.corpus_version = corpus_version
+        self.header = ''
+
+
         # logging.warn(langName)
-        print langName
+        print("language:", langName)
         path = os.path.join(Paths.corporaPath, langName)
-        self.sentNum, self.tokenNum, self.mweNum, self.intereavingNum, self.emeddedNum, self.singleWordExp, \
-        self.continousExp, self.trainingSents, self.testingSents, self.trainDataSet, mweFile, testMweFile = \
-            0, 0, 0, 0, 0, 0, 0, [], [], [], os.path.join(path, 'train.parsemetsv'), os.path.join(path,
-                                                                                                  'test.parsemetsv')
-        conlluFile, testConllu = self.getTrainAndTestConlluPath(path)
+        # initialize all attributes of the object
+        # mweFiles : traindata
+        # testMweFile : testdata
+        self.langName = langName
+        if corpus_version == 1.0:
+            self.sentNum, self.tokenNum, self.mweNum, self.intereavingNum, self.emeddedNum, self.singleWordExp, \
+            self.continousExp, self.trainingSents, self.testingSents, self.trainDataSet, mweFile, testMweFile = \
+                0, 0, 0, 0, 0, 0, 0, [], [], [], os.path.join(path, Paths.train_file_tsv), os.path.join(path, Paths.test_file_tsv)
+            conlluFile, testConllu = self.getTrainAndTestConlluPath(path)
+            testFile = os.path.join(path, Paths.test_file_tsv)
 
-        testFile = os.path.join(path, 'test.parsemetsv')
+            if conlluFile is not None and testConllu is not None:
+                self.trainDataSet = Corpus.readConlluFile(conlluFile)
+                self.mweNum = Corpus.readMweFile(mweFile, self.trainDataSet)
+                self.sentNum = len(self.trainDataSet)
 
-        if conlluFile is not None and testConllu is not None:
-            self.trainDataSet = Corpus.readConlluFile(conlluFile)
-            self.mweNum = Corpus.readMweFile(mweFile, self.trainDataSet)
+                for sent in self.trainDataSet:
+                    self.tokenNum += len(sent.tokens)
+                    self.emeddedNum += sent.recognizeEmbedded()
+                    self.intereavingNum += sent.recognizeInterleavingVMWEs()
+                    x, y = sent.recognizeContinouosandSingleVMWEs()
+                    self.singleWordExp += x
+                    self.continousExp += y
+                if XPParams.realExper:
+                    self.testDataSet = Corpus.readConlluFile(testConllu)
+                    Corpus.readMweFile(testMweFile, self.testDataSet)
+            else:
+                # if there are no train.conllu.autoPOS.autoDep and train.conllu.autoPOS.autoPOS files
+                self.trainDataSet, self.sentNum, self.mweNum = Corpus.readSentences(mweFile)
+                self.testDataSet, self.testSentNum, self.testMweNum = Corpus.readSentences(testFile, forTest=True)
+                for sent in self.trainDataSet:
+                    self.tokenNum += len(sent.tokens)
+                    self.emeddedNum += sent.recognizeEmbedded()
+                    self.intereavingNum += sent.recognizeInterleavingVMWEs()
+                    x, y = sent.recognizeContinouosandSingleVMWEs()
+                    self.singleWordExp += x
+                    self.continousExp += y
+            self.getTrainAndTestSents()
+            if XPParams.useCrossValidation:
+                self.testRange, self.trainRange = self.getRanges()
+            else:
+                self.testRange, self.trainRange = None, None
+        elif corpus_version == 1.1:
+            self.sentNum, self.tokenNum, self.mweNum, self.intereavingNum, self.emeddedNum, self.singleWordExp, \
+            self.continousExp, self.trainingSents, self.testingSents, self.trainDataSet, mweFile, testMweFile = \
+                0, 0, 0, 0, 0, 0, 0, [], [], [], os.path.join(path, Paths.train_file), os.path.join(path, Paths.test_file)
+            file_train, file_test = self.getTrainAndTestConlluPath(path)
+            print(self.langName, file_train, file_test, self.corpus_version, "epoches", XPParams.num_epochs, "features", XPParams.numberModuloReduction, "CNN and SVM", XPParams.useCNNandSVM, "only CNN", XPParams.useCNNOnly)
+            self.trainDataSet, self.mweNum = self.readConlluAndMweFile(file_train, train=True)
             self.sentNum = len(self.trainDataSet)
 
             for sent in self.trainDataSet:
@@ -45,45 +91,56 @@ class Corpus:
                 self.singleWordExp += x
                 self.continousExp += y
             if XPParams.realExper:
-                self.testDataSet = Corpus.readConlluFile(testConllu)
-                Corpus.readMweFile(testMweFile, self.testDataSet)
+                self.testDataSet = self.readConlluAndMweFile(file_test, train=False)[0]
+                # Corpus.readMweFile(testMweFile, self.testDataSet)
+            self.getTrainAndTestSents()
+            if XPParams.useCrossValidation:
+                self.testRange, self.trainRange = self.getRanges()
+            else:
+                self.testRange, self.trainRange = None, None
         else:
-            self.trainDataSet, self.sentNum, self.mweNum = Corpus.readSentences(mweFile)
-            self.testDataSet, self.testSentNum, self.testMweNum = Corpus.readSentences(testFile, forTest=True)
-            for sent in self.trainDataSet:
-                self.tokenNum += len(sent.tokens)
-                self.emeddedNum += sent.recognizeEmbedded()
-                self.intereavingNum += sent.recognizeInterleavingVMWEs()
-                x, y = sent.recognizeContinouosandSingleVMWEs()
-                self.singleWordExp += x
-                self.continousExp += y
-        self.getTrainAndTestSents()
-        if XPParams.useCrossValidation:
-            self.testRange, self.trainRange = self.getRangs()
-        else:
-            self.testRange, self.trainRange = None, None
+            raise ValueError("wrong corpora version")
 
     def update(self):
+        """ update corpus with mwedictionary (number of occurrences of mwe), 
+            mwetokendictionary (tokens in mwe) and 
+            mwtdictionary (type of mwe)
+        """
         if XPParams.useCrossValidation:
             self.divideSents()
             self.initializeSents()
+        if XPParams.print_debug:
+            print("trainsents", len(self.trainingSents))
         Corpus.mweDictionary, Corpus.mweTokenDic, Corpus.mwtDictionary = Corpus.getMWEDic(self.trainingSents)
 
     def getTrainAndTestConlluPath(self, path):
+        """ return path of train and test conllu data. 
+            Path depends on parameters like AutoGeneratePOS and AutoGenerateDEP
+        """
         conlluFile, testConllu = None, None
-        if XPParams.useAutoGeneratedPOS and XPParams.useAutoGeneratedDEP and os.path.isfile(
-                os.path.join(path, 'train.conllu.autoPOS.autoDep')):
-            conlluFile = os.path.join(path, 'train.conllu.autoPOS.autoDep')
-            if os.path.isfile(os.path.join(path, 'test.conllu.autoPOS.autoDep')):
-                testConllu = os.path.join(path, 'test.conllu.autoPOS.autoDep')
-        elif XPParams.useAutoGeneratedPOS and os.path.isfile(os.path.join(path, 'train.conllu.autoPOS')):
-            conlluFile = os.path.join(path, 'train.conllu.autoPOS')
-            if os.path.isfile(os.path.join(path, 'test.conllu.autoPOS')):
-                testConllu = os.path.join(path, 'test.conllu.autoPOS')
-        elif os.path.isfile(os.path.join(path, 'train.conllu')):
-            conlluFile = os.path.join(path, 'train.conllu')
-            if os.path.isfile(os.path.join(path, 'test.conllu')):
-                testConllu = os.path.join(path, 'test.conllu')
+        version = self.corpus_version
+        if version == 1.0:
+            if XPParams.useAutoGeneratedPOS and XPParams.useAutoGeneratedDEP and os.path.isfile(
+                    os.path.join(path, 'train.conllu.autoPOS.autoDep')):
+                # only True for HU
+                conlluFile = os.path.join(path, 'train.conllu.autoPOS.autoDep')
+                if os.path.isfile(os.path.join(path, 'test.conllu.autoPOS.autoDep')):
+                    testConllu = os.path.join(path, 'test.conllu.autoPOS.autoDep')
+            elif XPParams.useAutoGeneratedPOS and os.path.isfile(os.path.join(path, 'train.conllu.autoPOS')):
+                conlluFile = os.path.join(path, 'train.conllu.autoPOS')
+                if os.path.isfile(os.path.join(path, 'test.conllu.autoPOS')):
+                    testConllu = os.path.join(path, 'test.conllu.autoPOS')
+            if os.path.isfile(os.path.join(path, Paths.train_file_conllu)):
+                conlluFile = os.path.join(path, Paths.train_file_conllu)
+                if os.path.isfile(os.path.join(path, Paths.test_file_conllu)):
+                    testConllu = os.path.join(path, Paths.test_file_conllu)
+        elif version == 1.1:
+            if os.path.isfile(os.path.join(path, Paths.train_file)):
+                conlluFile = os.path.join(path, Paths.train_file)
+                if os.path.isfile(os.path.join(path, Paths.test_file)):
+                    testConllu = os.path.join(path, Paths.test_file)
+        else:
+            raise ValueError("wrong corpora version")
         return conlluFile, testConllu
 
     def divideCorpus(self, foldIdx, foldNum=5):
@@ -99,6 +156,13 @@ class Corpus:
 
     @staticmethod
     def readConlluFile(conlluFile):
+        """ read the mwe corpus file (version 1.0)
+            read file linewise. If line is a sent beginning initialize a new sent-object.
+            If line is a part of sentence split line and identify elements (also mwes)
+            and save in token object. Save tokens in sentence-object.
+            At end of sentence store sentence object in sentences list.
+            return sentences list
+        """
         sentences = []
         with open(conlluFile) as corpusFile:
             # Read the corpus file
@@ -116,11 +180,8 @@ class Corpus:
                     line = line[:-1]
                 if line.startswith('# sentid:'):
                     sentId = line.split('# sentid:')[1].strip()
-
-
                 elif line.startswith('# sentence-text:'):
                     continue
-
                 elif line.startswith('1\t'):
                     if sentId.strip() != '':
                         sent = Sentence(senIdx, sentid=sentId)
@@ -135,6 +196,7 @@ class Corpus:
                     if len(lineParts) != 10 or '-' in lineParts[0]:
                         continue
 
+
                     lineNum += 1
                     if lineParts[3] == '_':
                         missedUnTag += 1
@@ -145,16 +207,16 @@ class Corpus:
                     if lineParts[5] != '_':
                         morpho = lineParts[5].split('|')
                     if lineParts[6] != '_':
-                        token = Token(lineParts[0], lineParts[1].lower(), lemma=lineParts[2],
-                                      abstractPosTag=lineParts[3], morphologicalInfo=morpho,
+                        token = Token(lineParts[0], lineParts[1], lemma=lineParts[2],
+                                      universalPosTag=lineParts[3], morphologicalInfo=morpho,
                                       dependencyParent=int(lineParts[6]),
                                       dependencyLabel=lineParts[7])
                     else:
-                        token = Token(lineParts[0], lineParts[1].lower(), lemma=lineParts[2],
-                                      abstractPosTag=lineParts[3], morphologicalInfo=morpho,
+                        token = Token(lineParts[0], lineParts[1], lemma=lineParts[2],
+                                      universalPosTag=lineParts[3], morphologicalInfo=morpho,
                                       dependencyLabel=lineParts[7])
-                    if XPParams.useUniversalPOSTag:
-                        token.posTag = lineParts[3]
+                    if FeatParams.useUPOS and lineParts[3] != '_':
+                        token.universalPosTag = lineParts[3]
                     else:
                         if lineParts[4] != '_':
                             token.posTag = lineParts[4]
@@ -163,10 +225,179 @@ class Corpus:
                     # Associate the token with the sentence
                     sent.tokens.append(token)
                     sent.text += token.text + ' '
-        return sentences
+            return sentences
+
+
+    def readConlluAndMweFile(self, corpus_file, train=True, print_debug=XPParams.print_debug):
+        """ read the cupt corpus file with mwe and conllu (version 1.1)
+            read file linewise. If line is a sent beginning initialize a new sent-object.
+            If line is a part of sentence split line and identify elements (also mwes)
+            and save in token object. Save tokens in sentence-object.
+            At end of sentence store sentence object in sentences list.
+            return sentences list
+        """
+        sentences = []
+        with open(corpus_file) as corpusFile:
+            # Read the corpus file
+            print("filename", corpus_file)
+            lines = corpusFile.readlines()
+        sent = None
+        senIdx = 0
+        sentId = ''
+        sent_text = ''
+        new_sent = False
+        childDict = dict()
+
+        lineNum = 0
+        missedUnTag = 0
+        missedExTag = 0
+
+        #token_before_no_space = False
+
+        mweNum = 0
+
+        for line in lines:
+            if print_debug:
+                print("line", line)
+            if len(line) > 0 and line.endswith('\n'):
+                line = line[:-1]
+            if line.startswith('# global.columns = '):
+                self.header = line.split('# global.columns = ')[1].strip()
+                nr_id, nr_form, nr_lemma, nr_upos, nr_xpos, nr_feats, nr_head, nr_deprel, nr_deps, nr_misc, nr_mwe = Corpus.column_order(self.header)
+
+            elif line.startswith('# source_sent_id = '):
+                sentId = line.split('# source_sent_id = ')[1].strip()
+                new_sent = True
+                if print_debug:
+                    print("sentid", sentId)
+            elif line.startswith('# text = '):
+                sent_text = line.split('# text = ')[1].strip()
+                continue
+
+            elif (line.startswith('1\t') or line.startswith('1-')) and new_sent == True:
+                # first part of sentence, initialize new sentence
+                if sentId.strip() != '':
+                    sent = Sentence(senIdx, sentid=sentId, senttext=sent_text)
+                    if print_debug:
+                        print("sentence object", sent)
+                else:
+                    sent = Sentence(senIdx)
+                for head in childDict.keys():
+                    # add number of childs and childs to token
+                    #@todo
+                    pass
+                childDict = dict()
+                senIdx += 1
+                sentences.append(sent)
+
+            if not line.startswith('#'):
+                new_sent = False
+                lineParts = line.split('\t')
+                if print_debug:
+                    print("lineparts", lineParts)
+                # id 0 | token 1 | lemma 2 | utag 3 | postag 4 | morpho 5 | depline 6 | deplabel 7 | dependencies 8 | spaceafter attribute 9 | mwelabel 10
+
+                if len(lineParts) != 11 or '-' in lineParts[0]:
+                    continue
+
+                lineNum += 1
+
+                # convert float id in english corpus
+                if "." in lineParts[nr_id]:
+                    lineParts[nr_id] = lineParts[nr_id].split('.')[0]
+                    print("wrong type of id", lineParts[nr_id])
+                if "." in lineParts[nr_head]:
+                    lineParts[nr_head] = lineParts[nr_head].split('.')[0]
+                    print("wrong type of id", lineParts[nr_id])
+
+                if lineParts[nr_upos] == '_':
+                    missedUnTag += 1
+                if lineParts[nr_xpos] == '_':
+                    missedExTag += 1
+
+                morpho = ''
+                if lineParts[nr_feats] != '_':
+                    morpho = lineParts[nr_feats].split('|')
+                # generate token object with dependency parent if exist
+                if lineParts[nr_head] != '_' and lineParts[nr_head].isdigit():
+                    token = Token(lineParts[nr_id],
+                                  lineParts[nr_form],
+                                  morphologicalInfo=morpho,
+                                  dependencyParent=int(lineParts[nr_head]))
+                    if lineParts[nr_head] in childDict.keys():
+                        childDict[lineParts[nr_head]]["childs"].append(lineParts[nr_lemma])
+                        childDict[lineParts[nr_head]]["numChilds"] += 1
+                    else:
+                        childDict[lineParts[nr_head]] = {"childs": [lineParts[nr_lemma]], "numChilds": 1}
+                else:
+                    token = Token(lineParts[nr_id],
+                                  lineParts[nr_form],
+                                  morphologicalInfo=morpho)
+                # if value uneqal to '_' and contains information set it otherwise use default of ''
+                if FeatParams.usePOS and FeatParams.useUPOS and lineParts[nr_upos] != '_' and lineParts[nr_xpos] != '_' and lineParts[nr_xpos] == lineParts[nr_upos]:
+                    token.posTag = lineParts[nr_xpos]
+                elif FeatParams.useUPOS and lineParts[nr_upos] != '_':
+                    token.universalPosTag = lineParts[nr_upos]
+                elif FeatParams.usePOS and lineParts[nr_xpos] != '_':
+                    token.posTag = lineParts[nr_xpos]
+                if lineParts[nr_lemma] != '_':
+                    token.lemma = lineParts[nr_lemma]
+                if lineParts[nr_deprel] != '_':
+                    token.dependencyLabel = lineParts[nr_deprel]
+                #if space_before == False:
+                #    token.spaceBefore = True
+                #if lineParts[nr_misc] != 'SpaceAfter=No':
+                    #token.spaceAfter = None
+                    space_before = None
+                #else:
+                    #token.spaceAfter = True
+                    #space_before = False
+
+                Corpus.counter_words[token.getLemma()] += 1
+                if len(sent.tokens) >= XPParams.context_window:
+                    for prev_word in sent.tokens[-XPParams.context_window:]:
+                        Corpus.counter_cooc[(prev_word.getLemma(), token.getLemma())] += 1
+                else:
+                    for prev_word in sent.tokens:
+                        Corpus.counter_cooc[(prev_word.getLemma(), token.getLemma())] += 1
+
+                # append vMWEs to sent
+                if lineParts[nr_mwe] != '*' and lineParts[nr_mwe] != '_':
+                    vMWEids = lineParts[nr_mwe].split(';')
+                    if print_debug:
+                        print("vmweids", vMWEids)
+                    for vMWEid in vMWEids:
+                        id = int(vMWEid.split(':')[0])
+                        # New MWE captured
+                        if id not in sent.getWMWEIds():
+                            if len(vMWEid.split(':')) > 1:
+                                type = str(vMWEid.split(':')[1])
+                                vMWE = VMWE(id, token, type)
+                                if print_debug:
+                                    print("vmwe", id, token, type)
+                            else:
+                                vMWE = VMWE(id, token)
+                                if print_debug:
+                                    print("vmwe", id, token, type)
+                            mweNum += 1
+                            sent.vMWEs.append(vMWE)
+                        # Another token of an under-processing MWE
+                        else:
+                            vMWE = sent.getVMWE(id)
+                            if vMWE is not None:
+                                vMWE.addToken(token)
+                        # associate the token with the MWE
+                        token.setParent(vMWE)
+
+                # Associate the token with the (last) sentence
+                sent.tokens.append(token)
+                sent.text += token.text + ' '
+        Corpus.total_number_words = sum(Corpus.counter_words.values())
+        return sentences, mweNum
 
     @staticmethod
     def readMweFile(mweFile, sentences):
+        """ read the mwe corpus file (version 1.0)"""
         mweNum = 0
         with open(mweFile) as corpusFile:
 
@@ -187,7 +418,7 @@ class Corpus:
                 if '-' in lineParts[0]:
                     continue
                 if lineParts is not None and len(lineParts) == 4 and lineParts[3] != '_':
-
+                    # append vMWE to sent object
                     token = sent.tokens[int(lineParts[0]) - 1]
                     vMWEids = lineParts[3].split(';')
                     for vMWEid in vMWEids:
@@ -212,6 +443,9 @@ class Corpus:
 
     @staticmethod
     def readSentences(mweFile, forTest=False):
+        """ read sentence of train and test dataset. 
+            return sentence-objects, number of sentences and number of mwes
+        """
         sentences = []
         sentNum, mweNum = 0, 0
         with open(mweFile) as corpusFile:
@@ -241,7 +475,7 @@ class Corpus:
 
                 lineParts = line.split('\t')
 
-                # Empty line or lines of the form: "8-9	can't	_	_"
+                # Empty line or lines of the form: "8-9    can't    _    _"
                 if len(lineParts) != 4 or '-' in lineParts[0]:
                     continue
                 token = Token(lineParts[0], lineParts[1])
@@ -271,6 +505,12 @@ class Corpus:
 
     @staticmethod
     def getMWEDic(sents):
+        """ generate MWE Dictionary with lemma of mwe (as key) and 
+            1) type and lemma of singleword mwe = mwtDictionary
+            2) count of mwe = mweDictionary
+            3) number of tokens = mweTokenDictionary (always = 1?)
+            4) mwtDictionaryWithSent
+        """
         mweDictionary, mweTokenDictionary, mwtDictionary = {}, {}, {}
         for sent in sents:
             for mwe in sent.vMWEs:
@@ -306,6 +546,8 @@ class Corpus:
                             mweDictionary.pop(key1, None)
                         elif key2 in key1:
                             mweDictionary.pop(key2, None)
+        if XPParams.print_debug:
+            print("mweDictionary", len(mweDictionary), "mweTokenDictionary", len(mweTokenDictionary), "mwtDictionary", len(mwtDictionary))
         return mweDictionary, mweTokenDictionary, mwtDictionary
 
     def initializeSents(self, training=True):
@@ -349,7 +591,9 @@ class Corpus:
 
         return self.trainingSents, self.testingSents
 
-    def getRangs(self):
+    def getRanges(self):
+        """ splits data set in 1/5 test set and 4/5 train set. Iterate over whole corpus and each 1/5 get test set
+        """
         sents = self.trainDataSet
         testNum = int(len(sents) * 0.2)
         testRanges = [[0, testNum], [testNum, 2 * testNum], [2 * testNum, 3 * testNum], [3 * testNum, 4 * testNum],
@@ -429,8 +673,13 @@ class Corpus:
 
     def getGoldenMWEFile(self):
         res = ''
+        if self.corpus_version == 1.1:
+            res += '# global.columns = ' + self.header + '\n'
         for sent in self.testingSents:
-            idx = 1
+            if self.corpus_version == 1.1:
+                res += '# source_sent_id = '+sent.sentid+'\n'
+                res += '# text = '+sent.senttext+'\n'
+            idx = 0
             for token in sent.tokens:
                 tokenLbl = ''
                 if token.parentMWEs:
@@ -442,31 +691,103 @@ class Corpus:
                         if token.getLemma() == parent.tokens[0].getLemma():
                             tokenLbl += ':' + parent.type
                 if tokenLbl == '':
-                    tokenLbl = '_'
-                res += '{0}\t{1}\t{2}\t{3}\n'.format(idx, token.text.strip(), '_', tokenLbl)
+                    if self.corpus_version == 1.1:
+                        tokenLbl = '*'
+                    else:
+                        tokenLbl = '_'
+                if self.corpus_version == 1.0:
+                    res += '{0}\t{1}\t{2}\t{3}\n'.format(idx+1, token.text.strip(), '_', tokenLbl)
+                elif self.corpus_version == 1.1:
+                    if not sent.tokens[idx].dependencyParent:
+                        dep_parent = '_'
+                    else:
+                        dep_parent = sent.tokens[idx].dependencyParent
+                    if sent.tokens[idx].lemma == '' and sent.tokens[idx].form == '':
+                        line_elements = '\t'.join(['_', '_', '_', '_', '_', '_', '_', '_', '_'])
+                    elif sent.tokens[idx].lemma == '':
+                        line_elements = '\t'.join([str(idx + 1), sent.tokens[idx].form.strip(),
+                                                   '_', '_', '_', '_', '_', '_', '_', '_'])
+                    elif sent.tokens[idx].form == '':
+                        line_elements = '\t'.join([str(idx + 1), '_',
+                                                   sent.tokens[idx].lemma.strip(), '_', '_', '_', '_', '_', '_', '_'])
+                    else:
+                        line_elements = '\t'.join([str(idx + 1), sent.tokens[idx].form.strip(),
+                                                   sent.tokens[idx].lemma.strip(), '_', '_', '_', '_', '_', '_', '_'])
+
+                    res += line_elements + '\t' + str(tokenLbl) + '\n'
                 idx += 1
             res += '\n'
         return res
 
     def __str__(self):
+        """" used to print/write the corpus to the resulting file
+        """
         res = ''
+        if self.corpus_version == 1.1:
+            res += '# global.columns = ' + self.header + '\n'
         for sent in self.testingSents:
-            tokenList = []
-            for token in sent.tokens:
-                tokenList.append(token.text.strip())
-            labels = ['_'] * len(tokenList)
+            if self.corpus_version == 1.1:
+                res += '# source_sent_id = '+sent.sentid+'\n'
+                res += '# text = '+sent.senttext+'\n'
+                labels = ['*'] * len(sent.tokens)
+            else:
+                labels = ['_'] * len(sent.tokens)
+            if XPParams.print_debug:
+                print("labels", labels[:250])
+                print("tokenlist", sent.tokens[:250])
             for mwe in sent.identifiedVMWEs:
                 for token in mwe.tokens:
-                    if labels[token.position - 1] == '_':
-                        labels[token.position - 1] = str(mwe.id)
+                    #print(str(mwe.id), mwe.type, "id", "type")
+                    if self.corpus_version == 1.0:
+                        if labels[token.position - 1] == '_':
+                            labels[token.position - 1] = str(mwe.id)
+                        else:
+                            labels[token.position - 1] += ';' + str(mwe.id)
+                        if mwe.tokens[0] == token:
+                            labels[token.position - 1] += ':' + mwe.type
                     else:
-                        labels[token.position - 1] += ';' + str(mwe.id)
-                    if mwe.tokens[0] == token:
-                        labels[token.position - 1] += ':' + mwe.type
-
-            for i in range(len(tokenList)):
-                res += '{0}\t{1}\t{2}\t{3}\n'.format(i + 1, tokenList[i], '_', labels[i])
-            res += '\n'
+                        if labels[token.position - 1] == '*':
+                            labels[token.position - 1] = str(mwe.id)
+                        else:
+                            labels[token.position - 1] += ';' + str(mwe.id)
+                        if mwe.tokens[0] == token:
+                            labels[token.position - 1] += ':' + mwe.type
+            #print("labels", labels)
+            if self.corpus_version == 1.0:
+                for i in range(len(sent.tokens)):
+                    res += '{0}\t{1}\t{2}\t{3}\n'.format(i + 1, sent.tokens[i].form.strip(), '_', labels[i])
+                res += '\n'
+            elif self.corpus_version == 1.1:
+                for i in range(len(sent.tokens)):
+                    if not sent.tokens[i].dependencyParent:
+                        dep_parent = '_'
+                    else:
+                        dep_parent = sent.tokens[i].dependencyParent
+                    if sent.tokens[i].lemma == '' and sent.tokens[i].form == '':
+                        if sent.tokens[i].text != '':
+                            form = sent.tokens[i].text.strip()
+                        else:
+                            form = 'missing'
+                        line_elements = '\t'.join(
+                            [str(i + 1), form, '_',
+                             '_', '_', '_', '_', '_', '_', '_'])
+                    elif sent.tokens[i].lemma == '':
+                        line_elements = '\t'.join(
+                            [str(i + 1), sent.tokens[i].form.strip(), '_',
+                             '_', '_', '_', '_', '_', '_', '_'])
+                    elif sent.tokens[i].form == '':
+                        if sent.tokens[i].text != '':
+                            form = sent.tokens[i].text.strip()
+                        else:
+                            form = "missing"
+                        line_elements = '\t'.join(
+                            [str(i + 1), form, sent.tokens[i].lemma.strip(),
+                             '_', '_', '_', '_', '_', '_', '_'])
+                    else:
+                        line_elements = '\t'.join([str(i+1), sent.tokens[i].form.strip(), sent.tokens[i].lemma.strip(),
+                                                   '_', '_', '_', '_', '_', '_', '_'])
+                    res += line_elements+'\t'+str(labels[i])+'\n'
+                res += '\n'
         return res
         #     idx = 1
         #     tokenLemmas, tokenText = [], []
@@ -534,11 +855,32 @@ class Corpus:
                             else:
                                 newWindows += newWindowDistances[i] + (';' if i < (len(newWindowDistances) - 1) else '')
                     else:
-                        raise
+                        raise ValueError("Problem with windowsize")
                     mweDictionary[lemmaString] = newWindows
                 else:
                     mweDictionary[lemmaString] = windows
         return mweDictionary
+
+    @staticmethod
+    def column_order(header):
+        """ get order of columns to make sure that the index contains the right values.
+        :param header: ID FORM LEMMA UPOS (universal POS-Tag) XPOS (POS-Tag) FEATS (morphological features) HEAD (id of parent) DEPREL (dependency label) DEPS () MISC (space after attribute) PARSEME:MWE
+        :return: position of columns
+        """
+        column_order = header.split(" ")
+        nr_id = column_order.index("ID")
+        nr_form = column_order.index("FORM")
+        nr_lemma = column_order.index("LEMMA")
+        nr_upos = column_order.index("UPOS")
+        nr_xpos = column_order.index("XPOS")
+        nr_feats = column_order.index("FEATS")
+        nr_head = column_order.index("HEAD")
+        nr_deprel = column_order.index("DEPREL")
+        nr_deps = column_order.index("DEPS")
+        nr_misc = column_order.index("MISC")
+        nr_mwe = column_order.index("PARSEME:MWE")
+        return nr_id, nr_form, nr_lemma, nr_upos, nr_xpos, nr_feats, nr_head, nr_deprel, nr_deps, nr_misc, nr_mwe
+
 
 
 class Sentence:
@@ -546,9 +888,10 @@ class Sentence:
        a class used to encapsulate all the information of a sentence
     """
 
-    def __init__(self, id, sentid=''):
+    def __init__(self, id, sentid='', senttext=''):
 
         self.sentid = sentid
+        self.senttext = senttext
         self.id = id
         self.tokens = []
         self.vMWEs = []
@@ -749,6 +1092,7 @@ class Sentence:
 
     @staticmethod
     def getTokens(elemlist):
+        """return all Token objects from given elemlist (sentence)"""
         if isinstance(elemlist, Token):
             return [elemlist]
         if isinstance(elemlist, collections.Iterable):
@@ -763,10 +1107,11 @@ class Sentence:
 
     @staticmethod
     def getTokenLemmas(tokens):
+        """return all Tokens objects which are combined with their lemmas from given elemlist (sentence)"""
         text = ''
         tokens = Sentence.getTokens(tokens)
         for token in tokens:
-            if token.lemma != '':
+            if token.lemma != '' and FeatParams.useLemma:
                 text += token.lemma + ' '
             else:
                 text += token.text + ' '
@@ -1004,7 +1349,7 @@ class VMWE:
     def getLemmaString(self):
         result = ''
         for token in self.tokens:
-            if token.lemma.strip() != '':
+            if token.lemma.strip() != '' and FeatParams.useLemma:
                 result += token.lemma + ' '
             else:
                 result += token.text + ' '
@@ -1046,28 +1391,34 @@ class Token:
         a class used to encapsulate all the information of a sentence tokens
     """
 
-    def __init__(self, position, txt, lemma='', posTag='', abstractPosTag='', morphologicalInfo=[], dependencyParent=-1,
-                 dependencyLabel=''):
+    def __init__(self, position, txt, lemma='', posTag='', universalPosTag='', morphologicalInfo=[],
+                 dependencyParent=-1, dependencyLabel='', spaceAfter=''):
         self.position = int(position)
-        self.text = txt
+        self.form = txt
+        self.text = txt.lower()
         self.lemma = lemma
-        self.abstractPosTag = abstractPosTag
+        self.universalPosTag = universalPosTag
         self.posTag = posTag
         self.morphologicalInfo = morphologicalInfo
         self.dependencyParent = dependencyParent
         self.dependencyLabel = dependencyLabel
         self.parentMWEs = []
         self.directParent = None
+        self.spaceAfter = spaceAfter
+        self.childTokens = []
+        self.numChilds = 0
 
     def setParent(self, vMWE):
         self.parentMWEs.append(vMWE)
 
     def getLemma(self):
-        if self.lemma != '':
+        """return lemma (string) from Token object"""
+        if self.lemma != '' and FeatParams.useLemma:
             return self.lemma.strip()
         return self.text.strip()
 
     def getDirectParent(self):
+        """return and set parent MWEs if exist"""
         self.directParent = None
         if self.parentMWEs is not None and len(self.parentMWEs) > 0:
             if len(self.parentMWEs) == 1:
@@ -1090,6 +1441,9 @@ class Token:
         return False
 
     def isMWT(self):
+        """ if parentMWEs is not empty and vmw contains only one token return vmw
+            single multiwordelement found!
+        """
         if self.parentMWEs:
             for vmw in self.parentMWEs:
                 if len(vmw.tokens) == 1:

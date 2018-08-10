@@ -1,13 +1,23 @@
+from __future__ import division
 from config import Configuration
 from corpus import Corpus, Sentence, Token
 from param import FeatParams
 from param import XPParams
+import math
 
 
 class Extractor:
     @staticmethod
     def extract(sent):
+        """
+        get all transition which was collected in oracles parse sentence and save them to labels.
+        Get features and save them to features. Save both in sent.featuresInfo and return both
+        :param sent: sentence object
+        :return:
+        """
         transition = sent.initialTransition
+        # type transition object with transition, stack and buffer
+        # example 3- **SHIFT**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;S= [konjunkturaufschwung]   B= [im, fruehjahr, befluegelt ,.. ]
         labels, features = [], []
 
         while transition.next:
@@ -22,6 +32,17 @@ class Extractor:
 
     @staticmethod
     def getFeatures(transition, sent):
+        """
+        generate features of training or test set with length of stack/buffer and tokens
+        :param transition:
+        :param sent: sentence object with token objects (corpus.py)
+        :return:
+        """
+        #transDic = {}
+        #configuration = transition.configuration
+        #if len(configuration.stack) > 0 and isinstance(configuration.stack[-1], Token):
+        #    transDic['word_form'] = configuration.stack[-1].form
+        #return transDic
 
         transDic = {}
         configuration = transition.configuration
@@ -36,14 +57,20 @@ class Extractor:
                     # return transDic
         # TODO return transDic directly in this case
         if FeatParams.useStackLength and len(configuration.stack) > 1:
-            transDic['StackLengthIs'] = len(configuration.stack)
+            transDic['StackLengthIs'] = str(len(configuration.stack))
+        if FeatParams.useBufferLength and len(configuration.buffer) > 1:
+            transDic['BufferLengthIs'] = str(len(configuration.buffer))
+        if FeatParams.useSentenceLength:
+            transDic['SentenceLengthIs'] = str(len(sent.tokens))
 
-        if len(configuration.stack) >= 2:
+        if len(configuration.stack) >= 3 and FeatParams.use4Gram:
+            stackElements = [configuration.stack[-3], configuration.stack[-2], configuration.stack[-1]]
+        elif len(configuration.stack) >= 2 and FeatParams.useTriGram:
             stackElements = [configuration.stack[-2], configuration.stack[-1]]
         else:
             stackElements = configuration.stack
 
-        # General linguistic Informations
+        # General linguistic Information
         if stackElements:
             elemIdx = len(stackElements) - 1
             for elem in stackElements:
@@ -64,6 +91,7 @@ class Extractor:
                 Extractor.generateBiGram(stackElements[-2], stackElements[-1], 'S1S0', transDic)
                 if FeatParams.generateS1B1 and len(configuration.buffer) > 1:
                     Extractor.generateBiGram(stackElements[-2], configuration.buffer[1], 'S1B1', transDic)
+
             if len(stackElements) > 0 and len(configuration.buffer) > 0:
                 Extractor.generateBiGram(stackElements[-1], configuration.buffer[0], 'S0B0', transDic)
                 if len(stackElements) > 1:
@@ -76,6 +104,11 @@ class Extractor:
         # Tri-Gram Generation
         if FeatParams.useTriGram and len(stackElements) > 1 and len(configuration.buffer) > 0:
             Extractor.generateTriGram(stackElements[-2], stackElements[-1], configuration.buffer[0], 'S1S0B0', transDic)
+
+        # 4-Gram Generation
+        if FeatParams.use4Gram and len(stackElements) > 2 and len(configuration.buffer) > 0:
+            Extractor.generate4Gram(stackElements[-3], stackElements[-2], stackElements[-1], configuration.buffer[0], 'S2S1S0B0',
+                                      transDic)
 
         # Syntaxic Informations
         if len(stackElements) > 0 and FeatParams.useSyntax:
@@ -90,10 +123,19 @@ class Extractor:
                 and isinstance(configuration.stack[-2], Token):
             transDic['S0S1Distance'] = str(
                 sent.tokens.index(configuration.stack[-1]) - sent.tokens.index(configuration.stack[-2]))
+
         Extractor.addTransitionHistory(transition, transDic)
 
         if FeatParams.useLexic and len(configuration.buffer) > 0 and len(configuration.stack) >= 1:
             Extractor.generateDisconinousFeatures(configuration, sent, transDic)
+
+            # PPMI
+        if FeatParams.usePPMI and len(stackElements) > 1 and isinstance(stackElements[-2], Token) and isinstance(stackElements[-1], Token):
+            total = Corpus.total_number_words
+            expected_value = Extractor.get_expected_cooc(total, Corpus.counter_words[stackElements[-2].getLemma()],
+                                                         Corpus.counter_words[stackElements[-1].getLemma()])
+            transDic['PPMIS1S0_'+stackElements[-2].getLemma(), stackElements[-1].getLemma()] = Extractor.ppmi(Corpus.counter_cooc[(stackElements[-2].getLemma(), stackElements[-1].getLemma())], expected_value)
+            #print("ppmi used", transDic['PPMIS1S0_'+stackElements[-2].getLemma(), stackElements[-1].getLemma()])
 
         Extractor.enhanceMerge(transition, transDic)
 
@@ -151,20 +193,45 @@ class Extractor:
 
         if isinstance(token, list):
             token = Extractor.concatenateTokens([token])[0]
-        transDic[label + 'Token'] = token.text
+        if FeatParams.useToken:
+            transDic[label + 'Token'] = token.text
+        if FeatParams.useTokenLength:
+            transDic[label+'TokenLength'] = str(len(token.text))
         if FeatParams.usePOS and token.posTag is not None and token.posTag.strip() != '':
             transDic[label + 'POS'] = token.posTag
+        if FeatParams.useUPOS and token.universalPosTag is not None and token.universalPosTag.strip() != '':
+            transDic[label + 'UPOS'] = token.universalPosTag
         if FeatParams.useLemma and token.lemma is not None and token.lemma.strip() != '':
             transDic[label + 'Lemma'] = token.lemma
-        if not FeatParams.useLemma and not FeatParams.usePOS:
-            transDic[label + '_LastThreeLetters'] = token.text[-3:]
-            transDic[label + '_LastTwoLetters'] = token.text[-2:]
-        if FeatParams.useDictionary and ((
-                                                         token.lemma != '' and token.lemma in Corpus.mweTokenDic.keys()) or token.text in Corpus.mweTokenDic.keys()):
+        #if not FeatParams.useLemma and not FeatParams.usePOS:
+        #    transDic[label + '_LastThreeLetters'] = token.text[-3:]
+        #    transDic[label + '_LastTwoLetters'] = token.text[-2:]
+        if FeatParams.useMorphoInfo and token.morphologicalInfo:
+            splitted_morpho_info = token.morphologicalInfo
+            if len(splitted_morpho_info) > 1:
+                for info in splitted_morpho_info:
+                    if "=" in info:
+                        info = info.split("=")
+                        transDic[label + info[0]] = info[1]
+            else:
+                if "=" in splitted_morpho_info[0]:
+                    splitted_morpho_info = splitted_morpho_info[0].split("=")
+                    transDic[label + splitted_morpho_info[0]] = splitted_morpho_info[1]
+        #if FeatParams.useSpaceAfterInfo and token.spaceAfter == False:
+        #    transDic[label+'_SpaceAfter'] = "false"
+        if FeatParams.useDictionary and ((token.lemma != '' and token.lemma in Corpus.mweTokenDic.keys()) or token.text in Corpus.mweTokenDic.keys()):
             transDic[label + 'IsInLexic'] = 'true'
+        if FeatParams.enableSingleMWE and (token.lemma != '' and token.lemma in Corpus.mwtDictionary.keys()):
+            transDic[label + 'IsSingleMWE'] = 'true'
 
     @staticmethod
     def generateSyntaxicFeatures(stack, buffer, dic):
+        """
+        change input dic with dependencies, if is governed by another element or has rigth dependencies
+        :param stack: list with elements which are under processing
+        :param buffer: list with remaining input
+        :param dic: transdic = dictionary with all symbolic feature names and symbolic feature values
+        """
 
         if stack is not None and len(stack) > 0:
             stack0 = stack[-1]
@@ -173,26 +240,46 @@ class Extractor:
             if int(stack0.dependencyParent) == -1 or int(
                     stack0.dependencyParent) == 0 or stack0.dependencyLabel.strip() == '' or buffer is None and len(
                 buffer) <= 0:
+                # if last element of stack has no dependencyParent (-1) or is head of sentence (0)
+                # or has no dependency label or buffer is empty, do not add feature
+                #if FeatParams.useIsHead and int(stack0.dependencyParent) == 0:
+                #    dic[stack0.getLemma()+'isHead'] = 'true'
                 return
             for bElem in buffer:
-                if bElem.dependencyParent == stack0.position:
+                if bElem.dependencyParent == stack0.position and bElem.dependencyLabel != '':
+                    # if has right child
                     dic['hasRighDep_' + bElem.dependencyLabel] = 'true'
                     dic[stack0.getLemma() + '_hasRighDep_' + bElem.dependencyLabel] = 'true'
                     dic[stack0.getLemma() + '_' + bElem.getLemma() + '_hasRighDep_' + bElem.dependencyLabel] = 'true'
 
             if stack0.dependencyParent > stack0.position:
+                # if has right parent
                 for bElem in buffer:
                     if bElem.position == stack0.dependencyParent:
-                        dic[stack0.lemma + '_isGouvernedBy_' + bElem.getLemma()] = 'true'
-                        dic[stack0.lemma + '_isGouvernedBy_' + bElem.getLemma() + '_' + stack0.dependencyLabel] = 'true'
+                        dic[stack0.getLemma() + '_isGouvernedBy_' + bElem.getLemma()] = 'true'
+                        if stack0.dependencyLabel != '':
+                            dic[stack0.getLemma() + '_isGouvernedBy_' + bElem.getLemma() + '_' + stack0.dependencyLabel] = 'true'
                         break
+            else:
+                if FeatParams.useLeftDeps:
+                    for sElem in stack:
+                        if isinstance(sElem, Token) and sElem.dependencyParent == stack0.position and sElem.dependencyLabel != '':
+                            # if has left child
+                            dic['hasLeftDep_' + sElem.dependencyLabel] = 'true'
+                            dic[stack0.getLemma() + '_hasLeftDep_' + sElem.dependencyLabel] = 'true'
+                            dic[stack0.getLemma() + '_' + sElem.getLemma() + '_hasLeftDep_' + sElem.dependencyLabel] = 'true'
+                        if isinstance(sElem, Token) and sElem.position == stack0.dependencyParent:
+                            # if has left parent
+                            dic[stack0.getLemma() + '_isGouvernedBy_' + sElem.getLemma()] = 'true'
+                            if stack0.dependencyLabel != '':
+                                dic[stack0.getLemma() + '_isGouvernedBy_' + sElem.getLemma() + '_' + stack0.dependencyLabel] = 'true'
             if len(stack) > 1:
                 stack1 = stack[-2]
                 if not isinstance(stack1, Token):
                     return
-                if stack0.dependencyParent == stack1.position:
+                if stack0.dependencyParent == stack1.position and stack0.dependencyLabel != '':
                     dic['SyntaxicRelation'] = '+' + stack0.dependencyLabel
-                elif stack0.position == stack1.dependencyParent:
+                elif stack0.position == stack1.dependencyParent and stack1.dependencyLabel != '':
                     dic['SyntaxicRelation'] = '-' + stack1.dependencyLabel
 
     @staticmethod
@@ -208,6 +295,25 @@ class Extractor:
         Extractor.getFeatureInfo(transDic, label + 'LemmaLemmaPOS', tokens, 'llp')
         Extractor.getFeatureInfo(transDic, label + 'LemmaPOSLemma', tokens, 'lpl')
         Extractor.getFeatureInfo(transDic, label + 'POSLemmaLemma', tokens, 'pll')
+
+    #Extractor.generate4Gram(stackElements[-3], stackElements[-2], stackElements[-1], configuration.buffer[0],
+    #                        'S2S1S0B0',
+    #                        transDic)
+    @staticmethod
+    def generate4Gram(token0, token1, token2, token3, label, transDic):
+
+        tokens = Extractor.concatenateTokens([token0, token1, token2, token3])
+        Extractor.getFeatureInfo(transDic, label + 'Token', tokens, 'tttt')
+        Extractor.getFeatureInfo(transDic, label + 'Lemma', tokens, 'llll')
+        Extractor.getFeatureInfo(transDic, label + 'POS', tokens, 'pppp')
+        Extractor.getFeatureInfo(transDic, label + 'LemmaPOSPOSPOS', tokens, 'lppp')
+        Extractor.getFeatureInfo(transDic, label + 'POSLemmaPOSPOS', tokens, 'plpp')
+        Extractor.getFeatureInfo(transDic, label + 'POSPOSLemmaPOS', tokens, 'pplp')
+        Extractor.getFeatureInfo(transDic, label + 'POSPOSPOSLemma', tokens, 'pppl')
+        Extractor.getFeatureInfo(transDic, label + 'LemmaLemmaLemmaPOS', tokens, 'lllp')
+        Extractor.getFeatureInfo(transDic, label + 'LemmaLemmaPOSLemma', tokens, 'llpl')
+        Extractor.getFeatureInfo(transDic, label + 'LemmaPOSLemmaLemma', tokens, 'lpll')
+        Extractor.getFeatureInfo(transDic, label + 'POSLemmaLemmaLemma', tokens, 'plll')
 
     @staticmethod
     def generateBiGram(token0, token1, label, transDic):
@@ -233,9 +339,9 @@ class Extractor:
                     tokenDic[idx].text += subToken.text + '_'
                     tokenDic[idx].lemma += subToken.lemma + '_'
                     tokenDic[idx].posTag += subToken.posTag + '_'
-                tokenDic[idx].text = tokenDic[idx].text[:-1]
-                tokenDic[idx].lemma = tokenDic[idx].lemma[:-1]
-                tokenDic[idx].posTag = tokenDic[idx].posTag[:-1]
+                tokenDic[idx].text = tokenDic[idx].text.strip()
+                tokenDic[idx].lemma = tokenDic[idx].lemma.strip()
+                tokenDic[idx].posTag = tokenDic[idx].posTag.strip()
                 result.append(tokenDic[idx])
             idx += 1
         return result
@@ -295,3 +401,21 @@ class Extractor:
             idx += 1
         if len(history) == length:
             transDic[label] = history
+
+    @staticmethod
+    def get_expected_cooc(total, count_prev_word, count_word):
+        """ return expected value
+        """
+        if total == 0 or count_word == 0 or count_prev_word == 0:
+            return 0
+        return (count_prev_word * count_word) / (total * total)
+
+    @staticmethod
+    def ppmi(count_cooc, expected_cooc):
+        """ return positive pointwise mutual information.
+            If count of observed or expected co-ooccurrences is 0 return 0.
+        """
+        if count_cooc == 0 or expected_cooc == 0:
+            return 0
+        else:
+            return max(0, round(math.log((count_cooc / expected_cooc), 2)))
